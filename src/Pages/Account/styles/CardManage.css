@@ -1,0 +1,153 @@
+.your_card_main_div{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 20px;
+    /* justify-content: space-around; */
+}
+.active_card_main_div{
+    width: 970px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.your_card_head_div{
+    display: flex;
+    justify-content: space-between;
+}
+.new_card_reqst_link{
+    text-decoration: none;
+    color: #27BDAD;
+    font-size: .9rem;
+    font-weight: bold;
+    border: 1px solid #27BDAD;
+    border-radius: 20px;
+    padding: 7px 20px;
+}
+.new_card_reqst_link:hover{
+    background: #27BDAD;
+    color: white;
+    transition: .9s;
+}
+.acitve_cards{
+    width: 430px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.heading_active{
+    display: flex;
+}
+.active_head_div{
+    display: flex;
+    justify-content: space-between;
+}
+.active_para{
+    margin-left: 5px;
+    font-size: .8rem;
+    margin-top: 2px;
+}
+.cards_img_div{
+    text-align: center;
+}
+.cards_img_div>img{
+    width: 160px;
+    height: 80px;
+    margin-top: 20px;
+    margin: 30px 5px;
+    /* object-fit: contain; */
+}
+.cards_details{
+    display: flex;
+}
+.detail_div1{
+    width: 230px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.detail_div1>h6,.detail_div2>h6{
+    font-size: .8rem;
+    margin-top: 20px;
+}
+.detail_div1>p,.detail_div2>p{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.detail_div2{
+    text-align: center;
+}
+
+.button_card{
+    text-align: center;
+    margin-top: 15px;
+}
+.active_btn_card{
+    border: none;
+    border: 1px solid #27BDAD;
+    color: #27BDAD;
+    font-weight: 600;
+    outline: none;
+    padding: 6px 20px;
+    margin: 5px;
+    background: transparent;
+    border-radius: 20px;
+    font-size: .9rem;
+}
+.active_btn_card:hover{
+    background: #27BDAD;
+    color: white;
+}
+.active_btn_card:hover,.new_card_reqst_link:hover,
+.close:focus {
+    transition: .9s;
+  box-shadow: 
+  inset -3.5em 0 0 0 #27BDAD,
+  inset 3.5em 0 0  0   #27BDAD;
+}
+.report_btn_div{
+    text-align: center;
+
+}
+.report_btn{
+    background: #FF3D3D;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 10px auto;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.toggle_Main_div{
+    position: relative;
+}
+.toggle_div{
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 0px 5px gainsboro;
+    border-radius: 4px;
+    position: absolute;
+    width: 145px;
+    display: none;
+    /* right: 20px */
+    left: -10px;
+}
+.toggle_div li{
+    font-size: .8rem;
+   
+    margin-top: 8px;
+}
+.toggle_div li:hover{
+    cursor: pointer;
+}
+.toggle_Main_div:hover .toggle_div{
+    display: block;
+}
+
+.active_card_flex_{
+    display: flex;
+    /* justify-content: space-between; */
+}

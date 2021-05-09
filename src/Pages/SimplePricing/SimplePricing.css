@@ -1,0 +1,101 @@
+.simple_pricing_section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+
+.simple_pricing_section > h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 1rem;
+}
+
+.spricing_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sp_leftbox {
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.sp_leftbox h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sp_leftbox p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sp_leftbox button {
+    margin-top: 7rem;
+}
+
+.sp_uper {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sp_uper h1 {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 0.9;
+  font-weight: bold;
+}
+
+.sp_list ul {
+  padding-left: 0;
+  list-style: none;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.sp_list ul li {
+  display: flex;
+  align-items: center;
+}
+
+.sp_list ul li span {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sp_rightbox {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  border-radius: 10px;
+}
+
+.sp_rightbox h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.spcards_content {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+}
+
+.sp_card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

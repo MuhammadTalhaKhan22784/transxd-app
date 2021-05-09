@@ -1,0 +1,38 @@
+.paymen_div{
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    height: 85vh;
+    position: relative;
+}
+.paymen_div>h4{
+    margin-top: 30px;
+}
+.paymen_div>p{
+    margin-top: 10px;
+    font-size: .9rem;
+}
+.amount_div{
+    margin-top: 30px;
+    width: 300px;
+    border: 1px solid #27BDAD;
+    padding: 20px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.amount_div>h4{
+    margin-top: 5px;
+}
+.payment_btns{
+    /* margin-top: 250px; */
+    position: absolute;
+    bottom: 20px;
+    /* margin: 0px auto; */
+    left: 280px;
+    text-align: center;
+}
+.proced{
+    width: 150px;
+    margin: 0px auto;
+}

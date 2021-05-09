@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useEffect } from "react";
+import AppRouter from "./Router/AppRouter";
+import { ColorContext, colors } from "./Context/Context";
+import { reducer } from "./Context/Reducer";
+import { useReducer } from "react";
+import "./App.css";
 
 function App() {
+  let [state, dispatch] = useReducer(reducer, colors);
+
+  //  console.log(state)
+  useEffect(() => {
+    let get = localStorage.getItem("theme");
+    //  console.log(get)
+    dispatch({
+      type: "Dark",
+      payload: get,
+    });
+    if (get === "dark") {
+      document.body.classList.add("black");
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ColorContext.Provider value={{ color: state, setColor: dispatch }}>
+      <div>
+        <AppRouter />
+      </div>
+    </ColorContext.Provider>
   );
 }
 

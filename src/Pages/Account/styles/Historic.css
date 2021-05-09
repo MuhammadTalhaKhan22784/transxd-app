@@ -1,0 +1,10 @@
+.historic_trans_main_div{
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin: 0px 100px; */
+}
+.user_historic_card{
+    margin-top: 50px;
+    width: 320px;
+    margin-left: 50px;
+}

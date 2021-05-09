@@ -1,0 +1,78 @@
+.money_selct{
+    height: 100px;
+    padding: 30px 0px;
+    vertical-align: middle;
+
+}
+
+
+/* money info css  */
+.money_detail_container{
+    display: flex;
+    margin-top: 50px;
+}
+.user_card_div{
+    margin-left: 50px;
+    width: 330px;
+}
+.money_detail_inputs_div{
+    width: 900px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.money_detail_inputs_div>p{
+    margin-top: 10px;
+}
+.money_info{
+    margin-top: 15px;
+
+}
+.input_money_acc{
+    /* text-align: center; */
+    width: 400px;
+    margin: 20px auto;
+}
+.account_formate_div{
+    margin-top: 10px;
+    text-align: start;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.acc_no{
+    margin-top: 20px;
+    font-size: .9rem;
+}
+.radio_div{
+    display: flex;
+    margin-top: 10px;
+}
+.radio_div>p{
+    margin-top: 8px;
+}
+
+/* transaction css  */
+
+.transaction_div{
+    background: white;
+    border-radius: 15px;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.transaction_div p{
+    margin: 15px 0px;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.transaction_div>div{
+    display: flex;
+    justify-content: center;
+}
+
+.transaction_div>div>h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
