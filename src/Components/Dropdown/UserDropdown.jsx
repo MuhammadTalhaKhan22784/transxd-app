@@ -63,28 +63,28 @@ const UserDropdown = ({ logout }) => {
             </div>
             <hr />
             <button
-              onClick={() => history.push("/post")}
+              onClick={() => history.push("/")}
               className="text_bluegreen bg_white border_solid bluegreen_border"
             >
-              Report an issue
+              Home
             </button>
-            <button
+            {/* <button
               onClick={() => history.push("/post-survey-tamplate")}
               className="text_bluegreen bg_white border_solid bluegreen_border"
             >
               Post a survey
-            </button>
+            </button> */}
             <Link to="account-overview" className="list-style-none">
               <button className="text_bluegreen bg_white border_solid bluegreen_border">
                 Profile
               </button>
             </Link>
-            <button
+            {/* <button
               onClick={() => history.push("/account-setting")}
               className="text_bluegreen bg_white border_solid bluegreen_border"
             >
               Account Settings
-            </button>
+            </button> */}
             <button
               onClick={logout}
               className="text_bluegreen bg_white border_solid bluegreen_border"
