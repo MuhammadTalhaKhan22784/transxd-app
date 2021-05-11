@@ -28,6 +28,9 @@
 .number_div>img{
   margin-top: -5px;
 }
+.number_div_mob{
+    display: none;
+}
 .otp_get_inp_div{
     margin-top: 20px;
 }
@@ -100,4 +103,48 @@
 .thankyou_main_div>div>p{
     margin-top: 20px;
     margin-bottom: 30px;
+}
+.get_otp_main_div input{
+    border: 1px solid #27BDAD;
+     color: #27BDAD;
+}
+.D_get_otp_main_div input{
+    color: #72FAEC !important;
+    border: 1px solid #72FAEC !important;
+}
+
+@media screen and (max-width:991px){
+    .number_div_mob{
+        display: block;
+        margin-top: 20px;
+    }
+    .number_div_mob>img{
+        margin-left: 8px;
+    }
+    .confirm_opt_main_div,.thankyou_main_div{
+        background: transparent !important;
+    }
+    .number_div{
+        display: none;
+    }
+}
+
+@media screen and (max-width:635px){
+    .get_otp_main_div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .email_otp_div{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .confirm_opt_main_div{
+        padding: 20px 10px;
+    }
+    .otp_get_inp_div>input{
+        width: 40px;
+        padding: 0px;
+    }
 }

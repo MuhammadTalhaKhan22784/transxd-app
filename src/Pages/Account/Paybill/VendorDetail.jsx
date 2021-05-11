@@ -1,23 +1,34 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
+import { ColorContext } from '../../../Context/Context'
+import {useHistory} from 'react-router-dom'
 // assets 
 import location from '../../../Assets/Group 4230.png'
 import tick from '../../../Assets/Path 7452.png'
 import Qr from '../../../Assets/Group 4558.png'
+import QrL from '../../../Assets/Group 4558l.png'
 import bill from '../../../Assets/Path 7480.png'
 import orline from '../../../Assets/Path 7553.png'
+import MobViewBack from '../../../Components/MobViewBack'
 
 const VendorDetail = () => {
+    const { color } = useContext(ColorContext)
+    let { mode } = color
+    const history = useHistory()
+
     return (
         <div>
+            <div className="bak_div">
+                <MobViewBack link='/pay-bill' value='PAY A BILL' />
+            </div>
             <div className="pay_bill_main_div">
                 <div className="pay_user_card_div">
                     <UserCard />
                 </div>
-                <div className="select_bill_div" style={{ backgroundColor: '' }}>
-                    <h4 style={{ color: '#27BDAD' }}>VENDOR DETAILS</h4>
-                    <p>Please select a vendor type and continue to proceed!</p>
-                    <div className="vendor_detail_div">
+                <div className="select_bill_div" style={{ backgroundColor: mode === 'dark' ? '#0E2725' : '' }}>
+                    <h4 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>VENDOR DETAILS</h4>
+                    <p style={{ color: mode === 'light' ? '' : 'white' }}>Please select a vendor type and continue to proceed!</p>
+                    <div className={mode === 'light' ? "vendor_detail_div" : 'vendor_detail_div vendor_D_detail_div'} >
                         <div className="country_div">
                             <div className="tick_sign">
                                 <div className="country_input_slct">
@@ -29,10 +40,10 @@ const VendorDetail = () => {
                                 </div>
                                 <img src={tick} alt="" />
                             </div>
-                            <div className="select_vendor_box" style={{ backgroundColor: '#E9F8F7' }}>
-                                <h6>Select a vendor</h6>
-                                <div className="boxes_div">
-                                    <div className="boxempty"></div>
+                            <div className="select_vendor_box" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#142b28' }}>
+                                <h6 style={{ color: mode === 'light' ? '' : 'white' }}>Select a vendor</h6>
+                                <div className={mode === 'light' ? "boxes_div" : 'boxes_div dark_box_div'}>
+                                    <div className="boxempty"  ></div>
                                     <div className="boxempty"></div>
                                     <div className="boxempty"></div>
                                     <div className="boxempty"></div>
@@ -53,19 +64,29 @@ const VendorDetail = () => {
                                 </label>
                             </div>
                             <div className="orLine_div">
-                                <img src={orline} alt=""/>
-                                <span>OR</span>
-                                <img src={orline} alt=""/>
+                                <img src={orline} alt="" />
+                                <span style={{ color: mode === 'light' ? '' : 'white' }}>OR</span>
+                                <img src={orline} alt="" />
                             </div>
-                            <p className='qr_para'>SCAN QR CODE</p>
-                            <div className="qrcode_div" style={{backgroundColor:'#E9F8F7'}}>
-                                <img src={Qr} alt=""/>
+                            <p className='qr_para' style={{ color: mode === 'light' ? '' : 'white' }}>SCAN QR CODE</p>
+                            <div className="qrcode_div" style={{ backgroundColor: mode === 'dark' ? '#142b28' : '#E9F8F7' }}>
+                                <img src={mode==='light'? QrL:Qr} alt="" />
                             </div>
                         </div>
                     </div>
                     <div>
-                        <button className='back_btn' style={{ color: '#27BDAD', border: '1px solid #27BDAD' }}>Back</button>
-                        <button className='con_btn' style={{ backgroundColor: "#27BDAD", color: 'white' }}>Continue</button>
+                        <button
+                            className='back_btn'
+                            onClick={() => history.push('/pay-bill')}
+
+                            style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC', border: '1px solid #27BDAD' }}
+                            >Back</button>
+                        <button
+                            className='con_btn'
+                            onClick={()=>history.push('/bil-payment')}
+                            style={{ backgroundColor: mode === 'light' ? "#27BDAD" : '#72FAEC', color: mode === 'light' ? 'white' : 'black' }}
+                        >Continue
+                        </button>
                     </div>
                 </div>
             </div>

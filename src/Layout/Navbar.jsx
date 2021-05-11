@@ -22,6 +22,26 @@ import path from "../Assets/path.png";
 import pathmb from "../Assets/pathmb.png";
 import LangSwitch from "../Components/Swich/LangSwitch";
 import togglebtn from "../Assets/togglebtn.png";
+import overviewicond from "../Assets/overviewicon.png";
+import overviewiconl from "../Assets/overviewiconl.png";
+import historiciconl from "../Assets/historiciconl.png";
+import historicicond from "../Assets/historicicond.png";
+import cardmanageiconl from "../Assets/cardmanageiconl.png";
+import cardmanageicond from "../Assets/cardmanageicond.png";
+import paybilliconl from "../Assets/paybilliconl.png";
+import paybillicond from "../Assets/paybillicond.png";
+import sendmoneyiconl from "../Assets/sendmoneyicond.png";
+import sendmoneyicond from "../Assets/sendmoneyicond.png";
+import refericonl from "../Assets/refericonl.png";
+import refericond from "../Assets/refericond.png";
+import securityiconl from "../Assets/securityiconl.png";
+import securityicond from "../Assets/securityicond.png";
+import settingicond from "../Assets/settingicond.png";
+import settingiconl from "../Assets/settingiconl.png";
+import logouticonl from "../Assets/logouticonl.png";
+import logouticond from "../Assets/logouticond.png";
+import UserDropdown from "../Components/Dropdown/UserDropdown";
+
 // import MobSearchDropdown from "Components/Dropdown/MobSearchDropdown";
 
 const Navbar = () => {
@@ -147,7 +167,7 @@ const Navbar = () => {
                 </button>
               </li>
               <li className="nav-item">
-                <LangSwitch />
+                <LangSwitch id="lang" />
               </li>
             </div>
           </div>
@@ -200,7 +220,7 @@ const Navbar = () => {
                 <img className="path_line" src={pathmb} alt="img" />
               )}
               <li className="nav-item">
-                <Link className="nav-link" to="/post-survey-tamplate">
+                <Link className="nav-link" to="/features">
                   Features
                 </Link>
               </li>
@@ -210,7 +230,7 @@ const Navbar = () => {
                 <img className="path_line" src={pathmb} alt="img" />
               )}
               <li className="nav-item">
-                <Link className="nav-link" to="product">
+                <Link className="nav-link" to="/receive-payment">
                   Payments
                 </Link>
               </li>
@@ -221,7 +241,7 @@ const Navbar = () => {
               )}
 
               <li className="nav-item">
-                <Link className="nav-link" to="blog">
+                <Link className="nav-link" to="/pricing">
                   Pricing
                 </Link>
               </li>
@@ -238,70 +258,51 @@ const Navbar = () => {
               </li>
             </ul>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <button
+                  style={{ display: showMode === false ? "block" : "none" }}
+                  className="btn s_btn"
+                  onClick={() => {
+                    setShowMode(true);
+                    handleDark();
+                  }}
+                >
+                  <img
+                    src={lightimg}
+                    style={{
+                      width: "35px",
+                    }}
+                    alt="..."
+                  />
+                </button>
+                <button
+                  className="btn s_btn"
+                  style={{ display: showMode === false ? "none" : "block" }}
+                  onClick={() => {
+                    setShowMode(false);
+                    handleLight();
+                  }}
+                >
+                  <img
+                    src={darkimg}
+                    style={{
+                      width: "35px",
+                    }}
+                    alt="..."
+                  />
+                </button>
+              </li>
+              <li className="nav-item">
+                <LangSwitch id="lang-2" />
+              </li>
               {isActive ? (
                 <>
-                  {mode === "light" ? (
-                    <img className="path_line" src={path} alt="img" />
-                  ) : (
-                    <img className="path_line" src={pathmb} alt="img" />
-                  )}
-
-                  {mode === "light" ? (
-                    <img className="path_line" src={path} alt="img" />
-                  ) : (
-                    <img className="path_line" src={pathmb} alt="img" />
-                  )}
-                  {mode === "light" ? (
-                    <img className="path_line" src={path} alt="img" />
-                  ) : (
-                    <img className="path_line" src={pathmb} alt="img" />
-                  )}
-                  <li className="nav-item">
-                    {/* <UserDropdown logout={handleLogout} /> */}
-                  </li>
+                  <UserDropdown />
                 </>
               ) : (
                 <>
-                  <li className="nav-item">
-                    <button
-                      style={{ display: showMode === false ? "block" : "none" }}
-                      className="btn s_btn"
-                      onClick={() => {
-                        setShowMode(true);
-                        handleDark();
-                      }}
-                    >
-                      <img
-                        src={lightimg}
-                        style={{
-                          width: "35px",
-                        }}
-                        alt="..."
-                      />
-                    </button>
-                    <button
-                      className="btn s_btn"
-                      style={{ display: showMode === false ? "none" : "block" }}
-                      onClick={() => {
-                        setShowMode(false);
-                        handleLight();
-                      }}
-                    >
-                      <img
-                        src={darkimg}
-                        style={{
-                          width: "35px",
-                        }}
-                        alt="..."
-                      />
-                    </button>
-                  </li>
-                  <li className="nav-item">
-                    <LangSwitch />
-                  </li>
-
                   <li className="nav-item ms-4">
-                    <Link to="/signup">
+                    <Link to="/register">
                       <button
                         style={{
                           backgroundColor: "transparent",
@@ -411,7 +412,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li onClick={handleClose} className="nav-item mb-4">
-                        <Link to="/signup">
+                        <Link to="/register">
                           <button
                             style={{
                               backgroundColor: "transparent",
@@ -462,23 +463,19 @@ const Navbar = () => {
                         className="text_darkgray"
                         style={{
                           color:
-                            mode === "light"
-                              ? style.bgblack
-                              : style.bggreen,
+                            mode === "light" ? style.bgblack : style.bggreen,
                         }}
                       >
                         salmanaltaf@gmail.com
                       </span>
                       <button
                         style={{
-                         
                           border: "none",
-                          backgroundColor: 
+                          backgroundColor:
                             mode === "light"
                               ? style.bggreen
                               : style.bgdarkgreen,
-                          color:
-                            style.bgblack,
+                          color: style.bgblack,
                           padding: "8px 25px",
                         }}
                         className="cus_btn1 mt-2 mb-2"
@@ -489,69 +486,170 @@ const Navbar = () => {
                     <hr />
                   </div>
                 )}
-                {/* /user ki profile ani/ */}
 
-                <li onClick={handleClose} className="nav-item">
-                  <Link
-                    className="nav-link"
-                    to="/post"
-                    style={{
-                      color: mode === "light" ? style.bgblack : style.bggreen,
-                    }}
-                  >
-                    Homeas
-                  </Link>
-                </li>
-                <li onClick={handleClose} className="nav-item">
-                  <Link className="nav-link" to="/post-survey-tamplate">
-                    Features
-                  </Link>
-                </li>
-                <li onClick={handleClose} className="nav-item">
-                  <Link className="nav-link" to="product">
-                    Payments
-                  </Link>
-                </li>
-                <li onClick={handleClose} className="nav-item">
-                  <Link className="nav-link" to="product">
-                    Pricing
-                  </Link>
-                </li>
-
-                <li onClick={handleClose} className="nav-item">
-                  <Link className="nav-link" to="blog">
-                    Get Card
-                  </Link>
-                </li>
-                {/* <li onClick={handleClose} className="nav-item">
-                  <MobSearchDropdown />
-                </li> */}
-                <li className="nav-item mt-5">{/* <LanguageDropdown /> */}</li>
-                {isActive ? (
+                {!isActive ? (
                   <>
                     <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="/profile">
-                        Profile
+                      <Link
+                        className="nav-link"
+                        to="/post"
+                        style={{
+                          color:
+                            mode === "light" ? style.bgblack : style.bggreen,
+                        }}
+                      >
+                        Home
                       </Link>
                     </li>
                     <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="/account-setting">
-                        Account setting
+                      <Link className="nav-link" to="/features">
+                        Features
                       </Link>
                     </li>
-                    <li
-                      onClick={() => {
-                        handleLogout();
-                        handleClose();
-                      }}
-                      className="nav-item"
-                    >
-                      <Link onClick={handleClose} className="nav-link" to="#">
-                        Logout
+                    <li onClick={handleClose} className="nav-item">
+                      <Link className="nav-link" to="/receive-payment">
+                        Payments
+                      </Link>
+                    </li>
+                    <li onClick={handleClose} className="nav-item">
+                      <Link className="nav-link" to="/pricing">
+                        Pricing
+                      </Link>
+                    </li>
+
+                    <li onClick={handleClose} className="nav-item">
+                      <Link className="nav-link" to="blog">
+                        Get Card
                       </Link>
                     </li>
                   </>
-                ) : null}
+                ) : (
+                  <>
+                    <div style={{ width: "80%", margin: "0 auto" }}>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={overviewiconl} alt="..." />
+                        ) : (
+                          <img src={overviewicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Overview
+                        </Link>
+                      </li>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={historiciconl} alt="..." />
+                        ) : (
+                          <img src={historicicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Historic Transactions
+                        </Link>
+                      </li>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={cardmanageiconl} alt="..." />
+                        ) : (
+                          <img src={cardmanageicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Card Management
+                        </Link>
+                      </li>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={paybilliconl} alt="..." />
+                        ) : (
+                          <img src={paybillicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Pay a Bill
+                        </Link>
+                      </li>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={sendmoneyiconl} alt="..." />
+                        ) : (
+                          <img src={sendmoneyicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Send Money
+                        </Link>
+                      </li>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={refericonl} alt="..." />
+                        ) : (
+                          <img src={refericond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Refer a Friend
+                        </Link>
+                      </li>
+
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center mt-5"
+                      >
+                        {mode === "light" ? (
+                          <img src={securityiconl} alt="..." />
+                        ) : (
+                          <img src={securityicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Account Security
+                        </Link>
+                      </li>
+                      <li
+                        onClick={handleClose}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={settingiconl} alt="..." />
+                        ) : (
+                          <img src={settingicond} alt="..." />
+                        )}
+                        <Link className="nav-link ms-3" to="/profile">
+                          Profile Settings
+                        </Link>
+                      </li>
+                      <li
+                        onClick={() => {
+                          handleLogout();
+                          handleClose();
+                        }}
+                        className="nav-item d-flex align-items-center"
+                      >
+                        {mode === "light" ? (
+                          <img src={logouticonl} alt="..." />
+                        ) : (
+                          <img src={logouticond} alt="..." />
+                        )}
+                        <Link onClick={handleClose} className="nav-link ms-3" to="#">
+                          Logout
+                        </Link>
+                      </li>
+                    </div>
+                  </>
+                )}
               </ul>
             ) : null}
           </div>

@@ -24,10 +24,22 @@
 .bill_type_select{
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    flex-wrap: wrap;
+    width: 600px;
     padding: 25px;
     border-radius: 15px;
     margin: 30px auto;
+    height: 50vh;
+    overflow-y: auto;
+}
+.bill_type_select::-webkit-scrollbar{
+    width: 5px;
+}
+.bill_type_select::-webkit-scrollbar-thumb{
+    background-color: #27BDAD;
+}
+.bill_type_select::-webkit-scrollbar-track{
+    background-color: #9fe6de;
 }
 ._img_bill{
     padding: 20px 0px;
@@ -48,6 +60,7 @@
     background-color: #27BDAD;
 
 }
+
 ._img_bill:hover .light_bil{
     display: none;
 }
@@ -59,6 +72,17 @@
     margin-top: 10px;
     font-weight: 600;
 
+}
+.empty_box_bil{
+    background-color: #b5e8e3;
+    border-radius: 10px;
+    width: 120px;
+    /* padding: 20px; */
+    height: 110px;
+    margin-top: 10px;
+}
+.select_bill_div_D .empty_box_bil{
+    background-color: #234c48;
 }
 .back_btn,.con_btn{
     padding: 5px 0px;
@@ -74,7 +98,7 @@
     font-weight: 600;
 }
 .abslt_btn_div{
-    position: absolute;
+    /* position: absolute; */
     bottom: 20px;
     left: 290px;
 }
@@ -85,6 +109,10 @@
 .vendor_detail_div{
     margin-top: 30px;
     display: flex;
+}
+.vendor_D_detail_div select , .vendor_D_detail_div input, .vendor_D_detail_div input::placeholder{
+    color:  white !important;
+    /* border: 1px solid #9fe6de; */
 }
 .country_div{
     width: 400px;
@@ -157,6 +185,9 @@ input::placeholder{
   flex-wrap: wrap;
   margin-top: 15px;
 }
+.dark_box_div>.boxempty{
+    background-color: #234c48;
+}
 .boxempty{
     width: 55px;
     height: 55px;
@@ -196,4 +227,134 @@ input::placeholder{
 }
 .payment_bil{
     width: 900px;
+}
+
+
+@media screen and (max-width:1080px){
+    .pay_user_card_div,.pay_user_card_div{
+        margin-left: 10px;
+    }
+    .select_bill_div{
+        width: 700px;
+    }
+    .bill_type_select{
+        width: auto;
+    }
+    .vendor_detail_div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bill_id_div{
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1030px){
+    .select_bill_div{
+        width: 650px;
+    }
+}
+@media screen and (max-width:991px){
+    .select_bill_div{
+        width: 100%;
+        height: 70vh;
+        background: transparent !important;
+    }
+    .bill_id_div{
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .pay_user_card_div,.select_bill_div>h4{
+        display: none;
+    }
+    .pay_bill_main_div{
+        margin: 50px 20px;
+        margin-top: 0px;
+    }
+    .bil_payment_main_div{
+        margin-top: 0px;
+    }
+    .bill_type_select{
+        width: 700px;
+    }
+}
+@media screen and (max-width:850px){
+    .bill_id_div{
+        margin-left: -20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .bill_type_select{
+        width: 500px;
+        flex-wrap: wrap;
+        
+    }
+    .bil_type{
+        margin: 5px;
+    }
+}
+@media screen and (max-width:588px){
+    .bill_type_select{
+        width: 400px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:465px){
+    .bill_type_select{
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .bil_type,._img_bill{
+        width: 100px !important;
+    }
+    .bil_type p{
+        font-size: .8rem;
+    }
+    .country_input_slct{
+        width: 280px;
+    }
+    .country_input_slct select,.country_input_slct input{
+        width: 210px;
+    }
+    .select_vendor_box{
+        width: 300px;
+    }
+}
+@media screen and (max-width:370px){
+    .bill_type_select{
+        width: 300px;
+    }
+    .pay_bill_main_div{
+        margin: 50px 10px;
+        margin-top: 0px;
+    }
+    .select_bill_div{
+        padding: 10px 5px;
+    }
+}
+@media screen and (max-width:350px){
+    .country_input_slct{
+        width: 250px;
+    }
+    .country_input_slct select,.country_input_slct input{
+        width: 180px;
+    }
+    .select_vendor_box{
+        width: 280px;
+    }
+}
+@media screen and (max-width:330px){
+    .bill_type_select{
+        width: 270px;
+    }
+    .bil_type,._img_bill{
+        width: 90px !important;
+    }
+    .bil_type p{
+        font-size: .9rem;
+    }
+    .back_btn, .con_btn{
+        margin: 5px;
+    }
 }

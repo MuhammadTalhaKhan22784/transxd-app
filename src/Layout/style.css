@@ -29,6 +29,7 @@
   color: unset;
   font-size: 1rem;
   font-weight: bold;
+  margin-right: 15px;
 }
 
 .en_option {
@@ -58,14 +59,6 @@
 
 /*  */
 
-.down_arrow {
-  transition: all 0.4s ease-in;
-  color: #19c2a0 !important;
-}
-.nav-item:hover .down_arrow {
-  transform: rotate(180deg) !important;
-  transition: all 0.4s ease-out;
-}
 .submenu {
   position: absolute;
   top: 38px;
@@ -102,20 +95,27 @@
 /*  */
 
 .lang_btn {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   margin-right: 10px;
 }
 
-.lang_btn:hover .down_arrow_1 {
-  transform: rotate(0deg) !important;
-}
-
 .lngdrpdwn_btn {
-  width: 130px;
+  width: 70px;
   height: 30px;
   border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 0.8rem;
   border-radius: 5px;
+}
+
+.down_arrow {
+  width: 12px !important;
+  margin-left: 5px;
+  object-fit: contain;
 }
 
 .lang_submenu .lang_item {
@@ -138,11 +138,15 @@
 }
 
 .langdrpdwn_menu {
-  height: max-content;
-  padding-top: 15px;
+  height: 100px;
+  overflow-y: scroll;
   border-radius: 5px;
+  min-width: 6rem !important;
   border: none;
   box-shadow: 1px 0 20px rgb(0 0 0 / 8%);
+}
+
+.langdrpdwn_menu.dropdown-menu {
 }
 
 /*  */
@@ -339,77 +343,13 @@
 
 /*  */
 
-.down_arrow {
-  transition: all 0.4s ease-in;
-  color: #19c2a0 !important;
-}
-.advance-filter:hover .down_arrow {
-  transform: rotate(180deg) !important;
-  transition: all 0.4s ease-out;
-}
-.af_submenu {
-  width: 100%;
-  height: 150px;
-  position: absolute;
-  top: 84px;
-  left: 0;
-  display: none;
-  background: #f3f4f7;
-  border-top: none;
-  border-radius: 4px;
-  transition: 0.2s all ease-out;
-  box-shadow: 0px 0px 10px gainsboro;
-}
-.advance-filter .nav-item:hover .af_submenu {
-  display: block;
-  transition: 0.2s all ease-out;
-}
-
-.af_submenu .af_submenu-item {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-direction: column;
-}
-
-.af_submenu .af_submenu-item .af_smi_1 {
-  width: 60%;
-  margin: 0 auto;
-  padding-left: 0px !important;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.af_smi_2 {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.af_smi_2 button {
-  width: 200px;
-  box-shadow: 0px 0px 10px gainsboro;
-  height: 35px;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-.af_smi_2 span {
-  margin-top: 8px;
-  font-size: 1rem;
-}
 
 /*  */
 
 .userinfo_dropdown {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .userinfo_text {
@@ -434,6 +374,11 @@
   align-items: center;
 }
 
+.userdrpdwn_btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .usericon {
   width: 40px;
   height: 40px;
@@ -442,13 +387,13 @@
 
 .downicon {
   margin-left: 11px;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   object-fit: contain;
 }
 
 .path_line {
-  width: 2px;
+  width: 2px !important;
   height: 35px;
 }
 
@@ -548,6 +493,7 @@
 .fc_1 > div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .fc_1 span {
@@ -768,8 +714,17 @@
   .f_switch {
     display: none !important;
   }
+  .c_navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
 }
 
+@media (max-width: 1096px) {
+  .c_navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.8rem;
+    margin-right: 2px;
+  }
+}
 @media (max-width: 1070px) {
   .cn_container {
     max-width: 1040px !important;
@@ -780,6 +735,7 @@
 }
 
 @media (max-width: 991px) {
+
   .cart_menu {
     left: -46.9px !important;
   }
@@ -836,10 +792,13 @@
   .mob_nav .c_btn {
     height: 33px;
   }
-  .lang_btn {
+  /* .lang_btn {
     width: 100%;
     justify-content: center;
     margin: 0 auto 14px auto;
+  } */
+  .btn:focus {
+    box-shadow: none !important;
   }
   /*  */
 
@@ -903,6 +862,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .c_navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.8rem;
+  }
+  .c_navbar .navbar-nav .nav-item img {
+    width: 17px;
+  }
   .search_main {
     display: flex;
     flex-direction: column;

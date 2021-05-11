@@ -20,6 +20,7 @@ import copyrightmb from "../Assets/copyrightmb.png";
 import "./style.css";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
+import LangSwitch from "../Components/Swich/LangSwitch";
 const Footer = () => {
   let history = useHistory();
   const [showMode, setShowMode] = useState(false);
@@ -141,41 +142,21 @@ const Footer = () => {
               >
                 Transxd
               </span>
-              <span
-                onClick={() => {
-                  history.push("/product");
-                }}
-              >
-                Home
-              </span>
-              <span
-                onClick={() => {
-                  history.push("/product");
-                }}
-              >
-                Payments
-              </span>
-              <span
-                onClick={() => {
-                  history.push("/consensus");
-                }}
-              >
-                Features
-              </span>
-              <span
-                onClick={() => {
-                  history.push("/profile");
-                }}
-              >
-                About us
-              </span>
-              <span
-                onClick={() => {
-                  history.push("/profile");
-                }}
-              >
-                Contact us
-              </span>
+              <Link className="text-decoration-none" to="/">
+                <span>Home</span>
+              </Link>
+              <Link className="text-decoration-none" to="/receive-payment">
+                <span>Payments</span>
+              </Link>
+              <Link className="text-decoration-none" to="/features">
+                <span>Features</span>
+              </Link>
+              <Link className="text-decoration-none" to="#">
+                <span>About us</span>
+              </Link>
+              <Link className="text-decoration-none" to="#">
+                <span>Contact us</span>
+              </Link>
             </div>
             <div>
               <span
@@ -186,21 +167,15 @@ const Footer = () => {
               >
                 Legal
               </span>
-              <span>Terms of use</span>
-              <span
-                onClick={() => {
-                  history.push("/about");
-                }}
-              >
-                Privacy Policy
-              </span>
-              <span
-                onClick={() => {
-                  history.push("/contact-us");
-                }}
-              >
-                Company Policy
-              </span>
+              <Link className="text-decoration-none" to="/terms-condition">
+                <span>Terms of use</span>
+              </Link>
+              <Link className="text-decoration-none" to="#">
+                <span>Privacy Policy</span>
+              </Link>
+              <Link className="text-decoration-none" to="#">
+                <span>Company Policy</span>
+              </Link>
             </div>
             <div>
               <span
@@ -218,8 +193,12 @@ const Footer = () => {
               >
                 Contact us
               </span>
-              <span>invest with us</span>
-              <span>Feedback</span>
+              <Link className="text-decoration-none" to="#">
+                <span>invest with us</span>
+              </Link>
+              <Link className="text-decoration-none" to="#">
+                <span>Feedback</span>
+              </Link>
             </div>
           </div>
           <div className="fc_3">
@@ -254,7 +233,7 @@ const Footer = () => {
                 <img src={newslettericonmob} alt="..." />
               )}
             </div>
-            <div className="f_switch w-100 d-flex justify-content-end">
+            <div className="f_switch w-100 d-flex justify-content-end align-items-center mt-3">
               <button
                 style={{ display: showMode === false ? "block" : "none" }}
                 className="btn s_btn"
@@ -287,6 +266,8 @@ const Footer = () => {
                   alt="..."
                 />
               </button>
+
+              <LangSwitch id="lang-3"/>
             </div>
           </div>
 
@@ -294,11 +275,14 @@ const Footer = () => {
             <div className="fc_btm">
               <div>
                 <span>IBC: BVI 2022059</span>
+
                 <span>RCCM: MA-BKO 2019 E-14904</span>
+
                 <span>RCCM: NE-NIM 01 2019 B13 00387</span>
               </div>
               <div>
                 <span>RCCM: CI-ABJ 2020 B 01087</span>
+
                 <span>RCCM: TG-LOM 2019 B3045</span>
               </div>
             </div>
@@ -323,9 +307,6 @@ const Footer = () => {
             2021. Rarare Inc. All rights reserved.{" "}
           </span>
         </div>
-        {/* <div className="fc_2 mob_fc_2">
-          
-        </div> */}
       </div>
     </React.Fragment>
   );

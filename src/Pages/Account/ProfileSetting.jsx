@@ -1,39 +1,52 @@
-import React,{useState} from 'react'
+import React, { useState, useContext } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
 import PersonalDetail from '../../Components/AccountComp/PersonalDetail'
 import UploadLicns from '../../Components/AccountComp/UploadLicns'
+import { ColorContext } from '../../Context/Context'
+// assets 
 import user from '../../Assets/Path 7446.png'
 import upload from '../../Assets/Group 4482.png'
 import './styles/Setting.css'
+import MobViewBack from '../../Components/MobViewBack'
 
 const ProfileSetting = () => {
 
-    let [next,setNext] = useState(false)
-   const handleNext = ()=>{
-       setNext(true)
-   }
+    const { color } = useContext(ColorContext)
+    let { mode } = color
+
+    let [next, setNext] = useState(false)
+    const handleNext = () => {
+        setNext(true)
+    }
     return (
         <div>
+            <div className="bak_div">
+                <MobViewBack link='/' value='SECURITY SETTINGS' />
+            </div>
             <div className="setting_main_div">
                 <div>
                     <UserCard />
                 </div>
-                <div className="personal_info_div" style={{ backgroundColor: '#E9F8F7' }}>
-                <h5 style={{ color: '#27BDAD' }}>UPDATE PERSONAL INFORMATION</h5>
-                 <p>Request a change to your profile details. Please note that changes are subject
+                <div className="personal_info_div" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#112626' }}>
+                    <h5 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>UPDATE PERSONAL INFORMATION</h5>
+                    <p style={{ color: mode === 'light' ? 'black' : 'white' }}
+                    >Request a change to your profile details. Please note that changes are subject
                     to provision of a proof such as a valid identity card/passport and verification by our team!</p>
-                    {!next?
-                    <PersonalDetail nextFunc={handleNext} />
-                    :
-                    <UploadLicns />
-                }
+                    {!next ?
+                        <PersonalDetail head nextFunc={handleNext} height='uploc_height' />
+                        :
+                        <UploadLicns head sBtn />
+                    }
                 </div>
-                <div className="updateImg_div" style={{ backgroundColor: '#E9F8F7' }}>
-                    <h5 style={{ color: '#27BDAD' }}>Change Profile Picture</h5>
-                    <p>Change your profile picture! Please use a picture so face is fully visible and clear!</p>
+                <div className="updateImg_div" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#0E2725' }}>
+                    <h5 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>Change Profile Picture</h5>
+                    <p style={{ color: mode === 'light' ? 'black' : 'white' }}
+                    >Change your profile picture! Please use a picture so face is fully visible and clear!</p>
                     <div>
                         <img src={user} alt="" />
-                        <img className='upload_profile' src={upload} alt="" />
+                        <div>
+                            <img className='upload_profile' src={upload} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

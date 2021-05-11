@@ -1,18 +1,43 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useContext } from "react";
 import "./Terms.css";
+import { ColorContext } from "../../Context/Context";
 
 const TermAndCond = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { color, setColor } = useContext(ColorContext);
+  let { mode } = color;
+  let style = {
+    bggreen: "#27BDAD",
+    bgblue: "#3C66C4",
+    bglightblue: "#E9F8F7",
+    bgred: "#CF4332",
+    bgblack: "#0E2725",
+    bgwhite: "#FFFFFF",
+    bgdarkgreen: "#72FAEC",
+    bglightgreen: "#0A1716",
+  };
   return (
     <div className="terms_and_cond_container">
       <div className="terms_and_cond_main_div">
         <div className="terms_boxex_div">
           <div className="tersm_head_div">
-            <h3>Legal & Compliance</h3>
+            <h3
+              style={{
+                color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+              }}
+            >
+              Legal & Compliance
+            </h3>
           </div>
-          <div className="terms_one_box_div">
+          <div
+            className="terms_one_box_div"
+            style={{
+              color: mode === "light" ? style.bgblack : style.bgwhite,
+            }}
+          >
             <p className="term_note_para">LLorem ipsum dolo</p>
             <div className="terms_para_div">
               <p>
@@ -78,7 +103,14 @@ const TermAndCond = () => {
           </div>
         </div>
         <div className="terms_two_div">
-          <div className="terms_two_box_para_div">
+          <div
+            className="terms_two_box_para_div"
+            style={{
+              backgroundColor:
+                mode === "light" ? style.bglightblue : style.bglightgreen,
+              color: mode === "light" ? style.bgblack : style.bgwhite,
+            }}
+          >
             <div className="terms_sub_head_div">
               <h5>
                 <strong>In Plain English</strong>

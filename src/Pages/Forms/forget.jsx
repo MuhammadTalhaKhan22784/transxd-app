@@ -1,23 +1,31 @@
-import React, { useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { ColorContext } from "../../Context/Context";
 import { Swiper, SwiperSlide } from "swiper/react";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
 import featherMail from "../../Assets/feather-mail.png";
 
 import "./Forms.css";
 // assets
-// import xSmallIcon from "../../Assets/Group 26@2x.png";
-// import xMedumIcon from "../../Assets/Group 25@3x.png";
-// import polygon1 from "../../Assets/Polygon 3@2x.png";
-// import polygon2 from "../../Assets/Polygon 2@2x.png";
-// import lgbgright from "../../Assets/lg_bgright.png";
 import forgotlogo from "../../Assets/forgotlogo.png";
-// import Button from "../../Components/Btn/Btn";
 
 const Forget = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { color, setColor } = useContext(ColorContext);
+  let { mode } = color;
+  let style = {
+    bggreen: "#27BDAD",
+    bgblue: "#3C66C4",
+    bglightblue: "#E9F8F7",
+    bgred: "#CF4332",
+    bgblack: "#0E2725",
+    bgwhite: "#FFFFFF",
+    bgdarkgreen: "#72FAEC",
+    bglightgreen: "#0A1716",
+  };
 
   return (
     <React.Fragment>
@@ -25,24 +33,44 @@ const Forget = () => {
         <div className="login_form">
           <div className="s_form">
             <div className="s_text">
-              <h2 className="text_darkblue fw-bold mt-4">
-                Forgot <strong className="text_bluegreen">Password</strong>
+              <h2
+                className="fw-bold mt-4"
+                style={{
+                  color: mode === "light" ? style.bggreen : style.bgwhite,
+                }}
+              >
+                Forgot{" "}
+                <strong
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                  Password?
+                </strong>
               </h2>
             </div>
-            <div className="s_para">
-              <p className="text_lightgray">
+            <div className="s_para mt-3">
+              <p
+                style={{
+                  width: "90%",
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
+                }}
+              >
                 To err is to human! Enter the your email address and we'll send
                 you a magic link!
               </p>
             </div>
-            <div className="s_img">
+            <div className="s_img mt-3">
               <img src={forgotlogo} alt="lgLogo" />
             </div>
             <form className="s_form_fields mt-3">
               <div className="p_input">
                 <img src={featherMail} alt="..." />
                 <input
-                  style={{ paddingLeft: "0" }}
+                  style={{
+                    paddingLeft: "15px",
+                    color: mode === "light" ? style.bggreen : style.bgwhite,
+                  }}
                   placeholder="Email address"
                   type="email"
                 />
@@ -50,18 +78,32 @@ const Forget = () => {
               <div className="form_btn ">
                 <button
                   style={{
-                    backgroundColor: "white",
-                    border: "1px solid #27BDAD",
-                    color: "black",
+                    padding: "10px 40px",
+                    border: "1px solid",
+                    borderColor:
+                      mode === "light" ? style.bggreen : "transparent",
+                    backgroundColor:
+                      mode === "light" ? style.bgwhite : style.bglightgreen,
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
-                  className="cus_btn1"
+                  className="cus_btn1 mt-4"
                 >
-                  Sign-up today!
+                  Get Majic Link
                 </button>
               </div>
-              <span className="s_label mt-3">
+              <span
+                className="s_label mt-3"
+                style={{
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
+                }}
+              >
                 Didn't receive a code?{" "}
-                <Link to="/login" className="text_lightpurple">
+                <Link
+                  to="#"
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
                   &nbsp;Contact Help Center!
                 </Link>
               </span>
@@ -127,8 +169,6 @@ const Forget = () => {
             </Swiper>
           </div>
         </div>
-     
-     
       </div>
     </React.Fragment>
   );

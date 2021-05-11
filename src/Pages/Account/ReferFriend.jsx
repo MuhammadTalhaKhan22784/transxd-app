@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
 // assets 
 import s1 from '../../Assets/Group 4488.png'
@@ -9,23 +9,29 @@ import s5 from '../../Assets/Group 4492.png'
 import s6 from '../../Assets/Group 4493.png'
 import or from '../../Assets/Path 7553.png'
 import email from '../../Assets/Icon feather-mail.png'
+import emailL from '../../Assets/Icon feather-maill.png'
 import linkG from '../../Assets/Group 4484.png'
 import link from '../../Assets/Icon feather-link-2.png'
 import copy from '../../Assets/Icon feather-copy.png'
 import './styles/Refer.css'
+import { ColorContext } from '../../Context/Context'
 
 const ReferFriend = () => {
+    const { color } = useContext(ColorContext)
+    let { mode } = color
     return (
         <div>
             <div className="refer_main_">
                 <div className="user_card_div2">
                     <UserCard />
                 </div>
-                <div className="refer_card_social" style={{ backgroundColor: '#E9F8F7' }}>
-                    <h5 style={{ color: '#27BDAD' }}>REFER A FRIEND</h5>
+                <div className="refer_card_social" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#112626' }}>
+                    <h5 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>REFER A FRIEND</h5>
                     <div className='social_share_head'>
-                        <h5 style={{ color: '#27BDAD' }}>Share on social media</h5>
-                        <p>Share referral link on social media on your favorite social networking websites!</p>
+                        <h5 style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}>Share on social media</h5>
+                        <p
+                            style={{ color: color.mode === 'light' ? '' : 'white' }}
+                        >Share referral link on social media on your favorite social networking websites!</p>
                     </div>
                     <div className="social_icon_div">
                         <img src={s1} alt="" />
@@ -37,28 +43,40 @@ const ReferFriend = () => {
                     </div>
                     <div className="orline_div">
                         <img src={or} alt="" />
-                        <span> OR </span>
+                        <span style={{ color: color.mode === 'light' ? '' : 'white' }}> OR </span>
                         <img src={or} alt="" />
                     </div>
                     <div className="emailInput">
-                        <h5 style={{ color: '#27BDAD' }}>Enter friend's email</h5>
-                        <p>Send a personalized email link to your friend or family! Simply enter email and send a referral link!</p>
+                        <h5 style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}>Enter friend's email</h5>
+                        <p
+                            style={{ color: mode === 'light' ? '' : 'white' }}
+                        >Send a personalized email link to your friend or family! Simply enter email and send a referral link!</p>
                         <div className="pass_inpt entr_link">
-                            <img src={email} alt="" />
-                            <input type='email' name="" id="" />
+                            <img src={mode === 'dark' ? email : emailL} alt="" />
+                            <input
+                                type='email'
+                                placeholder='Recipient email address'
+                                className={mode==='light'?'light_inp':'dark_inp'}
+                            />
                         </div>
                         <div >
-                            <button className='change_pss_btn'>Share Now</button>
+                            <button
+                                className='change_pss_btn'
+                                style={{ backgroundColor: mode === 'light' ? "#27BDAD" : '#72FAEC', color: mode === 'light' ? 'white' : 'black' }}
+                            >Share Now</button>
                         </div>
                     </div>
                 </div>
-                <div className="refer_copylink_card" style={{ backgroundColor: '#E9F8F7' }}>
+                <div className="refer_copylink_card" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#112626' }}>
                     <img src={linkG} alt="" />
-                    <h5 style={{ color: '#27BDAD' }}>Share via invite link</h5>
-                    <p>Copy the invite link and send to your friends or family via messages or any medium you link!</p>
+                    <h5 style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}>Share via invite link</h5>
+                    <p style={{ color: mode === 'light' ? '' : 'white' }}>Copy the invite link and send to your friends or family via messages or any medium you link!</p>
                     <div className="link_inpt">
                         <img src={link} alt="" />
-                        <input type='email' name="" value='https://www.youtube.com/watch?v=pba_' readOnly id="" />
+                        <input 
+                        type='email' 
+                        className={mode==='light'?'light_inp':'dark_inp'}
+                        value='https://www.youtube.com/watch?v=pba_' readOnly  />
                         <img src={copy} alt="" />
                     </div>
                 </div>

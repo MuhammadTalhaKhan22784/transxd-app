@@ -17,7 +17,6 @@
 
 .term_note_para {
   font-weight: 600;
-  color: black;
   padding: 8px 0px;
   padding-bottom: 0px !important;
 }
@@ -38,8 +37,6 @@
   margin-top: 20px;
   border-radius: 8px;
   width: 400px;
-  background-color: #ebedf5;
-  color: #5f677c;
   text-align: center;
 }
 

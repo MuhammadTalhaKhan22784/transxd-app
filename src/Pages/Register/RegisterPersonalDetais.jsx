@@ -65,10 +65,10 @@ const RegisterPersonalDetais = () => {
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
-                Login to{" "}
+                Register with{" "}
                 <strong
                   style={{
-                    color: style.bggreen,
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
                 >
                   Transxnd!
@@ -84,13 +84,20 @@ const RegisterPersonalDetais = () => {
                 Please enter your email address and password to login..
               </p>
             </div>
-            <h2 className="fs-6 mt-5">Personal Details</h2>
+            <h2
+              className="fs-6 mt-5"
+              style={{
+                color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+              }}
+            >
+              Personal Details
+            </h2>
             <form className="s_form_fields">
               <div className="inline_input">
                 <div className="p_input" style={{ width: "48%" }}>
                   <img src={userimg} alt="..." />
                   <input
-                    style={{ paddingLeft: "5px" }}
+                    style={{ paddingLeft: "15px" }}
                     placeholder="First Name"
                     type="text"
                     className="half_input"
@@ -99,7 +106,7 @@ const RegisterPersonalDetais = () => {
                 <div className="p_input" style={{ width: "48%" }}>
                   <img src={userimg} alt="..." />
                   <input
-                    style={{ paddingLeft: "5px" }}
+                    style={{ paddingLeft: "15px" }}
                     placeholder="First Name"
                     type="text"
                     className="half_input"
@@ -114,7 +121,8 @@ const RegisterPersonalDetais = () => {
               <div className="p_input">
                 <img src={featherMail} alt="..." />
                 <input
-                  style={{ paddingLeft: "0" }}
+                
+                  style={{ paddingLeft: "15px" }}
                   placeholder="Email address"
                   type="email"
                 />

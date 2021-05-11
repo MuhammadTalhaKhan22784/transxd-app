@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
+import Fade from "react-reveal/Fade";
 
 import "./Home.css";
 
@@ -100,7 +101,12 @@ const Home = () => {
               <img src={homemap} alt="..." />
             </div>
             <div className="hr_box2">
-              <img src={homegirlimg} alt="..." />
+            <img src={homegirlimg} alt="..." />
+            </div>
+            <div className="hr_box3">
+              <Fade right duration={1800} delay={1200}>
+                <img src={homegirlimg} alt="..." />
+              </Fade>
             </div>
           </div>
         </div>{" "}

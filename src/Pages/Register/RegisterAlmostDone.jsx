@@ -87,7 +87,14 @@ const RegisterAlmostDone = () => {
                 Please enter your email address and password to login..
               </p>
             </div>
-            <h2 className="fs-6 mt-5">Contact Details</h2>
+            <h2
+              className="fs-6 mt-5"
+              style={{
+                color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+              }}
+            >
+              You are almost done
+            </h2>
             <div className="s_para mt-3">
               <p
                 style={{
@@ -102,7 +109,13 @@ const RegisterAlmostDone = () => {
               <img src={regimg} alt="..." />
             </div>
             <div className="d-flex align-items-center mt-3">
-              <span>+92 312 486 7888</span>
+              <span
+                style={{
+                  color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                }}
+              >
+                +92 312 486 7888
+              </span>
               <img className="ms-2" src={iconEdit} alt="..." />
             </div>
             <div className="optp_code d-flex justify-content-between">
@@ -115,7 +128,14 @@ const RegisterAlmostDone = () => {
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
                 }}
               >
-                <span className="fs-2">1</span>
+                <span
+                  className="fs-2"
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                  1
+                </span>
               </div>
               <div
                 className="d-flex align-items-center justify-content-center"
@@ -126,7 +146,14 @@ const RegisterAlmostDone = () => {
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
                 }}
               >
-                <span className="fs-2">1</span>
+                <span
+                  className="fs-2"
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                  2
+                </span>
               </div>
               <div
                 className="d-flex align-items-center justify-content-center"
@@ -137,7 +164,14 @@ const RegisterAlmostDone = () => {
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
                 }}
               >
-                <span className="fs-2">1</span>
+                <span
+                  className="fs-2"
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                  3
+                </span>
               </div>
               <div
                 className="d-flex align-items-center justify-content-center"
@@ -148,7 +182,14 @@ const RegisterAlmostDone = () => {
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
                 }}
               >
-                <span className="fs-2">1</span>
+                <span
+                  className="fs-2"
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                  4
+                </span>
               </div>
             </div>
 
@@ -187,7 +228,6 @@ const RegisterAlmostDone = () => {
                 </Link>
               </span>
             </form>
-         
           </div>
         </div>
       ) : (

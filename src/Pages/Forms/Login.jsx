@@ -61,7 +61,7 @@ const Login = () => {
                 Login to{" "}
                 <strong
                   style={{
-                    color: style.bggreen,
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
                 >
                   Transxnd!
@@ -105,7 +105,10 @@ const Login = () => {
               <div className="p_input">
                 <img src={featherMail} alt="..." />
                 <input
-                  style={{ paddingLeft: "0" }}
+                  style={{
+                    paddingLeft: "15px",
+                    color: mode === "light" ? style.bggreen : style.bgwhite,
+                  }}
                   placeholder="Email address"
                   type="email"
                 />
@@ -113,6 +116,9 @@ const Login = () => {
               <div className="p_input">
                 <img src={featherLock} alt="..." />
                 <input
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgwhite,
+                  }}
                   placeholder="Password"
                   type={!pass ? "password" : "text"}
                 />
@@ -136,11 +142,11 @@ const Login = () => {
                 </label>
                 <span
                   style={{
-                    color: mode === "light" ? style.bgblack : style.bggreen,
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
                   className="fp_text"
                   onClick={() => {
-                    history.push("forget");
+                    history.push("/forget");
                   }}
                 >
                   Forgot Password?
@@ -155,7 +161,7 @@ const Login = () => {
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
                     color: mode === "light" ? style.bgwhite : style.bgblack,
                   }}
-                  className="cus_btn1"
+                  className="cus_btn1 fw-bold"
                 >
                   Login
                 </button>
@@ -169,9 +175,9 @@ const Login = () => {
                 Not a member?{" "}
                 <Link
                   style={{
-                    color: mode === "light" ? style.bgblack : style.bggreen,
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
-                  to="/login"
+                  to="/register"
                 >
                   &nbsp;Register Now!
                 </Link>

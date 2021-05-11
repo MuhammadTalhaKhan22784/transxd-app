@@ -3,6 +3,7 @@ import { ColorContext } from '../../Context/Context'
 import UserCard from '../../Components/AccountComp/UserCard'
 import TransTable from '../../Components/AccountComp/TransTable'
 import './styles/Historic.css'
+import MobViewBack from '../../Components/MobViewBack'
 
 const HistoricTrans = () => {
     const { color } = useContext(ColorContext)
@@ -10,6 +11,9 @@ const HistoricTrans = () => {
 
     return (
         <div>
+              <div className="bak_div">
+                <MobViewBack link='/' value='YOUR TRANSCTIONS' />
+            </div>
             <div className="historic_trans_main_div">
                 <div className="user_historic_card">
                     <UserCard />
@@ -28,7 +32,7 @@ const HistoricTrans = () => {
                             </select>
                         </div>
                     </div>
-                    <TransTable />
+                    <TransTable  className='table_scroll_hist'/>
                 </div>
             </div>
         </div>

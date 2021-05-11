@@ -9,12 +9,16 @@ import toggleW from '../../../Assets/Component 49 – 2.png'
 import card1 from '../../../Assets/Group 4416.png'
 import card2 from '../../../Assets/Group 4415.png'
 import '../styles/CardManage.css'
+import MobViewBack from '../../../Components/MobViewBack'
 
 const CurrCard = () => {
     const { color } = useContext(ColorContext)
     let { mode } = color
     return (
         <div className='active_card_container'>
+              <div className="bak_div">
+                <MobViewBack link='/' value='YOUR CARD' />
+            </div>
             <div className="your_card_main_div">
                 <div className='user_card_di'>
                     <UserCard />
@@ -27,7 +31,7 @@ const CurrCard = () => {
                         <Link
                             className='new_card_reqst_link'
                             style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}
-                            to='/add-new-card'>
+                            to='/request-new-card'>
                             Request a New Card
                         </Link>
                     </div>

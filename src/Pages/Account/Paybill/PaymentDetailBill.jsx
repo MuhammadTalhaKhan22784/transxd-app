@@ -1,17 +1,26 @@
 import React from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
+import MobViewBack from '../../../Components/MobViewBack'
 import PaymentDetail from '../../../Utils/PaymentDetail'
 
 
 const PaymentDetailBill = () => {
     return (
         <div>
+            <div className="bak_div">
+                <MobViewBack link='/bil-detail' value='PAY A BILL' />
+            </div>
             <div className='bil_payment_main_div'>
                 <div className="user_card_div">
                     <UserCard />
                 </div>
                 <div className="payment_bil">
-                <PaymentDetail />
+                <PaymentDetail 
+                btnV='Proceed & Pay' 
+                link='/confrim-otp' 
+                backLink='/bil-detail'
+                desc='Please enter bill amount! Or confirm payment if vendor has returned an amount!'
+                 />
                 </div>
             </div>
         </div>

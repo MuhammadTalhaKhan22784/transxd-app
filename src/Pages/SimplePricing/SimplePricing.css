@@ -4,12 +4,13 @@
   display: flex;
   flex-direction: column;
   padding: 0 4rem;
+  margin-bottom: 4rem;
 }
 
 .simple_pricing_section > h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 1rem;
 }
 
 .spricing_content {
@@ -19,7 +20,7 @@
 
 .sp_leftbox {
   width: 30%;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -38,7 +39,7 @@
 }
 
 .sp_leftbox button {
-    margin-top: 7rem;
+  margin-top: 7rem;
 }
 
 .sp_uper {
@@ -79,7 +80,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .sp_rightbox h2 {
@@ -99,3 +100,79 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 1210px) {
+  .sp_leftbox p {
+    font-size: 0.8rem;
+  }
+  .sp_list ul li span {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .simple_pricing_section > h2 {
+    margin: 2rem auto;
+  }
+  .spricing_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sp_leftbox {
+    width: 400px;
+  }
+  .sp_leftbox button {
+    margin-top: 0rem;
+  }
+  .sp_rightbox {
+    width: 100%;
+    border: none !important;
+    padding: 0;
+  }
+  .s_none {
+    display: none;
+  }
+  .sp_card {
+    border: 1px solid #27bdad;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    width: 400px;
+  }
+  .spcards_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .simple_pricing_section > h2 {
+    font-size: 1.2rem;
+  }
+  .simple_pricing_section {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sp_leftbox,
+  .sp_card,
+  .sp_rightbox {
+    width: 317px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .simple_pricing_section {
+    padding: 0 10px;
+  }
+  .simple_pricing_section > h2 {
+    font-size: 1rem;
+  }
+  .sp_leftbox,
+  .sp_card,
+  .sp_rightbox {
+    width: 300px;
+    padding: 2rem 10px;
+  }
+}
+

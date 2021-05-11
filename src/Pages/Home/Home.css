@@ -71,6 +71,18 @@
   display: none;
 }
 
+.hr_box3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr_box3 img {
+  margin-left: -704px;
+  width: 327px;
+}
+
 /* home_tmoney */
 
 .home_tmoney {
@@ -391,6 +403,11 @@
   width: 80%;
 }
 
+@media screen and (max-width: 1238px) {
+  .hr_box3 img {
+    margin-left: -417px;
+  }
+}
 @media screen and (max-width: 980px) {
   .home_hero {
     flex-direction: column-reverse;
@@ -399,6 +416,9 @@
     margin-top: 2rem;
   }
   .hr_box {
+    display: none;
+  }
+  .hr_box3 {
     display: none;
   }
   .h_right {
