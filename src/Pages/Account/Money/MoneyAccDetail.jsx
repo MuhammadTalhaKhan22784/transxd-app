@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
 import { withStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
@@ -24,6 +24,10 @@ const GreenRadio = withStyles({
 
 
 const MoneyAccDetail = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const { color } = useContext(ColorContext)
     let { mode } = color
     const history = useHistory()

@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useContext } from "react";
+import React, { useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
 import Fade from "react-reveal/Fade";
 
@@ -29,6 +29,11 @@ import handmob2 from "../../Assets/handmob2.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const { color, setColor } = useContext(ColorContext);
   let { mode } = color;
   let style = {

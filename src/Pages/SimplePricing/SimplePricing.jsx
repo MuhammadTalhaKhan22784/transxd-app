@@ -18,6 +18,10 @@ const SimplePricing = () => {
     bglightgreen: "#0A1716",
   };
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <React.Fragment>
       <div className="simple_pricing_section">

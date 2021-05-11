@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
 // assets 
 import s1 from '../../Assets/Group 4488.png'
@@ -19,6 +19,10 @@ import { ColorContext } from '../../Context/Context'
 const ReferFriend = () => {
     const { color } = useContext(ColorContext)
     let { mode } = color
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div>
             <div className="refer_main_">

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
 import { ColorContext } from '../../../Context/Context'
 import {useHistory} from 'react-router-dom'
@@ -12,6 +12,9 @@ import orline from '../../../Assets/Path 7553.png'
 import MobViewBack from '../../../Components/MobViewBack'
 
 const VendorDetail = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const { color } = useContext(ColorContext)
     let { mode } = color
     const history = useHistory()

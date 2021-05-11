@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
 import MobViewBack from '../../../Components/MobViewBack'
 import ConfrimWait from '../../../Utils/ConfrimWait'
@@ -14,7 +14,9 @@ const WaitMoney = () => {
             setThanks(true)
         }, 2000)
     }, [])
-
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div>
             <div className="bak_div">

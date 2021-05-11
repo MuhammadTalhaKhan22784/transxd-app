@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useLayoutEffect } from "react";
 import { ColorContext } from "../../Context/Context";
 import UserCard from "../../Components/AccountComp/UserCard";
 import { Link } from "react-router-dom";
@@ -18,6 +18,10 @@ const AccountOverview = () => {
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="overview_main_container">
       <div className="overview_main_div">

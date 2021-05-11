@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import CStepper from '../../Components/AccountComp/Stepper'
 import UserCard from '../../Components/AccountComp/UserCard'
 import MobViewBack from '../../Components/MobViewBack'
 
 const RequestCard = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <React.Fragment>
             <div className="bak_div">

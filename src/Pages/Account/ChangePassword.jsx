@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useLayoutEffect } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
 import lock from '../../Assets/Icon feather-lock.png'
 import lockL from '../../Assets/Icon feather-lockl.png'
@@ -22,6 +22,10 @@ const ChangePassword = () => {
     const showPassword = (e) => {
         setPass({ ...pass, [e]: !pass[e] })
     }
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     return (
         <div>

@@ -195,13 +195,9 @@ const Footer = () => {
               >
                 Business
               </span>
-              <span
-                onClick={() => {
-                  history.push("/terms");
-                }}
-              >
-                Contact us
-              </span>
+              <Link className="text-decoration-none" to="#">
+                <span>Contact us</span>
+              </Link>
               <Link className="text-decoration-none" to="#">
                 <span>invest with us</span>
               </Link>

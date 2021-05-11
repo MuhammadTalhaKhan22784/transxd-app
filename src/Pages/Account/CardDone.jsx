@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
 import { ColorContext } from '../../Context/Context'
 import thankyou from '../../Assets/Group 4361.png'
@@ -8,7 +8,9 @@ import MobViewBack from '../../Components/MobViewBack'
 const CardDone = () => {
     const { color } = useContext(ColorContext);
     let { mode } = color
-
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <React.Fragment>
             <div className="bak_div">

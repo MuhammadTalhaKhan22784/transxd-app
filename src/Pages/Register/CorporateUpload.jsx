@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 
 // import Button from "../../Components/Btn/Btn";

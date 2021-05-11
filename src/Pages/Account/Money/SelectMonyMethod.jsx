@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
 import { useHistory } from 'react-router-dom'
 import card2 from '../../../Assets/Group 4569.png'
@@ -18,7 +18,9 @@ const SelectMonyMethod = () => {
     const { color } = useContext(ColorContext)
     let { mode } = color
     const history = useHistory()
-
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div>
             <div className="bak_div">

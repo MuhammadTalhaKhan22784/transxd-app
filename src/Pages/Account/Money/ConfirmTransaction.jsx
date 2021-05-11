@@ -1,10 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import { useHistory } from 'react-router'
 import UserCard from '../../../Components/AccountComp/UserCard'
 import MobViewBack from '../../../Components/MobViewBack'
 import { ColorContext } from '../../../Context/Context'
 
 const ConfirmTransaction = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const { color } = useContext(ColorContext)
     let { mode } = color
     const history = useHistory()

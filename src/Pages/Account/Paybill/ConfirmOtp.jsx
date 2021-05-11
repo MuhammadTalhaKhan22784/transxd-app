@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import UserCard from '../../../Components/AccountComp/UserCard'
 import MobViewBack from '../../../Components/MobViewBack'
 import Confirmotp from '../../../Utils/Confirmotp'
 
 
 const ConfirmOtpBill = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div>
             <div className="bak_div">

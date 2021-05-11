@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useLayoutEffect } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
 import PersonalDetail from '../../Components/AccountComp/PersonalDetail'
 import UploadLicns from '../../Components/AccountComp/UploadLicns'
@@ -18,6 +18,10 @@ const ProfileSetting = () => {
     const handleNext = () => {
         setNext(true)
     }
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <div>
             <div className="bak_div">

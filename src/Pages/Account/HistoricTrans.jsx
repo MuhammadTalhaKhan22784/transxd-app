@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useLayoutEffect } from 'react'
 import { ColorContext } from '../../Context/Context'
 import UserCard from '../../Components/AccountComp/UserCard'
 import TransTable from '../../Components/AccountComp/TransTable'
@@ -8,6 +8,10 @@ import MobViewBack from '../../Components/MobViewBack'
 const HistoricTrans = () => {
     const { color } = useContext(ColorContext)
     let { mode } = color
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
     return (
         <div>
