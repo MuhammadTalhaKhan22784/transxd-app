@@ -28,6 +28,9 @@ import ProfileSetting from "../Pages/Account/ProfileSetting";
 import CurrCard from "../Pages/Account/CardManage/CurrCard";
 import RequestCard from "../Pages/Account/RequestCard";
 import CardDone from "../Pages/Account/CardDone";
+import ConfirmOtpMoney from '../Pages/Account/Money/ConfirmMoneyOtp'
+import WaitMoney from '../Pages/Account/Money/WaitMoney'
+
 const AppRouter = () => {
   return (
     <React.Fragment>
@@ -52,6 +55,9 @@ const AppRouter = () => {
           <Route path="/bil-detail" component={VendorDetail} />
           <Route path="/bil-payment" component={PaymentDetailBill} />
           <Route path="/confrim-otp" component={ConfirmOtp} />
+          <Route path='/money-otp-confirm' component={ConfirmOtpMoney} />
+          <Route path='/money-successful' component={WaitMoney} />
+
           <Route path="/waiting" component={wait} />
           <Route path="/successful" component={SuccessFul} />
           <Route path="/select-bank" component={SelectMonyMethod} />

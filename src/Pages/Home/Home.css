@@ -693,6 +693,9 @@
     width: 85%;
     font-size: 0.8rem;
   }
+  .cus_btn1 {
+    padding: 10px 15px;
+  }
 }
 
 @media screen and (max-width: 338px) {

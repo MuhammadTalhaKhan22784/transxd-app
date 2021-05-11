@@ -137,6 +137,9 @@
     .email_otp_div{
         margin-top: 20px;
     }
+    .confirm_opt_main_div{
+        height: max-content;
+    }
 }
 
 @media screen and (max-width:360px){

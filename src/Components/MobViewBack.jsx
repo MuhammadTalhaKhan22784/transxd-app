@@ -1,16 +1,23 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import back from '../Assets/Icon feather-arrow-left.png'
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import backd from "../Assets/Icon feather-arrow-left.png";
+import backl from "../Assets/back.png";
+import { ColorContext } from "../Context/Context";
 
-const MobViewBack = ({link,value}) => {
-    return (
-        <div>
-            <div className="back_link_div">
-                {/* <img src={back} alt=""/> */}
-                <Link to={link} className='mob_back_link'><img src={back} alt=""/> <span> {value}</span></Link>
-            </div>
-        </div>
-    )
-}
+const MobViewBack = ({ link, value }) => {
+  const { color } = useContext(ColorContext);
+  let { mode } = color;
+  return (
+    <div>
+      <div className="back_link_div">
+        {/* <img src={back} alt=""/> */}
+        <Link to={link} className="mob_back_link">
+          <img src={mode === "light" ? backl : backd} alt="" />{" "}
+          <span style={{color:mode==='light'?'black':''}} > {value}</span>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default MobViewBack
+export default MobViewBack;

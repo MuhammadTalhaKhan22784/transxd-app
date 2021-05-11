@@ -1,38 +1,36 @@
-import React, { useState, useLayoutEffect, useContext } from "react";
-import { Link,useHistory } from "react-router-dom";
+import React, { useState, useLayoutEffect, useContext, useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 
 import "./Register.css";
 // assets
 
-import fbIcon from "../../Assets/fb_icon.png";
-import gmailIcon from "../../Assets/gmail_icon.png";
-import orLine from "../../Assets/or_line.png";
-import darkorline from "../../Assets/darkor_line.png";
-
-import eclipseMoving from "../../Assets/eclipse_moving.png";
-import iconEdit from "../../Assets/Icon-edit.png";
-import pwdopen from "../../Assets/pwdopen.png";
-import featherMail from "../../Assets/feather-mail.png";
-import featherLock from "../../Assets/feather-lock.png";
-import userimg from "../../Assets/userimg.png";
-import calendaricon from "../../Assets/calendaricon.png";
-import locationimg from "../../Assets/locationimg.png";
-import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import loader1L from "../../Assets/loader1L.png";
+import loader2L from "../../Assets/loader2L.png";
+import loaderd1 from "../../Assets/loaderd1.png";
+import loaderd2 from "../../Assets/loaderd2.png";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 // import 'swiper/swiper-bundle.min.css'
 import "swiper/swiper-bundle.css";
-import DatePicker from "../../Components/DatePicker/DatePicker";
 
 SwiperCore.use([Pagination]);
 
 const RegisterProcess = () => {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  let [load, setLoad] = useState(false);
+
+  
+    useLayoutEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+    // setInterval(() => {
+    //   setLoad(!load);
+    //   console.log(load)
+    // }, 2000);
+  // useEffect(()=>{
+
+  // },[load])
 
   let history = useHistory();
   const [show, setShow] = useState(true);
@@ -77,10 +75,13 @@ const RegisterProcess = () => {
                 </strong>
               </h2>
             </div>
-           
-            
-            <div style={{marginTop:"12rem"}}>
-              <img src={eclipseMoving} alt="..." />
+
+            <div style={{ marginTop: "8rem",height:"70px" }}>
+              {mode === "light" ? (
+                <img src={!load ? loader1L : loader2L} alt="..." />
+              ) : (
+                <img src={!load ? loaderd1 : loaderd2} alt="..." />
+              )}
             </div>
             <div className="s_para mt-4">
               <p
@@ -91,7 +92,7 @@ const RegisterProcess = () => {
                 Please enter your email address and password to login..
               </p>
             </div>
-            
+{/* 
             <form className="s_form_fields">
               <div className="form_btn mt-5">
                 <button
@@ -127,7 +128,7 @@ const RegisterProcess = () => {
                 </Link>
               </span>
             </form>
-         
+        */}
           </div>
         </div>
       ) : (

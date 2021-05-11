@@ -24,7 +24,7 @@ const SelectBill = () => {
     return (
         <div className='pay_Bil_container'>
             <div className="bak_div">
-                <MobViewBack link='/' value='PAY A BILL' />
+                <MobViewBack link='/account-overview' value='PAY A BILL' />
             </div>
             <div className="pay_bill_main_div">
                 <div className="pay_user_card_div">

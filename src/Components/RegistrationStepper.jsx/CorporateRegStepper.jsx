@@ -107,8 +107,8 @@ export default function CorporateRegisterStepper() {
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    if (activeStep === 4) {
-      history.push("/request-done");
+    if (activeStep === 1) {
+      history.push("/login");
     }
   };
   // console.log(classes.)

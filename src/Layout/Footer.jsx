@@ -44,7 +44,7 @@ const Footer = () => {
   return (
     <React.Fragment>
       <div
-        className="footer"
+        className="footer mt-4"
         style={{
           background: mode === "light" ? style.bglightblue : style.bgblack,
           color: mode === "light" ? style.bgblack : style.bgwhite,
@@ -65,34 +65,40 @@ const Footer = () => {
             </Link>
             <div className="fc2_m">
               <div className="fc2_button">
-                <button
-                  style={{
-                    marginTop: "0.8rem",
-                    backgroundColor: "transparent",
-                    border: "1px solid",
-                    borderColor:
-                      mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    padding: "8px 20px",
-                  }}
-                  className="cus_btn1 me-4"
-                >
-                  Sign up
-                </button>
-                <button
-                  style={{
-                    marginTop: "0.8rem",
-                    backgroundColor: "transparent",
-                    border: "1px solid",
-                    borderColor:
-                      mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    padding: "8px 28px",
-                  }}
-                  className="cus_btn1"
-                >
-                  Login
-                </button>
+                <Link to="/register">
+                  <button
+                    style={{
+                      marginTop: "0.8rem",
+                      backgroundColor: "transparent",
+                      border: "1px solid",
+                      borderColor:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      color:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      padding: "8px 20px",
+                    }}
+                    className="cus_btn1 me-4"
+                  >
+                    Sign up
+                  </button>
+                </Link>
+                <Link to="/login">
+                  <button
+                    style={{
+                      marginTop: "0.8rem",
+                      backgroundColor: "transparent",
+                      border: "1px solid",
+                      borderColor:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      color:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      padding: "8px 28px",
+                    }}
+                    className="cus_btn1"
+                  >
+                    Login
+                  </button>
+                </Link>
               </div>
 
               <p>
@@ -270,7 +276,7 @@ const Footer = () => {
                 />
               </button>
 
-              <LangSwitch id="lang-3"/>
+              <LangSwitch id="lang-3" />
             </div>
           </div>
 

@@ -14,6 +14,7 @@ import "./style.css";
 
 // assets
 import transxdlogo from "../Assets/transxdlogo.png";
+import togglebtnl from "../Assets/togglebtnl.png";
 import transxdlogomob from "../Assets/transxdlogomob.png";
 import lightimg from "../Assets/lightimg.png";
 import darkimg from "../Assets/darkimg.png";
@@ -30,7 +31,7 @@ import cardmanageiconl from "../Assets/cardmanageiconl.png";
 import cardmanageicond from "../Assets/cardmanageicond.png";
 import paybilliconl from "../Assets/paybilliconl.png";
 import paybillicond from "../Assets/paybillicond.png";
-import sendmoneyiconl from "../Assets/sendmoneyicond.png";
+import sendmoneyiconl from "../Assets/sendmoneyiconl.png";
 import sendmoneyicond from "../Assets/sendmoneyicond.png";
 import refericonl from "../Assets/refericonl.png";
 import refericond from "../Assets/refericond.png";
@@ -181,7 +182,10 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
               >
-                <img src={togglebtn} alt="img" />
+                <img
+                  src={mode === "light" ? togglebtnl : togglebtn}
+                  alt="img"
+                />
               </button>
             </div>
           ) : (
@@ -195,7 +199,10 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
               >
-                <img src={togglebtn} alt="img" />
+                <img
+                  src={mode === "light" ? togglebtnl : togglebtn}
+                  alt="img"
+                />
               </button>
             </div>
           )}
@@ -252,7 +259,7 @@ const Navbar = () => {
               )}
 
               <li className="nav-item">
-                <Link className="nav-link" to="blog">
+                <Link className="nav-link" to="#">
                   Get Card
                 </Link>
               </li>
@@ -535,7 +542,7 @@ const Navbar = () => {
                         ) : (
                           <img src={overviewicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/account-overview">
                           Overview
                         </Link>
                       </li>
@@ -548,7 +555,10 @@ const Navbar = () => {
                         ) : (
                           <img src={historicicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link
+                          className="nav-link ms-3"
+                          to="/historic-transaction"
+                        >
                           Historic Transactions
                         </Link>
                       </li>
@@ -561,7 +571,7 @@ const Navbar = () => {
                         ) : (
                           <img src={cardmanageicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/active-card">
                           Card Management
                         </Link>
                       </li>
@@ -574,7 +584,7 @@ const Navbar = () => {
                         ) : (
                           <img src={paybillicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/pay-bill">
                           Pay a Bill
                         </Link>
                       </li>
@@ -587,7 +597,7 @@ const Navbar = () => {
                         ) : (
                           <img src={sendmoneyicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/select-bank">
                           Send Money
                         </Link>
                       </li>
@@ -600,7 +610,7 @@ const Navbar = () => {
                         ) : (
                           <img src={refericond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/refer-friend">
                           Refer a Friend
                         </Link>
                       </li>
@@ -614,7 +624,7 @@ const Navbar = () => {
                         ) : (
                           <img src={securityicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/change-password">
                           Account Security
                         </Link>
                       </li>
@@ -627,7 +637,7 @@ const Navbar = () => {
                         ) : (
                           <img src={settingicond} alt="..." />
                         )}
-                        <Link className="nav-link ms-3" to="/profile">
+                        <Link className="nav-link ms-3" to="/setting">
                           Profile Settings
                         </Link>
                       </li>
@@ -643,7 +653,11 @@ const Navbar = () => {
                         ) : (
                           <img src={logouticond} alt="..." />
                         )}
-                        <Link onClick={handleClose} className="nav-link ms-3" to="#">
+                        <Link
+                          onClick={handleClose}
+                          className="nav-link ms-3"
+                          to="#"
+                        >
                           Logout
                         </Link>
                       </li>

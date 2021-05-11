@@ -107,9 +107,9 @@
 
 .transaction_table_div {
   margin-top: 20px;
-  padding: 20px;
+  padding: 20px 10px;
   border-radius: 10px;
-  height: max-content;
+  /* height: max-content; */
   /* overflow-x: scroll; */
 }
 .transaction_table_head {
@@ -137,7 +137,7 @@
   overflow-x: scroll;
 }
 .table_scroll_hist {
-  max-height: 78vh;
+  max-height: 88vh;
   overflow-y: scroll;
   overflow-x: scroll;
 }
@@ -300,6 +300,9 @@ th:nth-child(8) {
   width: 18px;
   object-fit: cover;
 }
+.transaction_table_main_div_mb{
+  display: none;
+}
 
 @media screen and (max-width: 1250px) {
   .overview_main_div {
@@ -375,6 +378,7 @@ th:nth-child(8) {
     width: 100%;
     display: flex;
     flex-direction: column;
+    display: block;
   }
   .t_cards {
       border: 1px solid #27BDAD;

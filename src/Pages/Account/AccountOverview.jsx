@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { ColorContext } from "../../Context/Context";
 import UserCard from "../../Components/AccountComp/UserCard";
 import { Link } from "react-router-dom";
-import Switch from "@material-ui/core/Switch";
 import TransTable from "../../Components/AccountComp/TransTable";
 import Chart from "../../Components/AccountComp/Chart";
 import "./styles/Account.css";
@@ -60,12 +59,34 @@ const AccountOverview = () => {
                 <h6 style={{ color: mode === "dark" ? "white" : "black" }}>
                   Your Balance
                 </h6>
-                <Switch
-                  checked={state.checkedA}
-                  onChange={handleChange}
-                  name="checkedA"
-                  inputProps={{ "aria-label": "secondary checkbox" }}
-                />
+                <div>
+                  <input
+                    // onChange={onChange}
+                    // checked={language.id_ === english.id_}
+                    type="checkbox"
+                    id='acc'
+                    className="lol-checkbox"
+                  />
+                  <label
+                    className="button"
+                    for='acc'
+                    style={{
+                      border: "1px solid",
+                      borderColor: mode === "light" ? "#27BDAD" : "#72FAEC",
+                      color: mode === "light" ? "#27BDAD" : "#72FAEC",
+                    }}
+                  >
+                    <div
+                      className="knob"
+                      style={{
+                        backgroundColor:
+                          mode === "light" ? "#27BDAD" : "#72FAEC",
+                      }}
+                    ></div>
+                    <div className="subscribe">USD</div>
+                    <div className="alright">XOF</div>
+                  </label>
+                </div>
               </div>
               <div
                 style={{
@@ -128,9 +149,8 @@ const AccountOverview = () => {
                     color: mode == "light" ? "#27BDAD" : "#72FAEC",
                     backgroundColor:
                       mode == "light" ? "#E9F8F7" : "transparent",
-                    border: `1px solid  ${
-                      mode === "light" ? "#27BDAD" : "#72FAEC"
-                    }`,
+                    border: `1px solid  ${mode === "light" ? "#27BDAD" : "#72FAEC"
+                      }`,
                   }}
                   name=""
                   id=""
@@ -157,9 +177,8 @@ const AccountOverview = () => {
                     color: mode == "light" ? "#27BDAD" : "#72FAEC",
                     backgroundColor:
                       mode == "light" ? "#E9F8F7" : "transparent",
-                    border: `1px solid  ${
-                      mode === "light" ? "#27BDAD" : "#72FAEC"
-                    }`,
+                    border: `1px solid  ${mode === "light" ? "#27BDAD" : "#72FAEC"
+                      }`,
                   }}
                 >
                   <option value="Card Transaction">Card Transaction</option>

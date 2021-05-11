@@ -640,7 +640,7 @@ position: relative;
     .user_get_detail_container>div{
         border-radius: 10px;
         padding: 10px;
-        background-color: #2d4b4b;
+        /* background-color: #2d4b4b; */
         margin-bottom: 15px;
     }
     .stepper_conatainer>p{

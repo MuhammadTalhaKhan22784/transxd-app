@@ -26,6 +26,7 @@ import hichip4 from "../../Assets/hichip4.png";
 import appstoreicons from "../../Assets/appstoreicons.png";
 import handmob from "../../Assets/handmob.png";
 import handmob2 from "../../Assets/handmob2.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { color, setColor } = useContext(ColorContext);
@@ -83,17 +84,19 @@ const Home = () => {
                 rapid transfers and the lowest fees. Your friends and family get
                 more when you send them money with Transxnd.
               </p>
-              <button
-                style={{
-                  marginTop: "0.8rem",
-                  backgroundColor: "transparent",
-                  border: "1px solid #27BDAD",
-                  color: mode === "light" ? style.bgblack : style.bgdarkgreen,
-                }}
-                className="cus_btn1"
-              >
-                Sign-up today!
-              </button>
+              <Link to="/register">
+                <button
+                  style={{
+                    marginTop: "0.8rem",
+                    backgroundColor: "transparent",
+                    border: "1px solid #27BDAD",
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
+                  }}
+                  className="cus_btn1"
+                >
+                  Sign-up today!
+                </button>
+              </Link>
             </div>
           </div>
           <div className="h_right">
@@ -101,7 +104,7 @@ const Home = () => {
               <img src={homemap} alt="..." />
             </div>
             <div className="hr_box2">
-            <img src={homegirlimg} alt="..." />
+              <img src={homegirlimg} alt="..." />
             </div>
             <div className="hr_box3">
               <Fade right duration={1800} delay={1200}>
@@ -167,16 +170,18 @@ const Home = () => {
                 rapid transfers and the lowest fees. Your friends and family get
                 more when you send them money with Transxnd.
               </p>
-              <button
-                style={{
-                  backgroundColor: "transparent",
-                  border: "1px solid #27BDAD",
-                  color: mode === "light" ? style.bgblack : style.bgdarkgreen,
-                }}
-                className="cus_btn1"
-              >
-                Sign-up today!
-              </button>
+              <Link to="/register">
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "1px solid #27BDAD",
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
+                  }}
+                  className="cus_btn1"
+                >
+                  Sign-up today!
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -278,17 +283,19 @@ const Home = () => {
                 </span>
               </div>
             </div>
-            <button
-              style={{
-                backgroundColor: "transparent",
-                border: "1px solid #27BDAD",
-                margin: "2rem auto",
-                color: mode === "light" ? style.bgblack : style.bgdarkgreen,
-              }}
-              className="cus_btn1"
-            >
-              Sign-up today!
-            </button>
+            <Link to="/register" style={{ textAlign: "center" }}>
+              <button
+                style={{
+                  backgroundColor: "transparent",
+                  border: "1px solid #27BDAD",
+                  margin: "2rem auto",
+                  color: mode === "light" ? style.bgblack : style.bgdarkgreen,
+                }}
+                className="cus_btn1 mt-5"
+              >
+                Sign-up today!
+              </button>
+            </Link>
           </div>
         </div>
         <div
@@ -349,16 +356,18 @@ const Home = () => {
                   Debit cards are accepted.
                 </p>
               </div>
-              <button
-                style={{
-                  backgroundColor: "transparent",
-                  border: "1px solid #27BDAD",
-                  color: mode === "light" ? style.bgblack : style.bgdarkgreen,
-                }}
-                className="cus_btn1"
-              >
-                Sign-up today!
-              </button>
+              <Link to="/register">
+                <button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "1px solid #27BDAD",
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
+                  }}
+                  className="cus_btn1"
+                >
+                  Sign-up today!
+                </button>
+              </Link>
             </div>
           </div>
           <div className="pd_right">
