@@ -77,3 +77,9 @@
 .cr_stepper .login_form {
   margin: 0 auto;
 }
+
+@media screen and (max-width:991px){
+  .cr_stepper {
+    width: 100%;
+  }
+}

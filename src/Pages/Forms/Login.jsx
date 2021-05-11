@@ -11,6 +11,7 @@ import orLine from "../../Assets/or_line.png";
 import darkorline from "../../Assets/darkor_line.png";
 
 import pwdopen from "../../Assets/pwdopen.png";
+import pwdclose from "../../Assets/Component 37 – 5.png";
 import featherMail from "../../Assets/feather-mail.png";
 import featherLock from "../../Assets/feather-lock.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
@@ -125,7 +126,7 @@ const Login = () => {
                 {!pass ? (
                   <img onClick={showPassword} src={pwdopen} alt="img" />
                 ) : (
-                  <img onClick={showPassword} src={pwdopen} alt="img" />
+                  <img onClick={showPassword} src={pwdclose} alt="img" />
                 )}
               </div>
 
