@@ -123,8 +123,26 @@ export default function CorporateRegisterStepper() {
 
   return (
     <div className="cr_stepper">
+       <div className="s_text">
+              <h2
+                className="mt-4 fw-bold"
+                style={{
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
+                }}
+              >
+                Corporate{" "}
+                <strong
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                  Registration!
+                </strong>
+              </h2>
+            </div>
       <div className={classes.root}>
         <Stepper
+        className="reg_stepper"
           alternativeLabel
           activeStep={activeStep}
           connector={<QontoConnector color={color} />}

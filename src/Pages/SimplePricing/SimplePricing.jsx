@@ -153,7 +153,7 @@ const SimplePricing = () => {
                 border: "1px solid",
                 borderColor:
                   mode === "light" ? style.bggreen : style.bgdarkgreen,
-                color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                color: mode === "light" ? style.bgblack : style.bgdarkgreen,
               }}
               className="cus_btn1"
             >
@@ -280,7 +280,7 @@ const SimplePricing = () => {
                     border: "1px solid",
                     borderColor:
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
                   className="cus_btn1"
                 >
@@ -398,7 +398,7 @@ const SimplePricing = () => {
                     border: "1px solid",
                     borderColor:
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
                   className="cus_btn1"
                 >

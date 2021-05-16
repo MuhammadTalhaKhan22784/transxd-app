@@ -67,8 +67,7 @@ const GetCard = () => {
                     </h2>
                     <p>
                       Transxnd is a rapid money transfer service, designed to
-                      provide a low cost service within Africa & for Africans in
-                      the diaspora.
+                      provide a low cost service within Africa & for
                     </p>
                     <button
                       style={{
@@ -94,12 +93,11 @@ const GetCard = () => {
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                       }}
                     >
-                      Debit card + E-Wallet
+                      Remittance
                     </h2>
                     <p>
                       Transxnd is a rapid money transfer service, designed to
-                      provide a low cost service within Africa & for Africans in
-                      the diaspora.
+                      provide a low cost service within Africa & for
                     </p>
                     <button
                       style={{
@@ -112,7 +110,7 @@ const GetCard = () => {
                       }}
                       className="cus_btn1"
                     >
-                      Get your card
+                      Send/ Receive Money
                     </button>
                   </div>
                 </div>
@@ -125,12 +123,11 @@ const GetCard = () => {
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                       }}
                     >
-                      Debit card + E-Wallet
+                      Digital Bill Payments
                     </h2>
                     <p>
                       Transxnd is a rapid money transfer service, designed to
-                      provide a low cost service within Africa & for Africans in
-                      the diaspora.
+                      provide a low cost service within Africa & for
                     </p>
                     <button
                       style={{
@@ -143,7 +140,7 @@ const GetCard = () => {
                       }}
                       className="cus_btn1"
                     >
-                      Get your card
+                      Pay a bill now
                     </button>
                   </div>
                 </div>
@@ -160,8 +157,7 @@ const GetCard = () => {
                     </h2>
                     <p>
                       Transxnd is a rapid money transfer service, designed to
-                      provide a low cost service within Africa & for Africans in
-                      the diaspora.
+                      provide a low cost service within Africa & for
                     </p>
                     <button
                       style={{

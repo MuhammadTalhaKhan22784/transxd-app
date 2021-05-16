@@ -26,6 +26,7 @@
 
 .gs_text_content p {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .gs_cards_content {
@@ -41,13 +42,20 @@
 }
 
 .gc_card img {
-  width: 50px;
+  width: 65px;
   object-fit: contain;
 }
 
 .gc_card h2 {
   margin: 1rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.gc_card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 10px;
 }
 
 .gc_card button {

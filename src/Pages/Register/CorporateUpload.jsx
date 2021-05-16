@@ -42,7 +42,7 @@ const CorporateUpload = () => {
     <React.Fragment>
       <div className="login_form">
         <div className="s_form">
-          <div className="s_text">
+          {/* <div className="s_text">
             <h2
               className="mt-4 fw-bold"
               style={{
@@ -58,7 +58,7 @@ const CorporateUpload = () => {
                 Registration!
               </strong>
             </h2>
-          </div>
+          </div> */}
           <div className="s_para mt-3 mb-3">
             <p
               style={{

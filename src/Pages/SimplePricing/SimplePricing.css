@@ -19,7 +19,7 @@
 }
 
 .sp_leftbox {
-  width: 30%;
+  width: 33%;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
 }
 
 .sp_leftbox button {
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 .sp_uper {
@@ -55,6 +55,10 @@
   font-size: 4rem;
   line-height: 0.9;
   font-weight: bold;
+}
+
+.sp_uper span {
+  font-weight: 500;
 }
 
 .sp_list ul {
@@ -76,7 +80,7 @@
 }
 
 .sp_rightbox {
-  width: 65%;
+  width: 61%;
   display: flex;
   flex-direction: column;
   padding: 2rem 0;

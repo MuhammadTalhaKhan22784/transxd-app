@@ -39,6 +39,7 @@ const TermAndCond = () => {
             }}
           >
             <p className="term_note_para">LLorem ipsum dolo</p>
+            {/* <div className="terms_box"></div> */}
             <div className="terms_para_div">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.

@@ -30,7 +30,7 @@
 }
 
 .s_form {
-  width: 450px;
+  width: 420px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -39,7 +39,8 @@
 }
 
 .s_text h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .s_select_box {
@@ -250,8 +251,9 @@
 }
 
 .s_para p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .s_checkbox {

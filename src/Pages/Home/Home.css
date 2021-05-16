@@ -36,13 +36,13 @@
 
 .hl_box p {
   margin: 10px 0;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
 }
 
 .cus_btn1 {
   width: max-content;
-  padding: 10px 30px;
+  padding: 8px 26px;
   border-radius: 40px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -98,7 +98,7 @@
 }
 
 .htm_left img {
-  width: 400px;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -126,7 +126,7 @@
 
 .hchip1 {
   position: absolute;
-  left: 0;
+  left: 70px;
   top: -50px;
 }
 
@@ -138,7 +138,7 @@
 
 .hchip3 {
   position: absolute;
-  left: 0px;
+  left: 70px;
   bottom: -100px;
 }
 
@@ -146,6 +146,8 @@
   position: absolute;
   right: 130px;
   bottom: -150px;
+  width: 70px;
+  height: 70px;
 }
 
 /* home_pay  */
@@ -159,7 +161,7 @@
 }
 
 .pay_bg {
-  width: 622px;
+  width: 684px;
   margin: 0 auto;
   height: 317px;
   background-position: center;
@@ -173,6 +175,10 @@
 .pay_bg1 {
   background-image: url("../../Assets/paybg.png");
 }
+
+.pchip_img {
+  width: 60px !important;
+}
 .pay_bg2 {
   background-image: url("../../Assets/paybg2.png");
 }
@@ -185,7 +191,14 @@
 
 .p_content h2 {
   margin-bottom: 1rem;
+  font-weight: 700;
 }
+
+.p_content p {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
 .pcard_section {
   width: 100%;
   display: flex;
@@ -205,10 +218,11 @@
 .pcard-img {
   width: 100%;
   display: flex;
+  height: 150px;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
-  border-radius: 10px;
+  /* padding: 30px 20px; */
+  border-radius: 18px;
 }
 
 .pcard span {
@@ -238,15 +252,16 @@
 
 .hw_content h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .hw_content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  width: 70%;
+  width: 64%;
   margin: 0 auto;
+
 }
 
 .hw_img {
@@ -257,7 +272,8 @@
 }
 
 .hw_img img {
-  width: 50%;
+  width: 60%;
+  margin-top: 10px;
 }
 
 /* home_paydebit */
@@ -296,7 +312,7 @@
 
 .pd_left h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 3rem;
   margin: 1rem 0;
 }
@@ -325,7 +341,7 @@
 }
 
 .hi_card {
-  width: 50%;
+  width: 60%;
   text-align: center;
   margin: 0 auto;
 }
@@ -338,12 +354,14 @@
 
 .hi_card h2 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
 .hi_card p {
   font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 /* home_commingsoon */
@@ -377,6 +395,7 @@
 .hcb_left p {
   font-size: 1rem;
   width: 400px;
+  opacity: 0.9;
 }
 
 .hcb_left div {
@@ -420,6 +439,9 @@
   }
   .hr_box3 {
     display: none;
+  }
+  .htm_left img {
+    width: 45%;
   }
   .h_right {
     width: 100%;
@@ -693,9 +715,9 @@
     width: 85%;
     font-size: 0.8rem;
   }
-  .cus_btn1 {
+  /* .cus_btn1 {
     padding: 10px 15px;
-  }
+  } */
 }
 
 @media screen and (max-width: 338px) {

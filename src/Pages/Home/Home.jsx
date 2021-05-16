@@ -33,7 +33,6 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
-
   const { color, setColor } = useContext(ColorContext);
   let { mode } = color;
   let style = {
@@ -219,6 +218,7 @@ const Home = () => {
                 a low cost service within Africa & for Africans in the diaspora.
               </p>
               <p
+                className="mt-4"
                 style={{
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
@@ -247,14 +247,14 @@ const Home = () => {
                   className="pcard-img"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img src={pchip1} alt="..." />
+                  <img className="pchip_img" src={pchip2} alt="..." />
                 </div>
                 <span
                   style={{
                     color: mode === "light" ? style.bgblack : style.bgwhite,
                   }}
                 >
-                  Mobile <br /> Recharge
+                  Electricity <br /> Bills
                 </span>
               </div>
               <div className="pcard">
@@ -262,14 +262,14 @@ const Home = () => {
                   className="pcard-img"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img src={pchip1} alt="..." />
+                  <img className="pchip_img" src={pchip3} alt="..." />
                 </div>
                 <span
                   style={{
                     color: mode === "light" ? style.bgblack : style.bgwhite,
                   }}
                 >
-                  Mobile <br /> Recharge
+                  Water <br /> Bills
                 </span>
               </div>
               <div className="pcard">
@@ -277,14 +277,14 @@ const Home = () => {
                   className="pcard-img"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img src={pchip1} alt="..." />
+                  <img src={pchip4} alt="..." />
                 </div>
                 <span
                   style={{
                     color: mode === "light" ? style.bgblack : style.bgwhite,
                   }}
                 >
-                  Mobile <br /> Recharge
+                  Gas/CNG <br /> Bills
                 </span>
               </div>
             </div>
@@ -361,7 +361,7 @@ const Home = () => {
                   Debit cards are accepted.
                 </p>
               </div>
-              <Link to="/register">
+              <Link to="/features">
                 <button
                   style={{
                     backgroundColor: "transparent",
@@ -370,7 +370,7 @@ const Home = () => {
                   }}
                   className="cus_btn1"
                 >
-                  Sign-up today!
+                  Apply for a card
                 </button>
               </Link>
             </div>
@@ -390,13 +390,19 @@ const Home = () => {
             <div
               className="row gy-5 justify-content-center"
               style={{
-                color: mode === "light" ? style.bggreen : style.bgwhite,
+                color: mode === "light" ? style.bgblack : style.bgwhite,
               }}
             >
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
                   <img src={hichip1} alt="..." />
-                  <h2>Customer Support</h2>
+                  <h2
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                  >
+                    Customer Support
+                  </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -407,7 +413,13 @@ const Home = () => {
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
                   <img src={hichip2} alt="..." />
-                  <h2>Customer Support</h2>
+                  <h2
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                  >
+                    Instant Cashout
+                  </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -418,7 +430,13 @@ const Home = () => {
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
                   <img src={hichip3} alt="..." />
-                  <h2>Customer Support</h2>
+                  <h2
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                  >
+                    Fully Encrypted
+                  </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -429,7 +447,13 @@ const Home = () => {
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
                   <img src={hichip4} alt="..." />
-                  <h2>Customer Support</h2>
+                  <h2
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                  >
+                    Safe and Secure
+                  </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna

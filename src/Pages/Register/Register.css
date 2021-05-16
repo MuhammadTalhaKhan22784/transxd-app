@@ -89,3 +89,10 @@
     width: 100%;
   }
 }
+
+
+.reg_stepper {
+  width: 650px;
+  margin: 20px auto 0 auto;
+
+}

@@ -57,23 +57,7 @@ const CooperateRegistration = () => {
       {showComp === false ? (
         <div className="login_form">
           <div className="s_form">
-            <div className="s_text">
-              <h2
-                className="mt-4 fw-bold"
-                style={{
-                  color: mode === "light" ? style.bgblack : style.bgwhite,
-                }}
-              >
-                Corporate{" "}
-                <strong
-                  style={{
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
-                  }}
-                >
-                  Registration!
-                </strong>
-              </h2>
-            </div>
+           
             <div className="s_para mt-3">
               <p
                 style={{
