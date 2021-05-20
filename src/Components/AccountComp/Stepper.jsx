@@ -72,8 +72,7 @@ const CustomStepper = withStyles((theme) => {
     return ({
         root: {
             "& .text": {
-                color: (props) => props.color,
-                fontWeight:"600",
+                color: (props) => props.color
             }
         }
     })

@@ -8,11 +8,11 @@ const UserGetDetail = () => {
   let { mode } = color;
   return (
     <div
-      className="user_get_detail_container"
-      style={{ backgroundColor: mode === "light" ? "#ddf8f6" : "" }}
+      className={mode==='light'? "user_get_detail_container":'user_get_detail_container2'}
+      // style={{ backgroundColor: mode === "light" ? "#ddf8f6" : "" }}
     >
       <div className="getName" 
-          style={{ backgroundColor: mode === "dark" ? "#2d4b4b" : "" }}
+          style={{ backgroundColor: mode === "dark" ? "#2d4b4b" : "#ddf8f6" }}
           >
         <h5>USER DETAILS</h5>
         <div
@@ -57,7 +57,10 @@ const UserGetDetail = () => {
       ) : (
         <img className="v_line" src={path1} alt="" />
       )}
-      <div className="user_identification_div">
+      <div className="user_identification_div "
+          style={{ backgroundColor: mode === "dark" ? "#2d4b4b" : "#ddf8f6" }}
+      
+      >
         <h5>USER IDENTIFICATION</h5>
         <div
           className={`user_get_name ${mode === "dark" ? "" : "light_h6_name"}`}

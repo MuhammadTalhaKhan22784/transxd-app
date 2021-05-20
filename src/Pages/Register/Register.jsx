@@ -9,6 +9,11 @@ import fbIcon from "../../Assets/fb_icon.png";
 import gmailIcon from "../../Assets/gmail_icon.png";
 import orLine from "../../Assets/or_line.png";
 import darkorline from "../../Assets/darkor_line.png";
+import slider2bg from "../../Assets/slider2bg.png";
+import slider3bg from "../../Assets/slider3bg.png";
+import slider4bg from "../../Assets/slider4bg.png";
+import slider5bg from "../../Assets/slider5bg.png";
+import slider6bg from "../../Assets/slider6bg.png";
 
 import mailIcon from "../../Assets/mail-icon.png";
 import iconBriefcase from "../../Assets/icon-briefcase.png";
@@ -201,7 +206,7 @@ const Register = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider2bg}
                   alt="signupBg"
                 />
               </SwiperSlide>
@@ -214,7 +219,7 @@ const Register = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider3bg}
                   alt="signupBg"
                 />
               </SwiperSlide>
@@ -227,7 +232,33 @@ const Register = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider4bg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "546px",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={slider5bg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "546px",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={slider6bg}
                   alt="signupBg"
                 />
               </SwiperSlide>

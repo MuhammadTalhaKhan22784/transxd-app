@@ -62,7 +62,7 @@ const Footer = () => {
     bgblack: "#000000",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0A1716",
+    bglightgreen: "#0E2725",
   };
 
   return (

@@ -11,8 +11,11 @@ import or from '../../Assets/Path 7553.png'
 import email from '../../Assets/Icon feather-mail.png'
 import emailL from '../../Assets/Icon feather-maill.png'
 import linkG from '../../Assets/Group 4484.png'
+import linkGD from '../../Assets/Group 4484d.png'
 import link from '../../Assets/Icon feather-link-2.png'
+import linkD from '../../Assets/Icon feather-link-2d.png'
 import copy from '../../Assets/Icon feather-copy.png'
+import copyD from '../../Assets/Icon feather-copyd.png'
 import './styles/Refer.css'
 import { ColorContext } from '../../Context/Context'
 
@@ -72,16 +75,16 @@ const ReferFriend = () => {
                     </div>
                 </div>
                 <div className="refer_copylink_card" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#112626' }}>
-                    <img src={linkG} alt="" />
+                    <img src={mode==='light'? linkG:linkGD} alt="" />
                     <h5 style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}>Share via invite link</h5>
                     <p style={{ color: mode === 'light' ? '' : 'white' }}>Copy the invite link and send to your friends or family via messages or any medium you link!</p>
                     <div className="link_inpt">
-                        <img src={link} alt="" />
+                        <img src={mode==='light'? link:linkD} alt="" />
                         <input 
                         type='email' 
                         className={mode==='light'?'light_inp':'dark_inp'}
                         value='https://www.youtube.com/watch?v=pba_' readOnly  />
-                        <img src={copy} alt="" />
+                        <img src={mode==='light'? copy:copyD} alt="" />
                     </div>
                 </div>
             </div>

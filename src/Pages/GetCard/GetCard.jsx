@@ -27,7 +27,7 @@ const GetCard = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0a1716",
+    bglightgreen: "#0E2725",
   };
   return (
     <React.Fragment>

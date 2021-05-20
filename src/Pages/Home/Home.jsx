@@ -56,7 +56,7 @@ const Home = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0A1716",
+    bglightgreen: "#0E2725",
   };
   let [text, setText] = useState(false);
 

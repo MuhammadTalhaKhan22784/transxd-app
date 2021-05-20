@@ -98,7 +98,7 @@ const Navbar = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0A1716",
+    bglightgreen: "#0E2725",
   };
   // const classes = useStyles({
   //   color: mode === "light" ? "#000" : "#fff",
@@ -214,7 +214,13 @@ const Navbar = () => {
               }}
             >
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link
+                  className="nav-link"
+                  style={{
+                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
+                  }}
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
@@ -332,9 +338,9 @@ const Navbar = () => {
                         style={{
                           border: "1px solid",
                           borderColor:
-                          mode === "light"
-                            ? style.bggreen
-                            : style.bgdarkgreen,
+                            mode === "light"
+                              ? style.bggreen
+                              : style.bgdarkgreen,
                           padding: "8px 28px",
                         }}
                         className={`cus_btn1

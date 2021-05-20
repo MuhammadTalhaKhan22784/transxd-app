@@ -9,7 +9,11 @@ import fbIcon from "../../Assets/fb_icon.png";
 import gmailIcon from "../../Assets/gmail_icon.png";
 import orLine from "../../Assets/or_line.png";
 import darkorline from "../../Assets/darkor_line.png";
-
+import slider2bg from "../../Assets/slider2bg.png";
+import slider3bg from "../../Assets/slider3bg.png";
+import slider4bg from "../../Assets/slider4bg.png";
+import slider5bg from "../../Assets/slider5bg.png";
+import slider6bg from "../../Assets/slider6bg.png";
 import pwdopen from "../../Assets/pwdopen.png";
 import pwdclose from "../../Assets/Component 37 – 5.png";
 import featherMail from "../../Assets/feather-mail.png";
@@ -212,7 +216,7 @@ const Login = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider2bg}
                   alt="signupBg"
                 />
               </SwiperSlide>
@@ -225,7 +229,7 @@ const Login = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider3bg}
                   alt="signupBg"
                 />
               </SwiperSlide>
@@ -238,41 +242,39 @@ const Login = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider4bg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "546px",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={slider5bg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "546px",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={slider6bg}
                   alt="signupBg"
                 />
               </SwiperSlide>
             </Swiper>
           </div>
         </div>
-
-        {/*        
-        <div className="login_img_content">
-          <img className="lgic_1" src={xSmallIcon} alt="img" />
-          <img className="lgic_2" src={xMedumIcon} alt="img" />
-          <img className="lgic_3" src={polygon1} alt="img" />
-          <img className="lgic_4" src={polygon2} alt="img" />
-        
-
-          <div className="d-flex justify-content-end">
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
-              <SwiperSlide style={{width: "546px", height: "475px" ,marginRight: "50px "}}>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide style={{width: "546px", height: "475px" ,marginRight: "50px "}}>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide style={{width: "546px", height: "475px" ,marginRight: "50px "}}>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
-              </SwiperSlide>
-              <SwiperSlide style={{width: "546px", height: "475px" ,marginRight: "50px "}}>
-                <img className="s_bgimg1" src={loginBg} alt="img" />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-     
-      */}
       </div>
     </React.Fragment>
   );

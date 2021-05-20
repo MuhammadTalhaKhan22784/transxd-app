@@ -26,6 +26,21 @@
   padding: 8px 0px;
   padding-bottom: 0px !important;
 }
+
+.term_main {
+  padding: 0 10px;
+}
+
+.shade_box_l:hover {
+  background: #E9F8F7;
+  border-radius: 15px;
+}
+
+.shade_box_d:hover {
+  background: #0E2725;
+  border-radius: 15px;
+}
+
 .terms_para_div > p {
   padding: 8px 0px;
 }

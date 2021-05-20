@@ -38,16 +38,31 @@
   margin-left: 8px;
   border: 1px solid #72faec;
 }
-.dark_overview:hover {
+/* .dark_overview:hover {
   transition: 0.5s;
-  background-color: #27bdad;
+  background-color: #72faec;
   color: white;
   border: none;
-}
-.over_view_link:hover {
+} */
+/* .over_view_link:hover {
   transition: 0.5s;
   background-color: #27bdad;
   color: white;
+} */
+.over_view_link:hover{
+  transition: .5s;
+box-shadow: 
+inset -4.1em 0 0 0 #27BDAD,
+inset 4.1em 0 0  0   #27BDAD;
+color: white !important;
+}
+.dark_overview:hover{
+  transition: .5s;
+box-shadow: 
+inset -4.2em 0 0 0 #72faec,
+inset 4.2em 0 0  0   #72faec;
+color: #213838 !important;
+border: none !important;
 }
 .your_summery_div {
   margin-top: 13px;
@@ -55,7 +70,7 @@
   justify-content: space-between;
 }
 .blnce_main_div {
-  width: 420px;
+  width: 47%;
   padding: 5px 15px;
   border-radius: 15px;
   padding-bottom: 20px;
@@ -67,18 +82,19 @@
   margin-top: 10px;
 }
 .blnce_head_div > h6 {
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 .blnce_head_div,
 .wallet_card_div {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .blnce_head_div .p_input {
   width: max-content;
-  height: 30px;
+  height: 25px;
+  padding: 0 7px;
 }
 
 .e_wallet,
@@ -97,7 +113,7 @@
   font-weight: 500;
 }
 .chart_main_div {
-  width: 460px;
+  width: 50%;
   border-radius: 10px;
   padding: 10px 20px;
 }
@@ -107,7 +123,7 @@
   border-radius: 20px;
 }
 .bar_chart {
-  width: 400px !important;
+  width: 100% !important;
 }
 
 /* transaction table css  */
@@ -157,9 +173,9 @@
   /* width: 100%; */
   /* width: 900px; */
 }
-.transaction_table_div {
-  /* overflow-x: scroll; */
-}
+/* .transaction_table_div {
+  overflow-x: scroll;
+} */
 .transaction_table_main_div > table {
   border-collapse: separate;
   border-spacing: 0 10px;
@@ -167,14 +183,14 @@
   text-indent: 0;
   /* max-width: 900px; */
   width: 100%;
-  margin: 10px auto;
-  margin-top: 20px;
+  /* margin: 10px auto; */
+  margin-top: 10px;
   font-size: 0.9em;
   font-weight: lighter !important;
   overflow-x: scroll;
 }
 .transaction_table_main_div > table > thead tr th {
-  padding: 10px;
+  padding: 10px 7px;
 }
 tbody tr td {
   padding: 5px 10px;
@@ -316,14 +332,14 @@ th:nth-child(8) {
     margin: 20px;
     margin-top: 50px;
   }
-  .blnce_main_div {
+  /* .blnce_main_div {
     width: 350px;
   }
   .chart_main_div {
     width: 350px;
-  }
+  } */
   .bar_chart {
-    width: 300px !important;
+    /* width: 300px !important; */
     margin-top: 20px;
   }
   .overview_right_content_div {
@@ -335,19 +351,22 @@ th:nth-child(8) {
     margin: 20px;
     margin-top: 50px;
   }
-  .blnce_main_div {
+  /* .blnce_main_div {
     width: 320px;
-  }
-  .chart_main_div {
-    width: 320px;
-  }
+  } */
+  /* .chart_main_div {
+    width: 40%;
+  } */
   .bar_chart {
-    width: 280px !important;
+    /* width: 30% !important; */
     margin-top: 20px;
     height: auto !important;
   }
   .overview_right_content_div {
     margin-left: 10px;
+  }
+  .overview_right_content_div{
+    width: 70%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -356,6 +375,9 @@ th:nth-child(8) {
   }
   .transaction_table_head {
     justify-content: flex-end;
+  }
+  .overview_right_content_div{
+    width: 100%;
   }
   .userCard_main_div,
   .transaction_table_main_div,
@@ -370,13 +392,13 @@ th:nth-child(8) {
     margin-left: 0px;
   }
   .blnce_main_div {
-    width: 400px;
+    width: 48%;
   }
   .chart_main_div {
-    width: 400px;
+    width: 48%;
   }
   .bar_chart {
-    width: 330px !important;
+    /* width: 330px !important; */
     margin-top: 20px;
     height: auto !important;
   }

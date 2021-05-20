@@ -35,7 +35,7 @@ const SelectMonyMethod = () => {
                     <p
                         style={{ color: mode === 'light' ? '' : 'white' }}
                     >Please enter recipient details!</p>
-                    <div className="bill_type_select" >
+                    <div className="bill_type_select money_type_select" >
                         <div className="bil_type">
                             <div className="_img_bill money_selct" style={{ border: '1px solid #27BDAD' }}>
                                 <img className='light_bil' src={card} alt="" />

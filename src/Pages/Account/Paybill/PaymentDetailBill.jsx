@@ -23,6 +23,8 @@ const PaymentDetailBill = () => {
                 link='/confrim-otp' 
                 backLink='/bil-detail'
                 desc='Please enter bill amount! Or confirm payment if vendor has returned an amount!'
+                amount='12123'
+                title='XOF'
                  />
                 </div>
             </div>

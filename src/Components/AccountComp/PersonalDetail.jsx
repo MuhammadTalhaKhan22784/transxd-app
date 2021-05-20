@@ -2,16 +2,18 @@ import React, { useContext } from "react";
 // assets
 import user from "../../Assets/Group 4244.png";
 import userD from "../../Assets/Group 4244d.png";
-import date from "../../Assets/Group 4243.png";
+// import date from "../../Assets/Group 4243.png";
+import date from "../../Assets/Group 4243d.png";
 import dateL from "../../Assets/Group 4243l.png";
-import calender from "../../Assets/Icon feather-calendar.png";
+// import calender from "../../Assets/Icon feather-calendar.png";
+import calender from "../../Assets/Icon feather-calendard.png";
 import calenderL from "../../Assets/Icon feather-calendarl.png";
-import email from "../../Assets/Icon feather-mail.png";
+import email from "../../Assets/Icon feather-maild.png";
 import emailL from "../../Assets/Icon feather-maill.png";
 import pakistan from "../../Assets/Mask Group 6.png";
-import loc from "../../Assets/Path 7362.png";
-import locL from "../../Assets/Group 4230.png";
-import phone from "../../Assets/Icon feather-smartphone.png";
+import loc from "../../Assets/Group 4230.png";
+import locL from "../../Assets/Group 4607.png";
+import phone from "../../Assets/Icon feather-smartphoned.png";
 import phoneL from "../../Assets/Icon feather-smartphonel.png";
 import { ColorContext } from "../../Context/Context";
 import LanguageDropdown from "../Dropdown/LanguageDropdown";
@@ -64,13 +66,13 @@ const PersonalDetail = ({ nextFunc, head, height }) => {
           </p>
         ) : null}
         <div className="email_input_perosnal">
-          <img src={mode === "dark" ? locL : loc} alt="" />
+          <img src={mode === "dark" ? loc : locL} alt="" />
           <select name="" id="">
             <option value="">Pakistan</option>
           </select>
         </div>
         <div className="email_input_perosnal d-flex align-items-center"
-        style={{padding:"0px 10px"}}
+        style={{padding:"0px 15px"}}
         >
           <img src={mode === "dark" ? phone : phoneL} alt="" />
           <LanguageDropdown 

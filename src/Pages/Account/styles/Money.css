@@ -4,6 +4,11 @@
     vertical-align: middle;
 
 }
+.money_type_select{
+    display: flex;
+  justify-content: space-between;
+  align-items:inherit !important;
+}
 
 
 /* money info css  */
@@ -16,7 +21,8 @@
     width: 330px;
 }
 .money_detail_inputs_div{
-    width: 900px;
+    /* width: 900px; */
+    width: 65%;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -70,15 +76,18 @@
     margin-bottom: 5px;
     font-size: .9rem;
     font-weight: 600;
+    margin-top: 25px;
+    /* margin-bottom: 20px; */
 }
 .transaction_div>div{
     display: flex;
     justify-content: center;
 }
 
-.transaction_div>div>h5{
-    margin-top: 10px;
+.transaction_div>h5{
+    margin-top: 5px;
     margin-left: 10px;
+    font-size: 1em !important;
 }
 
 @media screen and (max-width:991px){
@@ -94,9 +103,13 @@
     }
 }
 @media screen and (max-width:461px){
-    
+    .money_detail_inputs_div{
+        width: auto;
+
+    }
     .input_money_acc{
         width: 98%;
+        margin: 20px auto;
     }
     .transaction_div p{
       font-size: .8rem;

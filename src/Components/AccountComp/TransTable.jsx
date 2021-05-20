@@ -5,6 +5,109 @@ import up from "../../Assets/Group 4450.png";
 import down from "../../Assets/Group 4451.png";
 import TransList from "./TransList";
 
+const tableData = [
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: up
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: up
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: down
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: up
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: down
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: up
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: down
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: down
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: up
+  },
+  {
+    id: '4343435453443',
+    type: 'Credit',
+    source: 'Card',
+    date: 'December 20,2021',
+    beneficiary: 'Miss Cecilia Kerluke',
+    amount: '122199',
+    balance: '2321',
+    img: up
+  },
+]
+
 const TransTable = ({ className }) => {
   const { color } = useContext(ColorContext);
   let { mode } = color;
@@ -35,182 +138,26 @@ const TransTable = ({ className }) => {
             </tr>
           </thead>
           <tbody>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={down} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={down} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={down} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
-            <tr
-              className={
-                mode === "dark" ? "dark_mode_table" : "light_mode_table"
-              }
-            >
-              <td>abcsdfdfrerfdf</td>
-              <td>Credit</td>
-              <td>Card</td>
-              <td>december 23,2020</td>
-              <td>Miss Cecilia Kerluke</td>
-              <td style={{ color: "#1EE834", fontWeight: "bold" }}>12323</td>
-              <td style={{ color: "#27BDAD", fontWeight: "bold" }}>1243</td>
-              <td>
-                <img src={up} alt="" />
-              </td>
-            </tr>
+            {tableData.map((val, i) => (
+
+              <tr
+                className={
+                  mode === "dark" ? "dark_mode_table" : "light_mode_table"
+                }
+                key={i}
+              >
+                <td>{val.id}</td>
+                <td>{val.type}</td>
+                <td>{val.source}</td>
+                <td>{val.date}</td>
+                <td>{val.beneficiary}</td>
+                <td style={{ color: "#1EE834", fontWeight: "bold" }}>{val.amount}</td>
+                <td style={{ color: "#27BDAD", fontWeight: "bold" }}>{val.balance}</td>
+                <td>
+                  <img src={val.img} alt="" />
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+.nav-item .active{
+  color: red !important;
+}
+
 .navbar-toggler:focus {
   box-shadow: none;
   outline: none;
@@ -27,10 +31,11 @@
 
 .c_navbar .navbar-nav .nav-item .nav-link {
   color: unset;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   width: max-content;
   margin: 0 20px;
+  opacity: 0.9;
   padding: 0 !important;
 }
 
@@ -155,12 +160,12 @@
 
 .s_btn_dark {
   background: #72faec;
-  color: #0a1716;
+  color: #0E2725;
 }
 
 .s_btn_dark:hover {
   transition: 0.9s;
-  box-shadow: inset -6em 0 0 0 #0a1716, inset 6em 0 0 0 #0a1716;
+  box-shadow: inset -6em 0 0 0 #0E2725, inset 6em 0 0 0 #0E2725;
   color: #72faec !important;
 }
 
@@ -176,6 +181,12 @@
   color: #27bdad !important;
 }
 
+.reg_steppeer_btn .s_btn_dark:hover {
+  transition: 0.9s;
+  box-shadow: inset -12.5em 0 0 0 #0E2725, inset 12.5em 0 0 0 #0E2725;
+  color: #72faec !important;
+}
+
 .l_btn_light {
   background: #e9f8f7;
   color: #27bdad;
@@ -189,23 +200,23 @@
 
 .reg_form_btn .l_btn_light:hover {
   box-shadow: inset -11em 0 0 0 #27bdad, inset 11em 0 0 0 #27bdad !important;
-  /* color: #0a1716; */
+  /* color: #0E2725; */
 }
 
 .reg_form_btn .l_btn_dark:hover {
   box-shadow: inset -11em 0 0 0 #27bdad, inset 11em 0 0 0 #27bdad !important;
-  color: #0a1716 !important;
+  color: #0E2725 !important;
 }
 
 .l_btn_dark {
-  background: #0a1716;
+  background: #0E2725;
   color: #72faec;
 }
 
 .l_btn_dark:hover {
   transition: 0.9s;
   box-shadow: inset -6em 0 0 0 #72faec, inset 6em 0 0 0 #72faec;
-  color: #0a1716 !important;
+  color: #0E2725 !important;
 }
 
 .gc_card .l_btn_light:hover {

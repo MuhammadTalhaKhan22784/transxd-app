@@ -37,7 +37,7 @@ const TermAndCond = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0A1716",
+    bglightgreen: "#0E2725",
   };
 
   const handleTransalte = (event) => {
@@ -69,7 +69,7 @@ const TermAndCond = () => {
             }}
           >
             {termsData.map((val) => (
-              <div key={val.id} onClick={() => handleTransalte(val.id)}>
+              <div className={`term_main ${mode === "light" ? "shade_box_l" : "shade_box_d"}`} key={val.id} onClick={() => handleTransalte(val.id)}>
                 <p className="term_note_para">{val.head}</p>
                 <div className="terms_para_div">
 

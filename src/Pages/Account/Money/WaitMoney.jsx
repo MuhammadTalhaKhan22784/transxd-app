@@ -16,11 +16,14 @@ const WaitMoney = () => {
     }, [])
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     return (
         <div>
             <div className="bak_div">
-                <MobViewBack link='/money-otp-confirm' value='SEND MONEY' />
+                <MobViewBack
+                    link='/money-otp-confirm'
+                    value='SEND MONEY'
+                />
             </div>
             <div className='bil_payment_main_div'>
                 <div className="user_card_div">
@@ -28,9 +31,15 @@ const WaitMoney = () => {
                 </div>
                 <div className="payment_bil">
                     {!thanks ?
-                        <ConfrimWait />
+                        <ConfrimWait
+                            number='924823202332'
+                        />
                         :
-                        <ThankYou btnV='Make another transaction' link='/select-bank' />
+                        <ThankYou
+                            btnV='Make another transaction'
+                            link='/select-bank'
+                            success='Your payment has been made successfilly!'
+                        />
                     }
                 </div>
             </div>

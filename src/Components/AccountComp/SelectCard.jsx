@@ -4,9 +4,10 @@ import card1 from '../../Assets/Asset 1.png'
 import card2 from '../../Assets/Mask Group 7.png'
 import user from '../../Assets/Group 4244.png'
 import userD from '../../Assets/Group 4244d.png'
-import alert from '../../Assets/Polygon 8.png'
+import alert from '../../Assets/Group 4651.png'
 import slct from '../../Assets/Group 4580 dark.png'
 import slctL from '../../Assets/Group 4580.png'
+import loc from '../../Assets/Group 4607.png'
 import { ColorContext } from '../../Context/Context'
 
 const SelectCard = () => {
@@ -75,7 +76,7 @@ const SelectCard = () => {
                 </div>
             </div>
             <div className={mode === 'dark' ? "selecr_card_select" : 'selecr_card_select_l'}>
-                    <img src={mode==='dark'? userD:user} alt="" />
+                    <img src={mode==='dark'? loc:loc} alt="" />
                 <select name="" id="">
                     <option value="">Preffered City Of Delivery</option>
                 </select>

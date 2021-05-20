@@ -46,17 +46,19 @@
   margin-top: 20px;
 }
 ._name_change_div {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   padding: 6px 5px;
   border: 1px solid #27bdad;
   border-radius: 20px;
+  margin: 0px 8px;
+  width: 155px;
 }
 ._name_change_div > input {
   padding-left: 8px;
   background: transparent;
   border: none;
   outline: none;
-  width: 130px;
+  width: 110px;
   font-size: 0.8rem;
   color: #27bdad;
 }
@@ -98,7 +100,7 @@
   font-weight: 600;
 }
 .personal_detail_container {
-  height: 63vh;
+  height: 53vh;
   overflow-y: auto;
   margin-top: 0px;
 }
@@ -223,7 +225,10 @@
 }
 @media screen and (max-width: 413px) {
   ._name_change_div > input {
-    width: 105px;
+    width: 95px;
+  }
+  ._name_change_div{
+    width: 130px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -244,7 +249,10 @@
     width: 200px;
   }
   ._name_change_div > input {
-    width: 90px;
+    width: 75px;
+  }
+  ._name_change_div{
+    width: 115px;
   }
   .email_input_perosnal {
     width: 250px;
@@ -252,7 +260,10 @@
 }
 @media screen and (max-width: 325px) {
   ._name_change_div > input {
-    width: 80px;
+    width: 70px;
+  }
+  ._name_change_div{
+    width: 105px;
   }
   .email_input_perosnal {
     width: 230px;
@@ -260,6 +271,6 @@
 }
 @media screen and (max-width: 305px) {
   ._name_change_div > input {
-    width: 75px;
+    width: 70px;
   }
 }

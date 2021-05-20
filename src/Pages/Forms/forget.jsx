@@ -4,7 +4,11 @@ import { ColorContext } from "../../Context/Context";
 import { Swiper, SwiperSlide } from "swiper/react";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
 import featherMail from "../../Assets/feather-mail.png";
-
+import slider2bg from "../../Assets/slider2bg.png";
+import slider3bg from "../../Assets/slider3bg.png";
+import slider4bg from "../../Assets/slider4bg.png";
+import slider5bg from "../../Assets/slider5bg.png";
+import slider6bg from "../../Assets/slider6bg.png";
 import "./Forms.css";
 // assets
 import forgotlogo from "../../Assets/forgotlogo.png";
@@ -24,7 +28,7 @@ const Forget = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0A1716",
+    bglightgreen: "#0E2725",
   };
 
   return (
@@ -138,7 +142,7 @@ const Forget = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider2bg}
                   alt="loginBg"
                 />
               </SwiperSlide>
@@ -151,7 +155,7 @@ const Forget = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider3bg}
                   alt="loginBg"
                 />
               </SwiperSlide>
@@ -164,7 +168,33 @@ const Forget = () => {
               >
                 <img
                   className="s_bgimg"
-                  src={smilingafricanwoman}
+                  src={slider4bg}
+                  alt="loginBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "546px",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={slider5bg}
+                  alt="loginBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "546px",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={slider6bg}
                   alt="loginBg"
                 />
               </SwiperSlide>

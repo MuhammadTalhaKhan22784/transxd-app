@@ -6,6 +6,7 @@ import { ColorContext } from '../../Context/Context'
 // assets 
 import user from '../../Assets/Path 7446.png'
 import upload from '../../Assets/Group 4482.png'
+import uploadD from '../../Assets/Group 4482d.png'
 import './styles/Setting.css'
 import MobViewBack from '../../Components/MobViewBack'
 
@@ -49,7 +50,7 @@ const ProfileSetting = () => {
                     <div>
                         <img src={user} alt="" />
                         <div>
-                            <img className='upload_profile' src={upload} alt="" />
+                            <img className='upload_profile' src={mode==='light'? upload:uploadD} alt="" />
                         </div>
                     </div>
                 </div>

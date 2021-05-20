@@ -7,7 +7,7 @@ import { ColorContext } from '../../../Context/Context'
 const ConfirmTransaction = () => {
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const { color } = useContext(ColorContext)
     let { mode } = color
     const history = useHistory()
@@ -57,8 +57,8 @@ const ConfirmTransaction = () => {
                             style={{ color: mode === 'light' ? '' : 'white' }}
                         >TRANSCATION AMOUNT</p>
                         <div >
-                            <p style={{ color: mode === 'light' ? '' : 'white' }}>XOF</p>
-                            <h5 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}> 12,043.<sup>52</sup></h5>
+                            <span style={{ color: mode === 'light' ? '' : 'white' }}>XOF</span>
+                            <h5 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC',marginLeft:'10px' }}> 12,043.<sup>52</sup></h5>
                         </div>
                     </div>
                     <div style={{ marginTop: '20px' }} >

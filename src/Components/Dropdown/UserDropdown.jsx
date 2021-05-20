@@ -18,7 +18,7 @@ const UserDropdown = ({ logout }) => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0A1716",
+    bglightgreen: "#0E2725",
   };
   const history = useHistory();
   return (

@@ -23,6 +23,8 @@ const MoenyDetail = () => {
                         link='/confrim-transaction'
                         backLink='/bank_info'
                         desc='Please enter amount to transfer!'
+                        amount='32143.32'
+                        title='XOF'
                     />
                 </div>
             </div>

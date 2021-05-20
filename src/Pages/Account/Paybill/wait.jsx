@@ -8,10 +8,11 @@ const Wait = () => {
   let [thanks, setThanks] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+   const inteval= setTimeout(() => {
       console.log("run");
       setThanks(true);
     }, 2000);
+    return () => clearInterval(inteval)
   }, []);
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -19,7 +20,10 @@ const Wait = () => {
   return (
     <div>
       <div className="bak_div">
-        <MobViewBack link="/confrim-otp" value="PAY A BILL" />
+        <MobViewBack
+          link="/confrim-otp"
+          value="PAY A BILL"
+        />
       </div>
       <div className="bil_payment_main_div">
         <div className="user_card_div">
@@ -27,9 +31,15 @@ const Wait = () => {
         </div>
         <div className="payment_bil">
           {!thanks ? (
-            <ConfrimWait />
+            <ConfrimWait
+              number='924823202332'
+            />
           ) : (
-            <ThankYou btnV="Pay another bill" link="pay-bill" />
+            <ThankYou
+              btnV="Pay another bill"
+              link="pay-bill"
+              success='Your payment has been made successfilly!'
+            />
           )}
         </div>
       </div>

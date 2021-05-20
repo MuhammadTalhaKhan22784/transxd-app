@@ -13,7 +13,7 @@ const UploadLicns = ({className, head,sBtn,height }) => {
             <div className={`personal_detail_container upload_img ${height} `}>
                 {head ?
                     <>
-                        <h6 style={{ color: '#27BDAD' }}>PROOF OF VERFICATION</h6>
+                        <h6 style={{ color:mode==='light'? '#27BDAD':'#72FAEC' }}>PROOF OF VERFICATION</h6>
                         <div className='varify_para_div'>
                             <p style={{ color:mode==='light'? 'black':'white' }}>Please ensure that your profile data is correct and up-to-date before sending a
                             request for change. Invalid or incorrect information my lead to rejection of request

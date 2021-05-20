@@ -180,7 +180,7 @@ export default function CorporateRegisterStepper() {
                     : "l_stepper_CBtn_nxt"
                 }
                 style={{
-                  border: "1px solid",
+                  // border: "1px solid",
                   backgroundColor:
                     mode === "light" ? style.bggreen : style.bgdarkgreen,
                   color: mode === "light" ? style.bgwhite : style.bgblack,

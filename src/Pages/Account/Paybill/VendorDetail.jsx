@@ -3,7 +3,7 @@ import UserCard from '../../../Components/AccountComp/UserCard'
 import { ColorContext } from '../../../Context/Context'
 import {useHistory} from 'react-router-dom'
 // assets 
-import location from '../../../Assets/Group 4230.png'
+import location from '../../../Assets/Group 4607.png'
 import tick from '../../../Assets/Path 7452.png'
 import Qr from '../../../Assets/Group 4558.png'
 import QrL from '../../../Assets/Group 4558l.png'
@@ -68,7 +68,7 @@ const VendorDetail = () => {
                             </div>
                             <div className="orLine_div">
                                 <img src={orline} alt="" />
-                                <span style={{ color: mode === 'light' ? '' : 'white' }}>OR</span>
+                                <span style={{ color: mode === 'light' ? '' : 'white' }}> OR </span>
                                 <img src={orline} alt="" />
                             </div>
                             <p className='qr_para' style={{ color: mode === 'light' ? '' : 'white' }}>SCAN QR CODE</p>
