@@ -1,7 +1,7 @@
-import React, { useLayoutEffect, useContext } from "react";
+import React, { useLayoutEffect, useContext, useState, useEffect } from "react";
 import { ColorContext } from "../../Context/Context";
 import Fade from "react-reveal/Fade";
-
+import Cookie from "../../Components/Cokkie"
 import "./Home.css";
 
 import homegirlimg from "../../Assets/homeimg2.png";
@@ -13,10 +13,18 @@ import hchip1 from "../../Assets/hchip1.png";
 import hchip2 from "../../Assets/hchip2.png";
 import hchip3 from "../../Assets/hchip3.png";
 import hchip4 from "../../Assets/hchip4.png";
+import hichip1dark from "../../Assets/hichip1dark.png";
+import hichip2dark from "../../Assets/hichip2dark.png";
+import hichip3dark from "../../Assets/hichip3dark.png";
+import hichip4dark from "../../Assets/hichip4dark.png";
 import pchip1 from "../../Assets/pchip1.png";
 import pchip2 from "../../Assets/pchip2.png";
 import pchip3 from "../../Assets/pchip3.png";
 import pchip4 from "../../Assets/pchip4.png";
+import pchip1dark from "../../Assets/pchip1dark.png";
+import pchip2dark from "../../Assets/pchip2dark.png";
+import pchip3dark from "../../Assets/pchip3dark.png";
+import pchip4dark from "../../Assets/pchip4dark.png";
 import whybg from "../../Assets/whybg.png";
 import debitcard from "../../Assets/debitcard.png";
 import hichip1 from "../../Assets/hichip1.png";
@@ -27,7 +35,12 @@ import appstoreicons from "../../Assets/appstoreicons.png";
 import handmob from "../../Assets/handmob.png";
 import handmob2 from "../../Assets/handmob2.png";
 import { Link } from "react-router-dom";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination } from "swiper";
+import "swiper/swiper-bundle.css";
+// import 'swiper/swiper-bundle.min.css'
+import "swiper/swiper-bundle.css";
+SwiperCore.use([Pagination]);
 const Home = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -45,6 +58,15 @@ const Home = () => {
     bgdarkgreen: "#72FAEC",
     bglightgreen: "#0A1716",
   };
+  let [text, setText] = useState(false);
+
+  useEffect(() => {
+    const interval =
+     setInterval(() => {
+      setText(!text);
+    }, 1000);
+    return () => clearInterval(interval);
+  });
 
   return (
     <React.Fragment>
@@ -96,7 +118,8 @@ const Home = () => {
                     border: "1px solid #27BDAD",
                     color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1 h_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                 >
                   Sign-up today!
                 </button>
@@ -111,9 +134,55 @@ const Home = () => {
               <img src={homegirlimg} alt="..." />
             </div>
             <div className="hr_box3">
-              <Fade right duration={1800} delay={1200}>
+              {/* <Fade right duration={1800} delay={1200}>
                 <img src={homegirlimg} alt="..." />
-              </Fade>
+              </Fade> */}
+              
+            <div>
+            <Swiper pagination spaceBetween={50} slidesPerView={1}>
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={homegirlimg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={homegirlimg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+              <SwiperSlide
+                style={{
+                  width: "100%",
+                  height: "475px",
+                  marginRight: "50px ",
+                }}
+              >
+                <img
+                  className="s_bgimg"
+                  src={homegirlimg}
+                  alt="signupBg"
+                />
+              </SwiperSlide>
+           
+            </Swiper>
+          </div>
+          
             </div>
           </div>
         </div>{" "}
@@ -127,6 +196,7 @@ const Home = () => {
           <div className="htm_left">
             <img className="h_mob1" src={africanwomanimg} alt="..." />
             <img className="h_mob2" src={africanwomanimgmob} alt="..." />
+          
           </div>
           <div className="htm_right">
             <img className="hchip1" src={hchip1} alt="..." />
@@ -181,7 +251,8 @@ const Home = () => {
                     border: "1px solid #27BDAD",
                     color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                 >
                   Sign-up today!
                 </button>
@@ -229,10 +300,11 @@ const Home = () => {
             <div className="pcard_section">
               <div className="pcard">
                 <div
-                  className="pcard-img"
+                  className="pcard-img pcard_light"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img src={pchip1} alt="..." />
+                  <img className="plight" src={pchip1} alt="..." />
+                  <img className="pdark" src={pchip1dark} alt="..." />
                 </div>
                 <span
                   style={{
@@ -247,7 +319,9 @@ const Home = () => {
                   className="pcard-img"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img className="pchip_img" src={pchip2} alt="..." />
+                  <img className="pchip_img plight" src={pchip2} alt="..." />
+                  <img className="pchip_img pdark" src={pchip2dark} alt="..." />
+
                 </div>
                 <span
                   style={{
@@ -262,7 +336,9 @@ const Home = () => {
                   className="pcard-img"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img className="pchip_img" src={pchip3} alt="..." />
+                  <img className="plight pchip_img" src={pchip3} alt="..." />
+                  <img className="pdark pchip_img" src={pchip3dark} alt="..." />
+
                 </div>
                 <span
                   style={{
@@ -277,7 +353,9 @@ const Home = () => {
                   className="pcard-img"
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img src={pchip4} alt="..." />
+                  <img className="plight" src={pchip4} alt="..." />
+                  <img className="pdark" src={pchip4dark} alt="..." />
+
                 </div>
                 <span
                   style={{
@@ -296,7 +374,8 @@ const Home = () => {
                   margin: "2rem auto",
                   color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                 }}
-                className="cus_btn1 mt-5"
+                className={`cus_btn1 mt-5
+                ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
               >
                 Sign-up today!
               </button>
@@ -343,7 +422,7 @@ const Home = () => {
                         mode === "light" ? style.bggreen : style.bgdarkgreen,
                     }}
                   >
-                    wherever
+                    {text ? " wherever" : "whenever"}
                   </strong>{" "}
                   your want! <br />
                   with{" "}
@@ -368,7 +447,8 @@ const Home = () => {
                     border: "1px solid #27BDAD",
                     color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                 >
                   Apply for a card
                 </button>
@@ -395,7 +475,7 @@ const Home = () => {
             >
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
-                  <img src={hichip1} alt="..." />
+                  <img src={mode === "light" ? hichip1 : hichip1dark} alt="..." />
                   <h2
                     style={{
                       color: mode === "light" ? style.bggreen : style.bgwhite,
@@ -412,7 +492,7 @@ const Home = () => {
               </div>
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
-                  <img src={hichip2} alt="..." />
+                  <img src={mode === "light" ? hichip2 : hichip2dark} alt="..." />
                   <h2
                     style={{
                       color: mode === "light" ? style.bggreen : style.bgwhite,
@@ -429,7 +509,7 @@ const Home = () => {
               </div>
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
-                  <img src={hichip3} alt="..." />
+                  <img src={mode === "light" ? hichip3 : hichip3dark} alt="..." />
                   <h2
                     style={{
                       color: mode === "light" ? style.bggreen : style.bgwhite,
@@ -446,7 +526,7 @@ const Home = () => {
               </div>
               <div className="col-12 col-sm-5 col-md-6 col-lg-6">
                 <div className="hi_card">
-                  <img src={hichip4} alt="..." />
+                  <img src={mode === "light" ? hichip4 : hichip4dark} alt="..." />
                   <h2
                     style={{
                       color: mode === "light" ? style.bggreen : style.bgwhite,
@@ -509,6 +589,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+    <Cookie/>
     </React.Fragment>
   );
 };

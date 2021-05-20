@@ -7,6 +7,10 @@ import gchip1 from "../../Assets/gchip1.png";
 import gchip2 from "../../Assets/gchip2.png";
 import gchip3 from "../../Assets/gchip3.png";
 import gchip4 from "../../Assets/gchip4.png";
+import gchip1dark from "../../Assets/gchip1dark.png";
+import gchip2dark from "../../Assets/gchip2dark.png";
+import gchip3dark from "../../Assets/gchip3dark.png";
+import gchip4dark from "../../Assets/gchip4dark.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
 
 const GetCard = () => {
@@ -23,6 +27,7 @@ const GetCard = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
+    bglightgreen: "#0a1716",
   };
   return (
     <React.Fragment>
@@ -56,7 +61,10 @@ const GetCard = () => {
               <div className="row gy-5">
                 <div className="col-lg-6">
                   <div className="gc_card">
-                    <img src={gchip1} alt="..." />
+                    <img
+                      src={mode === "light" ? gchip1 : gchip1dark}
+                      alt="..."
+                    />
                     <h2
                       style={{
                         color:
@@ -71,14 +79,16 @@ const GetCard = () => {
                     </p>
                     <button
                       style={{
-                        backgroundColor: "transparent",
+                        backgroundColor:
+                          mode === "light" ? style.bgwhite : "black",
                         border: "1px solid",
                         borderColor:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                         color:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                       }}
-                      className="cus_btn1"
+                      className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                     >
                       Get your card
                     </button>
@@ -86,7 +96,10 @@ const GetCard = () => {
                 </div>
                 <div className="col-lg-6">
                   <div className="gc_card">
-                    <img src={gchip2} alt="..." />
+                    <img
+                      src={mode === "light" ? gchip2 : gchip2dark}
+                      alt="..."
+                    />
                     <h2
                       style={{
                         color:
@@ -101,14 +114,16 @@ const GetCard = () => {
                     </p>
                     <button
                       style={{
-                        backgroundColor: "transparent",
+                        backgroundColor:
+                          mode === "light" ? style.bgwhite : "black",
                         border: "1px solid",
                         borderColor:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                         color:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                       }}
-                      className="cus_btn1"
+                      className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                     >
                       Send/ Receive Money
                     </button>
@@ -116,7 +131,10 @@ const GetCard = () => {
                 </div>
                 <div className="col-lg-6 c_height">
                   <div className="gc_card">
-                    <img src={gchip3} alt="..." />
+                    <img
+                      src={mode === "light" ? gchip3 : gchip3dark}
+                      alt="..."
+                    />
                     <h2
                       style={{
                         color:
@@ -131,14 +149,16 @@ const GetCard = () => {
                     </p>
                     <button
                       style={{
-                        backgroundColor: "transparent",
+                        backgroundColor:
+                          mode === "light" ? style.bgwhite : "black",
                         border: "1px solid",
                         borderColor:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                         color:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                       }}
-                      className="cus_btn1"
+                      className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                     >
                       Pay a bill now
                     </button>
@@ -146,7 +166,10 @@ const GetCard = () => {
                 </div>
                 <div className="col-lg-6 c_height">
                   <div className="gc_card">
-                    <img src={gchip4} alt="..." />
+                    <img
+                      src={mode === "light" ? gchip4 : gchip4dark}
+                      alt="..."
+                    />
                     <h2
                       style={{
                         color:
@@ -161,14 +184,16 @@ const GetCard = () => {
                     </p>
                     <button
                       style={{
-                        backgroundColor: "transparent",
+                        backgroundColor:
+                          mode === "light" ? style.bgwhite : "black",
                         border: "1px solid",
                         borderColor:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                         color:
                           mode === "light" ? style.bggreen : style.bgdarkgreen,
                       }}
-                      className="cus_btn1"
+                      className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                     >
                       Get your card
                     </button>

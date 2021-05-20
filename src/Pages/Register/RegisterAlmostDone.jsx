@@ -84,7 +84,7 @@ const RegisterAlmostDone = () => {
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
-                Please enter your email address and password to login..
+                Please select how'd you like to register with us!
               </p>
             </div>
             <h2
@@ -122,7 +122,8 @@ const RegisterAlmostDone = () => {
               <div
                 className="d-flex align-items-center justify-content-center"
                 style={{
-                  padding: "2px 25px",
+                  width: "64px",
+                  height: "60px",
                   border: "1px solid",
                   borderColor:
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
@@ -140,7 +141,8 @@ const RegisterAlmostDone = () => {
               <div
                 className="d-flex align-items-center justify-content-center"
                 style={{
-                  padding: "2px 25px",
+                  width: "64px",
+                  height: "60px",
                   border: "1px solid",
                   borderColor:
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
@@ -158,7 +160,8 @@ const RegisterAlmostDone = () => {
               <div
                 className="d-flex align-items-center justify-content-center"
                 style={{
-                  padding: "2px 25px",
+                  width: "64px",
+                  height: "60px",
                   border: "1px solid",
                   borderColor:
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
@@ -176,7 +179,8 @@ const RegisterAlmostDone = () => {
               <div
                 className="d-flex align-items-center justify-content-center"
                 style={{
-                  padding: "2px 25px",
+                  width: "64px",
+                  height: "60px",
                   border: "1px solid",
                   borderColor:
                     mode === "light" ? style.bgblack : style.bgdarkgreen,
@@ -201,12 +205,13 @@ const RegisterAlmostDone = () => {
                   }}
                   style={{
                     padding: "8px 50px",
-                    border: "none",
+                    border: "1px solid",
                     backgroundColor:
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
                     color: mode === "light" ? style.bgwhite : style.bgblack,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                 >
                   Register
                 </button>

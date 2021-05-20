@@ -1,10 +1,40 @@
+/*  */
+
+.tick_img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.validation_text {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validation_text span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.r_form {
+  width: 466px;
+}
+
 .optp_code {
-  width: 80%;
+  width: 74%;
   margin: 1.5rem auto;
 }
 
 .optp_code > div {
-  border-radius: 10px;
+  border-radius: 13px;
+}
+
+.reg_form_btn {
+  margin-top: 10rem;
 }
 
 /* buiness upload image css  */
@@ -78,21 +108,78 @@
   margin: 0 auto;
 }
 
+/*  */
+
+.reg_img_content .s_bgimg {
+  width: 400px !important;
+}
+
+
+.reg_img_content .swiper-pagination-bullets {
+  left: 65px !important;
+}
+
+.reg_stepper {
+  width: 650px;
+  margin: 20px auto 0 auto;
+}
+
+.cus_stepper_btn{
+  width: max-content;
+  padding: 8px 120px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* .reg_img_content .swiper-wrapper {
+  height: 100vh !important;
+} */
+
 @media screen and (max-width: 991px) {
   .cr_stepper {
     width: 100%;
   }
+  .reg_stepper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:615px) {
+  .cr_stepper .MuiStepLabel-labelContainer{
+    display: block;
+}
 }
 
 @media screen and (max-width: 500px) {
   .optp_code {
     width: 100%;
   }
+  .r_form {
+    width: 380px;
+  }
 }
 
-
-.reg_stepper {
-  width: 650px;
-  margin: 20px auto 0 auto;
-
+@media screen and (max-width: 425px) {
+  .tick_img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+  }
+  .r_form {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .validation_text span {
+    font-size: 0.8rem;
+  }
+  .cus_stepper_btn {
+    padding: 8px 55px;
+  }
 }
+@media screen and (max-width: 370px) {
+  .reg_btn1 {
+    padding: 8px 17px;
+  }
+}
+

@@ -1,31 +1,19 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 
 // import "./Forms.css";
 // assets
 
-import fbIcon from "../../Assets/fb_icon.png";
-import gmailIcon from "../../Assets/gmail_icon.png";
-import orLine from "../../Assets/or_line.png";
-import darkorline from "../../Assets/darkor_line.png";
-
-import pwdopen from "../../Assets/pwdopen.png";
-import featherMail from "../../Assets/feather-mail.png";
 import featherLock from "../../Assets/feather-lock.png";
 import smartphone from "../../Assets/Icon feather-smartphone.png";
-
-import userimg from "../../Assets/userimg.png";
-import calendaricon from "../../Assets/calendaricon.png";
 import locationimg from "../../Assets/locationimg.png";
-import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
+import validationIcon from "../../Assets/validationIcon.png";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 // import 'swiper/swiper-bundle.min.css'
 import "swiper/swiper-bundle.css";
-import DatePicker from "../../Components/DatePicker/DatePicker";
 import RegisterAlmostDone from "./RegisterAlmostDone";
 import LanguageDropdown from "../../Components/Dropdown/LanguageDropdown";
 SwiperCore.use([Pagination]);
@@ -34,9 +22,6 @@ const RegisterContactDetails = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  let history = useHistory();
-  const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);
 
@@ -97,6 +82,7 @@ const RegisterContactDetails = () => {
             </h2>
 
             <form className="s_form_fields">
+
               <div className="p_input">
                 <img src={locationimg} alt="" />
                 <select
@@ -127,6 +113,7 @@ const RegisterContactDetails = () => {
                 </select>
               </div>
 
+
               <div className="p_input">
                 <img src={smartphone} alt="..." />
                 <LanguageDropdown />
@@ -151,37 +138,44 @@ const RegisterContactDetails = () => {
                   type="text"
                 />
               </div>
-              <div className="form_btn mt-5">
+              <div className="validation_text reg_form_btn">
+                <img src={validationIcon} alt="..." />
+                <span style={{ color: style.bgred }}>
+                  Any front end error will show up here!
+                </span>
+              </div>
+              <div className="form_btn">
                 <button
                   onClick={() => {
                     setShowComp(true);
                   }}
                   style={{
                     padding: "8px 50px",
-                    border: "none",
+                    border: "1px solid",
                     backgroundColor:
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
                     color: mode === "light" ? style.bgwhite : style.bgblack,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                 >
                   Register
                 </button>
               </div>
               <span
-                className="s_label mt-4"
+                className="s_label mt-3"
                 style={{
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
-                Not a member?{" "}
+                Already a member?{" "}
                 <Link
                   style={{
-                    color: mode === "light" ? style.bgblack : style.bggreen,
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
                   to="/login"
                 >
-                  &nbsp;Register Now!
+                  &nbsp;Login!
                 </Link>
               </span>
             </form>

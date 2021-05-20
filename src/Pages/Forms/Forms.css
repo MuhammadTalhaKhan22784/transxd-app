@@ -38,6 +38,10 @@
   /* border: 2px solid red; */
 }
 
+.f_form {
+  width: 388px;
+}
+
 .s_text h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -105,6 +109,12 @@
   object-fit: contain;
 }
 
+.s_social_btn button span {
+  font-weight: 500;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
 .or_line {
   width: 100%;
 }
@@ -115,7 +125,9 @@
 
 .inline_input {
   display: flex;
+  height: 56px;
   width: 100%;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -129,6 +141,8 @@
   margin: 0.3rem 0;
   padding-left: 1rem;
   outline: none;
+  font-size: 0.9rem;
+  opacity: 0.9;
   background-color: transparent;
 }
 
@@ -138,7 +152,7 @@
   /* justify-content: space-around; */
   align-items: center;
   width: 100%;
-  border: 1px solid #27bdad !important;
+  border: 1px solid #27bdad;
   height: 40px;
   margin: 1rem 0;
   padding: 0 16px;
@@ -147,6 +161,7 @@
 .cus_select {
   border: none;
   width: 100%;
+  font-size: 0.9rem;
   background-color: transparent;
 }
 
@@ -161,7 +176,8 @@
 }
 
 .p_input img {
-  width: 20px;
+  width: 16px;
+  object-fit: contain;
 }
 
 .s_form_fields input::placeholder {
@@ -199,6 +215,7 @@
   display: flex;
   justify-content: center;
   font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .s_label a {
@@ -250,6 +267,10 @@
   width: 100%;
 }
 
+.s_para h2 {
+  font-weight: 500;
+}
+
 .s_para p {
   font-size: 0.9rem;
   text-align: center;
@@ -268,6 +289,7 @@
 .sc_label {
   font-size: 0.8rem;
   margin-left: 25px;
+  font-weight: 500;
 }
 
 .sc_label > input[type="checkbox"] {
@@ -281,7 +303,7 @@
   width: 1rem;
   height: 1rem;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 100%;
   border: 1px solid #8792af;
   position: absolute;
   left: 0;
@@ -302,12 +324,15 @@
 .fp_text {
   margin: 0 !important;
   font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .login_img_content {
   width: 40%;
   position: relative;
 }
+
 
 .login_img_content .s_bgimg {
   width: 360px;
@@ -391,15 +416,11 @@
   .s_text h2 {
     font-size: 1.2rem;
   }
-
-  .s_label {
-    font-size: 0.7rem;
-  }
 }
 
 @media (max-width: 370px) {
   .s_form {
-    width: 278px;
+    width: 290px;
   }
   .s_box {
     width: 134px;

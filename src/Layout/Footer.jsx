@@ -28,6 +28,30 @@ const Footer = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleDark = () => {
+    localStorage.setItem("theme", "dark");
+    let set = localStorage.getItem("theme");
+    console.log(set);
+    setColor({
+      type: "Dark",
+      payload: set,
+    });
+    document.body.classList.remove("white");
+    document.body.classList.add("black");
+  };
+  const handleLight = () => {
+    localStorage.setItem("theme", "light");
+    let set = localStorage.getItem("theme");
+    console.log(set);
+
+    setColor({
+      type: "light",
+      payload: set,
+    });
+    document.body.classList.remove("black");
+    document.body.classList.add("white");
+  };
+
   const { color, setColor } = useContext(ColorContext);
   let { mode } = color;
   let style = {
@@ -69,15 +93,14 @@ const Footer = () => {
                   <button
                     style={{
                       marginTop: "0.8rem",
-                      backgroundColor: "transparent",
                       border: "1px solid",
                       borderColor:
                         mode === "light" ? style.bggreen : style.bgdarkgreen,
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+
                       padding: "8px 20px",
                     }}
-                    className="cus_btn1 me-4"
+                    className={`cus_btn1 me-4
+                    ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                   >
                     Sign up
                   </button>
@@ -85,16 +108,16 @@ const Footer = () => {
                 <Link to="/login">
                   <button
                     style={{
-                      marginTop: "0.8rem",
                       backgroundColor: "transparent",
+                      marginTop: "0.8rem",
                       border: "1px solid",
                       borderColor:
                         mode === "light" ? style.bggreen : style.bgdarkgreen,
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+
                       padding: "8px 28px",
                     }}
-                    className="cus_btn1"
+                    className={`cus_btn1
+                    ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                   >
                     Login
                   </button>
@@ -244,7 +267,7 @@ const Footer = () => {
                 className="btn s_btn"
                 onClick={() => {
                   setShowMode(true);
-                  // handleDark();
+                  handleDark();
                 }}
               >
                 <img
@@ -260,7 +283,7 @@ const Footer = () => {
                 style={{ display: showMode === false ? "none" : "block" }}
                 onClick={() => {
                   setShowMode(false);
-                  // handleLight();
+                  handleLight();
                 }}
               >
                 <img

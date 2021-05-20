@@ -10,6 +10,9 @@ import featherLock from "../../Assets/feather-lock.png";
 import userimg from "../../Assets/userimg.png";
 import calendaricon from "../../Assets/calendaricon.png";
 import locationimg from "../../Assets/locationimg.png";
+import tick from "../../Assets/Path 7452.png";
+import cross from "../../Assets/cross.png";
+import validationIcon from "../../Assets/validationIcon.png";
 
 import SwiperCore, { Pagination } from "swiper";
 import RegisterContactDetails from "./RegisterContactDetails";
@@ -42,10 +45,9 @@ const RegisterPersonalDetais = () => {
 
   return (
     <React.Fragment>
-      {/* <div className="main_form"> */}
       {showComp === false ? (
         <div className="login_form">
-          <div className="s_form">
+          <div className="s_form r_form">
             <div className="s_text">
               <h2
                 className="mt-4"
@@ -69,11 +71,12 @@ const RegisterPersonalDetais = () => {
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
-                Please enter your email address and password to login..
+                Verify that the information you provided is correct and click
+                Submit to register.
               </p>
             </div>
             <h2
-              className="fs-6 mt-5"
+              className="fs-6 mt-5 mb-3"
               style={{
                 color: mode === "light" ? style.bggreen : style.bgdarkgreen,
               }}
@@ -82,62 +85,126 @@ const RegisterPersonalDetais = () => {
             </h2>
             <form className="s_form_fields">
               <div className="inline_input">
-                <div className="p_input" style={{ width: "48%" }}>
+                <div
+                  className="p_input"
+                  style={{ width: "93%" }}
+                  style={{ width: "43%" }}
+                >
                   <img src={userimg} alt="..." />
                   <input
-                    style={{ paddingLeft: "15px" }}
+                    style={{
+                      paddingLeft: "15px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                      opacity: mode === "light" ? 1 : 0.9,
+                    }}
                     placeholder="First Name"
                     type="text"
                     className="half_input"
                   />
                 </div>
-                <div className="p_input" style={{ width: "48%" }}>
+                <div
+                  className="p_input"
+                  style={{ width: "93%" }}
+                  style={{ width: "48%" }}
+                >
                   <img src={userimg} alt="..." />
                   <input
-                    style={{ paddingLeft: "15px" }}
-                    placeholder="First Name"
+                    style={{
+                      paddingLeft: "15px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                      opacity: mode === "light" ? 1 : 0.9,
+                    }}
+                    placeholder="Last Name"
                     type="text"
                     className="half_input"
                   />
                 </div>
+                <img className="tick_img" src={tick} alt="..." />
               </div>
-              <div className="p_input">
-                <img src={locationimg} alt="..." />
-                <input placeholder="Enter Date" type="text" />
-                <img src={calendaricon} alt="img" />
+              <div className="inline_input">
+                <div className="p_input" style={{ width: "93%" }}>
+                  <img src={locationimg} alt="..." />
+                  <input
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                      opacity: mode === "light" ? 1 : 0.9,
+                    }}
+                    placeholder="Enter Date"
+                    type="text"
+                  />
+                  <img src={calendaricon} alt="img" />
+                </div>
+                <img className="tick_img" src={tick} alt="..." />
               </div>
-              <div className="p_input">
-                <img src={featherMail} alt="..." />
-                <input
-                
-                  style={{ paddingLeft: "15px" }}
-                  placeholder="Email address"
-                  type="email"
-                />
+              <div className="inline_input">
+                <div className="p_input" style={{ width: "93%" }}>
+                  <img src={featherMail} alt="..." />
+                  <input
+                    style={{
+                      paddingLeft: "15px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                      opacity: mode === "light" ? 1 : 0.9,
+                    }}
+                    placeholder="Email address"
+                    type="email"
+                  />
+                </div>
+                <img className="tick_img" src={tick} alt="..." />
               </div>
-              <div className="p_input">
-                <img src={featherLock} alt="..." />
-                <input
-                  placeholder="Password"
-                  type={!pass ? "password" : "text"}
-                />
-                {!pass ? (
-                  <img onClick={showPassword} src={pwdopen} alt="img" />
-                ) : (
-                  <img onClick={showPassword} src={pwdclose} alt="img" />
-                )}
+              <div className="inline_input">
+                <div
+                  className="p_input"
+                  style={{
+                    width: "93%",
+                    border: "1px solid",
+                    borderColor: style.bgred,
+                  }}
+                >
+                  <img src={featherLock} alt="..." />
+                  <input
+                    style={{
+                      color: style.bgred,
+                      opacity: mode === "light" ? 1 : 0.9,
+                    }}
+                    placeholder="Password"
+                    type={!pass ? "password" : "text"}
+                  />
+                  {!pass ? (
+                    <img onClick={showPassword} src={pwdopen} alt="img" />
+                  ) : (
+                    <img onClick={showPassword} src={pwdclose} alt="img" />
+                  )}
+                </div>
+                <img className="tick_img" src={cross} alt="..." />
               </div>
-              <div className="p_input">
-                <img src={featherLock} alt="..." />
-                <input
-                  placeholder="Confirm Password"
-                  type={!pass ? "password" : "text"}
-                />
-                {!pass ? (
-                  <img onClick={showPassword} src={pwdopen} alt="img" />
-                ) : (
-                  <img onClick={showPassword} src={pwdclose} alt="img" />
-                )}
+              <div className="inline_input">
+                <div
+                  className="p_input"
+                  style={{
+                    width: "93%",
+                    border: "1px solid",
+                    borderColor: style.bgred,
+                  }}
+                >
+                  <img src={featherLock} alt="..." />
+                  <input
+                    style={{
+                      color: style.bgred,
+                    }}
+                    placeholder="Confirm Password"
+                    type={!pass ? "password" : "text"}
+                  />
+                  {!pass ? (
+                    <img onClick={showPassword} src={pwdopen} alt="img" />
+                  ) : (
+                    <img onClick={showPassword} src={pwdclose} alt="img" />
+                  )}
+                </div>
+                <img className="tick_img" src={cross} alt="..." />
+              </div>
+              <div className="validation_text">
+                  <img src={validationIcon} alt="..." />
+                  <span style={{color:style.bgred}}>Password does't match Please reenter!</span>
               </div>
 
               <div className="form_btn mt-5">
@@ -147,12 +214,13 @@ const RegisterPersonalDetais = () => {
                   }}
                   style={{
                     padding: "8px 50px",
-                    border: "none",
+                    border: "1px solid",
                     backgroundColor:
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
                     color: mode === "light" ? style.bgwhite : style.bgblack,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                 >
                   Next
                 </button>
@@ -163,14 +231,14 @@ const RegisterPersonalDetais = () => {
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
-                Not a member?{" "}
+                Already a member?{" "}
                 <Link
                   style={{
-                    color: mode === "light" ? style.bgblack : style.bggreen,
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
                   to="/login"
                 >
-                  &nbsp;Register Now!
+                  &nbsp;Login
                 </Link>
               </span>
             </form>

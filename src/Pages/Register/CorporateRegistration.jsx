@@ -4,17 +4,13 @@ import { ColorContext } from "../../Context/Context";
 
 // import "./Forms.css";
 // assets
-import pwdopen from "../../Assets/pwdopen.png";
-import featherMail from "../../Assets/feather-mail.png";
+import tick from "../../Assets/Path 7452.png";
+import cross from "../../Assets/cross.png";
+import validationIcon from "../../Assets/validationIcon.png";
 import featherLock from "../../Assets/feather-lock.png";
 import smartphone from "../../Assets/Icon feather-smartphone.png";
-
-import userimg from "../../Assets/userimg.png";
 import calendaricon from "../../Assets/calendaricon.png";
 import locationimg from "../../Assets/locationimg.png";
-import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 // import 'swiper/swiper-bundle.min.css'
@@ -57,107 +53,133 @@ const CooperateRegistration = () => {
       {showComp === false ? (
         <div className="login_form">
           <div className="s_form">
-           
             <div className="s_para mt-3">
               <p
                 style={{
                   color: mode === "light" ? style.bgblack : style.bgwhite,
+                  fontWeight: "bold",
                 }}
               >
-                Please enter your email address and password to login..
+                Please fill in the details and we'll bein touch with you!
               </p>
             </div>
 
             <form className="s_form_fields">
-              <div className="p_input">
-                <img src={featherLock} alt="..." />
-                <input
-                  style={{
-                    paddingLeft: "10px",
-                    color: mode === "light" ? style.bggreen : style.bgwhite,
-                  }}
-                  placeholder="Company Name"
-                  type="text"
-                />
-              </div>
-
-              <div className="p_input">
-                <img src={featherLock} alt="..." />
-                <input
-                  style={{
-                    paddingLeft: "10px",
-                    color: mode === "light" ? style.bggreen : style.bgwhite,
-                  }}
-                  placeholder="Registration Number"
-                  type="number"
-                />
-              </div>
-
-              <div className="p_input">
-                <img src={locationimg} alt="..." />
-                <input
-                  placeholder="Enter Date"
-                  type="text"
-                  style={{
-                    color: mode === "light" ? style.bggreen : style.bgwhite,
-                  }}
-                />
-                <img src={calendaricon} alt="img" />
-              </div>
-
-              <div className="p_input">
-                <img src={locationimg} alt="" />
-                <select
-                  className="cus_select"
-                  style={{
-                    color: mode === "light" ? style.bggreen : style.bgwhite,
-                    paddingLeft: "10px",
-                  }}
-                >
-                  <option
+              <div className="inline_input">
+                <div className="p_input">
+                  <img src={featherLock} alt="..." />
+                  <input
                     style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      paddingLeft: "10px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
                     }}
-                    selected
-                  >
-                    Contact person name
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    option a
-                  </option>
-                </select>
-              </div>
-              <div className="p_input">
-                <img src={featherLock} alt="..." />
-                <input
-                  style={{
-                    paddingLeft: "10px",
-                    color: mode === "light" ? style.bggreen : style.bgwhite,
-                  }}
-                  placeholder="Contact Person Email Address"
-                  type="text"
-                />
-              </div>
-              <div className="p_input">
-                <img src={smartphone} alt="..." />
-                <LanguageDropdown />
-                <input
-                  style={{
-                    paddingLeft: "0px",
-                    color: mode === "light" ? style.bggreen : style.bgwhite,
-                  }}
-                  placeholder="Phone Number"
-                  type="text"
-                />
-              </div>
+                    placeholder="Company Name"
+                    type="text"
+                  />
+                </div>
+                <img className="tick_img ms-3" src={tick} alt="..." />
 
+              </div>
+              <div className="inline_input">
+                <div className="p_input">
+                  <img src={featherLock} alt="..." />
+                  <input
+                    style={{
+                      paddingLeft: "10px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                    placeholder="Registration Number"
+                    type="number"
+                  />
+                </div>
+                <img className="tick_img ms-3" src={tick} alt="..." />
+
+              </div>
+              <div className="inline_input">
+                <div className="p_input">
+                  <img src={locationimg} alt="..." />
+                  <input
+                    placeholder="Enter Date"
+                    type="text"
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                  />
+                  <img src={calendaricon} alt="img" />
+                </div>
+                <img className="tick_img ms-3" src={tick} alt="..." />
+
+              </div>
+              <div className="inline_input">
+                <div className="p_input">
+                  <img src={locationimg} alt="" />
+                  <select
+                    className="cus_select"
+                    style={{
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                      paddingLeft: "10px",
+                    }}
+                  >
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      selected
+                    >
+                      Contact person name
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      option a
+                    </option>
+                  </select>
+                </div>
+                <img className="tick_img ms-3" src={tick} alt="..." />
+
+              </div>
+              <div className="inline_input">
+                <div className="p_input">
+                  <img src={featherLock} alt="..." />
+                  <input
+                    style={{
+                      paddingLeft: "10px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                    placeholder="Contact Person Email Address"
+                    type="text"
+                  />
+                </div>
+                <img className="tick_img ms-3" src={cross} alt="..." />
+
+              </div>
+              <div className="inline_input">
+                <div className="p_input">
+                  <img src={smartphone} alt="..." />
+                  <LanguageDropdown />
+                  <input
+                    style={{
+                      paddingLeft: "0px",
+                      color: mode === "light" ? style.bggreen : style.bgwhite,
+                    }}
+                    placeholder="Phone Number"
+                    type="text"
+                  />
+                </div>
+                <img className="tick_img ms-3" src={cross} alt="..." />
+
+              </div>
+              <div className="validation_text mb-3 mt-3">
+                <img src={validationIcon} alt="..." />
+                <span style={{ color: style.bgred }}>
+                  Any front end error will show up here!
+                </span>
+              </div>
               {/* <div className="form_btn mt-5">
                 <button
                   onClick={() => {

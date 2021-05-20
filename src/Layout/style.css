@@ -28,8 +28,10 @@
 .c_navbar .navbar-nav .nav-item .nav-link {
   color: unset;
   font-size: 1rem;
-  font-weight: bold;
-  margin-right: 15px;
+  font-weight: 500;
+  width: max-content;
+  margin: 0 20px;
+  padding: 0 !important;
 }
 
 .en_option {
@@ -146,7 +148,72 @@
   box-shadow: 1px 0 20px rgb(0 0 0 / 8%);
 }
 
-.langdrpdwn_menu.dropdown-menu {
+.s_btn_light {
+  background: #27bdad;
+  color: white;
+}
+
+.s_btn_dark {
+  background: #72faec;
+  color: #0a1716;
+}
+
+.s_btn_dark:hover {
+  transition: 0.9s;
+  box-shadow: inset -6em 0 0 0 #0a1716, inset 6em 0 0 0 #0a1716;
+  color: #72faec !important;
+}
+
+.s_btn_light:hover {
+  transition: 0.9s;
+  box-shadow: inset -6em 0 0 0 white, inset 6em 0 0 0 white;
+  color: #27bdad !important;
+}
+
+.reg_steppeer_btn .s_btn_light:hover {
+  transition: 0.9s;
+  box-shadow: inset -12.5em 0 0 0 white, inset 12.5em 0 0 0 white;
+  color: #27bdad !important;
+}
+
+.l_btn_light {
+  background: #e9f8f7;
+  color: #27bdad;
+}
+
+.l_btn_light:hover {
+  transition: 0.9s;
+  box-shadow: inset -6em 0 0 0 #27bdad, inset 6em 0 0 0 #27bdad;
+  color: white !important;
+}
+
+.reg_form_btn .l_btn_light:hover {
+  box-shadow: inset -11em 0 0 0 #27bdad, inset 11em 0 0 0 #27bdad !important;
+  /* color: #0a1716; */
+}
+
+.reg_form_btn .l_btn_dark:hover {
+  box-shadow: inset -11em 0 0 0 #27bdad, inset 11em 0 0 0 #27bdad !important;
+  color: #0a1716 !important;
+}
+
+.l_btn_dark {
+  background: #0a1716;
+  color: #72faec;
+}
+
+.l_btn_dark:hover {
+  transition: 0.9s;
+  box-shadow: inset -6em 0 0 0 #72faec, inset 6em 0 0 0 #72faec;
+  color: #0a1716 !important;
+}
+
+.gc_card .l_btn_light:hover {
+  box-shadow: inset -8em 0 0 0 #27bdad, inset 8em 0 0 0 #27bdad;
+}
+
+.gc_card .l_btn_dark:hover {
+  box-shadow: inset -8em 0 0 0 #72faec, inset 8em 0 0 0 #72faec;
 }
 
 /*  */
@@ -343,7 +410,6 @@
 
 /*  */
 
-
 /*  */
 
 .userinfo_dropdown {
@@ -393,8 +459,8 @@
 }
 
 .path_line {
-  width: 2px !important;
-  height: 35px;
+  width: 1px !important;
+  height: 20px;
 }
 
 /*  */
@@ -628,10 +694,6 @@
   display: none;
 }
 
-.cn_container .nav-link {
-  margin-right: 1.2rem !important;
-}
-
 .mobnotification {
   display: none;
 }
@@ -721,20 +783,18 @@
 @media (max-width: 1096px) {
   .c_navbar .navbar-nav .nav-item .nav-link {
     font-size: 0.8rem;
-    margin-right: 2px;
   }
 }
 @media (max-width: 1070px) {
   .cn_container {
     max-width: 1040px !important;
   }
-  .cn_container .nav-link {
-    margin-right: 0.5rem !important;
+  .c_navbar .navbar-nav .nav-item .nav-link {
+    margin: 0 15px;
   }
 }
 
 @media (max-width: 991px) {
-
   .cart_menu {
     left: -46.9px !important;
   }

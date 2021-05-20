@@ -126,25 +126,25 @@ const Register = () => {
                         color: mode === "light" ? style.bgblack : style.bgwhite,
                       }}
                     >
-                      Already a member{" "}
+                      Already a member?{" "}
                       <Link
                         style={{
                           color:
-                            mode === "light" ? style.bgblack : style.bgdarkgreen,
+                            mode === "light" ? style.bggreen : style.bgdarkgreen,
                         }}
                         to="/login"
                       >
                         &nbsp;Login!
                       </Link>
                     </span>
-                    <div className="form_btn mt-5">
+                    <div className="form_btn reg_form_btn">
                       <button
                         onClick={() => {
                           setRegCop(true);
                         }}
                         style={{
-                          // padding: "8px 30px",
                           border: "1px solid",
+                          opacity: mode === "light" ? 1 : 0.9,
                           borderColor:
                             mode === "light"
                               ? style.bggreen
@@ -153,9 +153,10 @@ const Register = () => {
                           color:
                             mode === "light"
                               ? style.bggreen
-                              : style.bgdarkgreen,
+                              : style.bgwhite,
                         }}
-                        className="cus_btn1"
+                        className={`cus_btn1 reg_btn1
+                        ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                       >
                         <img
                           className="me-2"
@@ -175,13 +176,13 @@ const Register = () => {
         ) : (
           <CorporateRegisterStepper />
         )}
-        <div className="login_img_content">
+        <div className="login_img_content reg_img_content">
           <div>
             <Swiper pagination spaceBetween={50} slidesPerView={1}>
               <SwiperSlide
                 style={{
                   width: "546px",
-                  height: "475px",
+                  height: "557px",
                   marginRight: "50px ",
                 }}
               >

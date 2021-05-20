@@ -63,6 +63,8 @@ const CorporateUpload = () => {
             <p
               style={{
                 color: mode === "light" ? style.bgblack : style.bgwhite,
+                fontWeight:"600",
+                opacity:"0.9",
               }}
             >
               Please enter your email address and password to login..
@@ -72,7 +74,7 @@ const CorporateUpload = () => {
           <div className="bussines_container">
             <div className="bussines_main_div">
               <div>
-                <h6>
+                <h6 className="mt-3 mb-3">
                   <strong
                     style={{
                       color:
@@ -82,7 +84,10 @@ const CorporateUpload = () => {
                     UPLOAD COMPANY DOCUMENTS
                   </strong>
                 </h6>
-                <p>
+                <p
+                style={{ fontWeight:"600",
+                opacity:"0.9",}}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
                   cupiditate accusantium quibusdam facere.
                 </p>

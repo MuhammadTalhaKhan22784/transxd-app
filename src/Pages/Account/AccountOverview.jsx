@@ -9,7 +9,14 @@ import "./styles/Account.css";
 const AccountOverview = () => {
   const { color } = useContext(ColorContext);
   let { mode } = color;
-
+  let style = {
+    bggreen: "#27BDAD",
+    bgblue: "#3C66C4",
+    bgred: "#CF4332",
+    bgblack: "#0E2725",
+    bgwhite: "#FFFFFF",
+    bgdarkgreen: "#72FAEC",
+  };
   const [state, setState] = React.useState({
     checkedA: true,
     // checkedB: true,
@@ -63,7 +70,40 @@ const AccountOverview = () => {
                 <h6 style={{ color: mode === "dark" ? "white" : "black" }}>
                   Your Balance
                 </h6>
-                <div>
+               
+               
+              <div className="p_input">
+                <select
+                  className="cus_select"
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgwhite,
+                    paddingLeft: "10px",
+                  }}
+                >
+                  <option
+                    style={{
+                      color:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                    }}
+                    selected
+                  >
+                    Country of Residence
+                  </option>
+                  <option
+                    style={{
+                      color:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                    }}
+                    value="dasda"
+                  >
+                    option a
+                  </option>
+                </select>
+              </div>
+
+
+                {/* yaha select box lagega */}
+                {/* <div>
                   <input
                     // onChange={onChange}
                     // checked={language.id_ === english.id_}
@@ -90,7 +130,7 @@ const AccountOverview = () => {
                     <div className="subscribe">USD</div>
                     <div className="alright">XOF</div>
                   </label>
-                </div>
+                </div> */}
               </div>
               <div
                 style={{

@@ -11,6 +11,7 @@ import { useHistory } from "react-router";
 import CooperateRegistration from "../../Pages/Register/CorporateRegistration";
 import CorporateUpload from "../../Pages/Register/CorporateUpload";
 import "./CorporateRegStepper.css"
+import { Link } from "react-router-dom";
 const QontoConnector = withStyles({
   alternativeLabel: {
     top: 10,
@@ -66,6 +67,7 @@ const CustomStepper = withStyles((theme) => {
     root: {
       "& .text": {
         color: (props) => props.color,
+        fontWeight:"600",
       },
     },
   };
@@ -166,33 +168,10 @@ export default function CorporateRegisterStepper() {
           ))}
         </Stepper>
         <div>
-          <div>
+          <div className="reg_steppeer_btn">
             <Typography className={classes.instructions}>
               {getStepContent(activeStep)}
             </Typography>
-              {/* <Button
-              disabled={activeStep === 0}
-              onClick={handleBack}
-              className={
-                  color.mode === "dark"
-                  ? "stepper_CBtn_back"
-                  : "l_stepper_CBtn_back"
-                }
-                >
-                Back
-            </Button> */}
-              {/* <Button
-              variant="contained"
-              color="primary"
-              onClick={handleNext}
-              className={
-                  color.mode === "dark"
-                  ? "stepper_CBtn_nxt"
-                  : "l_stepper_CBtn_nxt"
-                }
-            >
-              {activeStep === steps.length - 1 ? "Submit" : "Next"}
-            </Button> */}
               <button
                 onClick={handleNext}
                 className={
@@ -201,16 +180,33 @@ export default function CorporateRegisterStepper() {
                     : "l_stepper_CBtn_nxt"
                 }
                 style={{
-                  padding: "8px 120px",
-                  border: "none",
+                  border: "1px solid",
                   backgroundColor:
                     mode === "light" ? style.bggreen : style.bgdarkgreen,
                   color: mode === "light" ? style.bgwhite : style.bgblack,
                 }}
-                className="cus_btn1"
+                className={`cus_stepper_btn
+                  ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
               >
-                {activeStep === steps.length - 1 ? "Submit" : "Next"}
+                {activeStep === steps.length - 1 ? "Submit Request" : "Next"}
               </button>
+              <span
+                      className="s_label mt-2"
+                      style={{
+                        color: mode === "light" ? style.bgblack : style.bgwhite,
+                      }}
+                    >
+                      Sign Up as an{" "}
+                      <Link
+                        style={{
+                          color:
+                            mode === "light" ? style.bggreen : style.bgdarkgreen,
+                        }}
+                        to="/register"
+                      >
+                        &nbsp;Indivisual user!
+                      </Link>
+                    </span>
             </div>
           {/* )} */}
         </div>

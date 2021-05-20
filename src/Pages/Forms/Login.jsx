@@ -156,13 +156,13 @@ const Login = () => {
               <div className="form_btn">
                 <button
                   style={{
-                    padding: "8px 80px",
-                    border: "none",
-                    backgroundColor:
-                      mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bgwhite : style.bgblack,
+                    // padding: "8px 80px",
+                    width:"170px",
+                    border: "1px solid",
+                   
                   }}
-                  className="cus_btn1 fw-bold"
+                  className={`cus_btn1
+                  ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                 >
                   Login
                 </button>
@@ -176,7 +176,7 @@ const Login = () => {
                 Not a member?{" "}
                 <Link
                   style={{
-                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
                   to="/register"
                 >

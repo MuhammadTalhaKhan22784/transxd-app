@@ -155,14 +155,15 @@ const SimplePricing = () => {
                   mode === "light" ? style.bggreen : style.bgdarkgreen,
                 color: mode === "light" ? style.bgblack : style.bgdarkgreen,
               }}
-              className="cus_btn1"
+              className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
             >
               Sign-up today!
             </button>
           </div>
           <div className="sp_rightbox" style={{ border: "1px solid #27BDAD" }}>
             <h2
-            className="s_none"
+              className="s_none"
               style={{
                 color: mode === "light" ? style.bggreen : style.bgdarkgreen,
               }}
@@ -282,7 +283,8 @@ const SimplePricing = () => {
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
                     color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                 >
                   Apply for a card
                 </button>
@@ -400,7 +402,8 @@ const SimplePricing = () => {
                       mode === "light" ? style.bggreen : style.bgdarkgreen,
                     color: mode === "light" ? style.bgblack : style.bgdarkgreen,
                   }}
-                  className="cus_btn1"
+                  className={`cus_btn1
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                 >
                   Apply for a card
                 </button>

@@ -31,12 +31,12 @@ const Forget = () => {
     <React.Fragment>
       <div className="main_form">
         <div className="login_form">
-          <div className="s_form">
+          <div className="s_form f_form">
             <div className="s_text">
               <h2
                 className="fw-bold mt-4"
                 style={{
-                  color: mode === "light" ? style.bggreen : style.bgwhite,
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
                 Forgot{" "}
@@ -53,6 +53,7 @@ const Forget = () => {
               <p
                 style={{
                   width: "90%",
+                  margin:"0 auto",
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
@@ -78,7 +79,7 @@ const Forget = () => {
               <div className="form_btn ">
                 <button
                   style={{
-                    padding: "10px 40px",
+                    padding: "7px 40px",
                     border: "1px solid",
                     borderColor:
                       mode === "light" ? style.bggreen : "transparent",
@@ -86,7 +87,8 @@ const Forget = () => {
                       mode === "light" ? style.bgwhite : style.bglightgreen,
                     color: mode === "light" ? style.bggreen : style.bgdarkgreen,
                   }}
-                  className="cus_btn1 mt-4"
+                  className={`cus_btn1 mt-4
+                  ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                 >
                   Get Majic Link
                 </button>

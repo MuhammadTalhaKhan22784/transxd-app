@@ -72,8 +72,15 @@
 .blnce_head_div,
 .wallet_card_div {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
+
+.blnce_head_div .p_input {
+  width: max-content;
+  height: 30px;
+}
+
 .e_wallet,
 .card_blnce {
   margin-top: 10px;

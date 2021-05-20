@@ -1,16 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ColorContext } from "../Context/Context";
 import { Link } from "react-router-dom";
-//
-// import { Icon } from "@iconify/react";
-// import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
-
 import "./style.css";
-// import LanguageDropdown from "../Components/Dropdown/LanguageDropdown.jsx";
-// import NotificationDropdown from "../Components/Dropdown/NotificationDropdown";
-// import CartDropdown from "../Components/Dropdown/CartDropdown";
-// import SearchDropdown from "../Components/Dropdown/SearchDropdown";
-// import UserDropdown from "../Components/Dropdown/UserDropdown";
 
 // assets
 import transxdlogo from "../Assets/transxdlogo.png";
@@ -42,15 +33,21 @@ import settingiconl from "../Assets/settingiconl.png";
 import logouticonl from "../Assets/logouticonl.png";
 import logouticond from "../Assets/logouticond.png";
 import UserDropdown from "../Components/Dropdown/UserDropdown";
+import { makeStyles } from "@material-ui/core";
 
-// import MobSearchDropdown from "Components/Dropdown/MobSearchDropdown";
-
+// const useStyles = makeStyles({
+//   root: {
+//     "&:hover": {
+//       color: (props) => `${props.color} !important`,
+//       backgroundColor: (props) => `${props.backgroundColor} !important`,
+//     },
+//   },
+// });
 const Navbar = () => {
   let [isActive, setIsActive] = useState(false);
   let [open, setOpen] = useState(false);
   const [showMode, setShowMode] = useState(false);
   const { color, setColor } = useContext(ColorContext);
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -103,6 +100,10 @@ const Navbar = () => {
     bgdarkgreen: "#72FAEC",
     bglightgreen: "#0A1716",
   };
+  // const classes = useStyles({
+  //   color: mode === "light" ? "#000" : "#fff",
+  //   backgroundColor: mode === "light" ? "#FFFFFF" : "#0E2725",
+  // });
 
   return (
     <React.Fragment>
@@ -190,7 +191,6 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="d-flex align-items-center">
-              {/* <MobSearchDropdown /> */}
               <button
                 className="navbar-toggler"
                 type="button"
@@ -206,10 +206,7 @@ const Navbar = () => {
               </button>
             </div>
           )}
-          <div
-            className="collapse desk_nav_collapse navbar-collapse"
-            // id="navbarSupportedContent"
-          >
+          <div className="collapse desk_nav_collapse navbar-collapse">
             <ul
               className="navbar-nav align-items-center me-auto mb-2 mb-lg-0"
               style={{
@@ -312,19 +309,18 @@ const Navbar = () => {
                     <Link to="/register">
                       <button
                         style={{
-                          backgroundColor: "transparent",
+                          // backgroundColor: style.bggreen,
                           border: "1px solid",
                           borderColor:
                             mode === "light"
                               ? style.bggreen
                               : style.bgdarkgreen,
-                          color:
-                            mode === "light"
-                              ? style.bggreen
-                              : style.bgdarkgreen,
+
                           padding: "8px 20px",
                         }}
-                        className="cus_btn1 me-2"
+                        // className={`cus_btn1 me-2 ${classes.root}`}
+                        className={`cus_btn1 me-2
+                          ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                       >
                         Sign up
                       </button>
@@ -334,19 +330,15 @@ const Navbar = () => {
                     <Link to="/login">
                       <button
                         style={{
-                          backgroundColor: "transparent",
                           border: "1px solid",
                           borderColor:
-                            mode === "light"
-                              ? style.bggreen
-                              : style.bgdarkgreen,
-                          color:
-                            mode === "light"
-                              ? style.bggreen
-                              : style.bgdarkgreen,
+                          mode === "light"
+                            ? style.bggreen
+                            : style.bgdarkgreen,
                           padding: "8px 28px",
                         }}
-                        className="cus_btn1"
+                        className={`cus_btn1
+                        ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                       >
                         Login
                       </button>
