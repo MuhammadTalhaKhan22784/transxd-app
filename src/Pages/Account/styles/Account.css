@@ -69,6 +69,18 @@ border: none !important;
   display: flex;
   justify-content: space-between;
 }
+.blnce_head_div,
+.wallet_card_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blnce_head_div .p_input {
+  width: max-content;
+  height: 25px;
+  padding: 0 7px;
+}
 .blnce_main_div {
   width: 47%;
   padding: 5px 15px;
@@ -81,9 +93,9 @@ border: none !important;
   padding: 15px;
   margin-top: 10px;
 }
-.blnce_head_div > h6 {
+/* .blnce_head_div > h6 {
   margin-top: 8px;
-}
+} */
 .blnce_head_div,
 .wallet_card_div {
   display: flex;
