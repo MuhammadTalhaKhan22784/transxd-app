@@ -313,7 +313,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 8rem;
+  padding-left: 11rem;
   padding-bottom: 3rem;
 }
 
@@ -326,7 +326,7 @@
 }
 
 .pd_left h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 3rem;
   margin: 1rem 0;

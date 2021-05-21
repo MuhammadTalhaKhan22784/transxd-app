@@ -9,7 +9,7 @@ import { ColorContext } from "../../Context/Context";
 import { useHistory } from "react-router";
 import CooperateRegistration from "../../Pages/Register/CorporateRegistration";
 import CorporateUpload from "../../Pages/Register/CorporateUpload";
-import "./CorporateRegStepper.css"
+import "./CorporateRegStepper.css";
 import { Link } from "react-router-dom";
 const QontoConnector = withStyles({
   alternativeLabel: {
@@ -19,7 +19,7 @@ const QontoConnector = withStyles({
   },
   active: {
     "& $line": {
-      borderColor: ({ color }) => color.mode,
+      // borderColor: ({ color }) => color.mode,
       borderColor: "#72FAEC",
       //    color: console.log(Color)
     },
@@ -66,7 +66,7 @@ const CustomStepper = withStyles((theme) => {
     root: {
       "& .text": {
         color: (props) => props.color,
-        fontWeight:"600",
+        fontWeight: "600",
       },
     },
   };
@@ -111,36 +111,28 @@ export default function CorporateRegisterStepper() {
     }
   };
 
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
-  // const handleReset = () => {
-  //     setActiveStep(0);
-  // };
-
   return (
     <div className="cr_stepper">
-       <div className="s_text">
-              <h2
-                className="mt-4 fw-bold"
-                style={{
-                  color: mode === "light" ? style.bgblack : style.bgwhite,
-                }}
-              >
-                Corporate{" "}
-                <strong
-                  style={{
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
-                  }}
-                >
-                  Registration!
-                </strong>
-              </h2>
-            </div>
+      <div className="s_text">
+        <h2
+          className="mt-4 fw-bold"
+          style={{
+            color: mode === "light" ? style.bgblack : style.bgwhite,
+          }}
+        >
+          Corporate{" "}
+          <strong
+            style={{
+              color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+            }}
+          >
+            Registration!
+          </strong>
+        </h2>
+      </div>
       <div className={classes.root}>
         <Stepper
-        className="reg_stepper"
+          className="reg_stepper"
           alternativeLabel
           activeStep={activeStep}
           connector={<QontoConnector color={color} />}
@@ -168,42 +160,41 @@ export default function CorporateRegisterStepper() {
             <Typography className={classes.instructions}>
               {getStepContent(activeStep)}
             </Typography>
-              <button
-                onClick={handleNext}
-                className={
-                  color.mode === "dark"
-                    ? "stepper_CBtn_nxt"
-                    : "l_stepper_CBtn_nxt"
-                }
-                style={{
-                  // border: "1px solid",
-                  backgroundColor:
-                    mode === "light" ? style.bggreen : style.bgdarkgreen,
-                  color: mode === "light" ? style.bgwhite : style.bgblack,
-                }}
-                className={`cus_stepper_btn
+            <button
+              onClick={handleNext}
+              // className={
+              //   color.mode === "dark"
+              //     ? "stepper_CBtn_nxt"
+              //     : "l_stepper_CBtn_nxt"
+              // }
+              style={{
+                border: "1px solid",
+                backgroundColor:
+                  mode === "light" ? style.bggreen : style.bgdarkgreen,
+                color: mode === "light" ? style.bgwhite : style.bgblack,
+              }}
+              className={`cus_stepper_btn
                   ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
+            >
+              {activeStep === steps.length - 1 ? "Submit Request" : "Next"}
+            </button>
+            <span
+              className="s_label mt-2"
+              style={{
+                color: mode === "light" ? style.bgblack : style.bgwhite,
+              }}
+            >
+              Sign Up as an{" "}
+              <Link
+                style={{
+                  color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                }}
+                to="/register"
               >
-                {activeStep === steps.length - 1 ? "Submit Request" : "Next"}
-              </button>
-              <span
-                      className="s_label mt-2"
-                      style={{
-                        color: mode === "light" ? style.bgblack : style.bgwhite,
-                      }}
-                    >
-                      Sign Up as an{" "}
-                      <Link
-                        style={{
-                          color:
-                            mode === "light" ? style.bggreen : style.bgdarkgreen,
-                        }}
-                        to="/register"
-                      >
-                        &nbsp;Indivisual user!
-                      </Link>
-                    </span>
-            </div>
+                &nbsp;Indivisual user!
+              </Link>
+            </span>
+          </div>
           {/* )} */}
         </div>
       </div>

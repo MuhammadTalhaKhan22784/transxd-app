@@ -1,6 +1,5 @@
 import React, { useState, useContext, useLayoutEffect } from 'react'
 import UserCard from '../../Components/AccountComp/UserCard'
-import lock from '../../Assets/Icon feather-lock.png'
 import lockL from '../../Assets/Icon feather-lockl.png'
 import lockd from '../../Assets/Icon feather-lockd.png'
 import hide from '../../Assets/Component 37 – 5.png'

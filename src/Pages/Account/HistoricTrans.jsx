@@ -27,8 +27,8 @@ const HistoricTrans = () => {
                         <h5 style={{ color: mode === 'dark' ? 'white' : 'black' }}>YOUR TRANSACTION</h5>
                         <div className="select_transaction_div">
                             <select style={{
-                                color: mode == 'light' ? '#27BDAD' : '#72FAEC',
-                                backgroundColor: mode == 'light' ? '#E9F8F7' : 'transparent',
+                                color: mode === 'light' ? '#27BDAD' : '#72FAEC',
+                                backgroundColor: mode === 'light' ? '#E9F8F7' : 'transparent',
                                 border: `1px solid  ${mode === 'light' ? '#27BDAD' : '#72FAEC'}`
                             }}
                                 name="" id="">

@@ -7,7 +7,7 @@ import userprofileimg from "../../Assets/userprofileimg.png";
 import downicon from "../../Assets/downicon.png";
 
 const UserDropdown = ({ logout }) => {
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
 
   let { mode } = color;
   let style = {

@@ -10,7 +10,7 @@ import path from "../../Assets/Path 7381.png";
 // import baselineKeyboardArrowDown from "@iconify-icons/ic/baseline-keyboard-arrow-down";
 
 const LanguageDropdown = () => {
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

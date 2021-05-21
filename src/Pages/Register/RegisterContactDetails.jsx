@@ -17,14 +17,9 @@ const RegisterContactDetails = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);
 
-  const showPassword = () => {
-    setPass(!pass);
-  };
-
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

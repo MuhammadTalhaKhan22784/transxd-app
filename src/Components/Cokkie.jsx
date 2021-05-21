@@ -5,7 +5,7 @@ import cokkie from "../Assets/Group 4235.png";
 import crosslight from "../Assets/Group 4241.png";
 
 const Cokkie = () => {
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

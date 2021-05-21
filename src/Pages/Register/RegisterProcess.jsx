@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
-import { useHistory } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 
 import "./Register.css";
@@ -14,21 +13,13 @@ import SwiperCore, { Pagination } from "swiper";
 SwiperCore.use([Pagination]);
 
 const RegisterProcess = () => {
-  let [load, setLoad] = useState(false);
+  let [load] = useState(false);
 
-  
-    useLayoutEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
-  const [show, setShow] = useState(true);
-  const [pass, setPass] = useState(false);
-  const [showComp, setShowComp] = useState(false);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  const showPassword = () => {
-    setPass(!pass);
-  };
-
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",
@@ -41,87 +32,44 @@ const RegisterProcess = () => {
 
   return (
     <React.Fragment>
-      {/* <div className="main_form"> */}
-      {showComp === false ? (
-        <div className="login_form">
-          <div className="s_form">
-            <div className="s_text">
-              <h2
-                className="mt-4"
+      <div className="login_form">
+        <div className="s_form">
+          <div className="s_text">
+            <h2
+              className="mt-4"
+              style={{
+                color: mode === "light" ? style.bgblack : style.bgwhite,
+              }}
+            >
+              Register with{" "}
+              <strong
                 style={{
-                  color: mode === "light" ? style.bgblack : style.bgwhite,
+                  color: style.bggreen,
                 }}
               >
-                Register with{" "}
-                <strong
-                  style={{
-                    color: style.bggreen,
-                  }}
-                >
-                  Transxnd!
-                </strong>
-              </h2>
-            </div>
+                Transxnd!
+              </strong>
+            </h2>
+          </div>
 
-            <div style={{ marginTop: "8rem",height:"70px" }}>
-              {mode === "light" ? (
-                <img src={!load ? loader1L : loader2L} alt="..." />
-              ) : (
-                <img src={!load ? loaderd1 : loaderd2} alt="..." />
-              )}
-            </div>
-            <div className="s_para mt-4">
-              <p
-                style={{
-                  color: mode === "light" ? style.bgblack : style.bgwhite,
-                }}
-              >
-                Please enter your email address and password to login..
-              </p>
-            </div>
-{/* 
-            <form className="s_form_fields">
-              <div className="form_btn mt-5">
-                <button
-                  onClick={() => {
-                    setShowComp(true);
-                  }}
-                  style={{
-                    padding: "8px 50px",
-                    border: "none",
-                    backgroundColor:
-                      mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bgwhite : style.bgblack,
-                  }}
-                  className="cus_btn1"
-                >
-                  Register
-                </button>
-              </div>
-              <span
-                className="s_label mt-4"
-                style={{
-                  color: mode === "light" ? style.bgblack : style.bgwhite,
-                }}
-              >
-                Not a member?{" "}
-                <Link
-                  style={{
-                    color: mode === "light" ? style.bgblack : style.bggreen,
-                  }}
-                  to="/login"
-                >
-                  &nbsp;Register Now!
-                </Link>
-              </span>
-            </form>
-        */}
+          <div style={{ marginTop: "8rem", height: "70px" }}>
+            {mode === "light" ? (
+              <img src={!load ? loader1L : loader2L} alt="..." />
+            ) : (
+              <img src={!load ? loaderd1 : loaderd2} alt="..." />
+            )}
+          </div>
+          <div className="s_para mt-4">
+            <p
+              style={{
+                color: mode === "light" ? style.bgblack : style.bgwhite,
+              }}
+            >
+              Please enter your email address and password to login..
+            </p>
           </div>
         </div>
-      ) : (
-        <RegisterProcess />
-      )}
-      {/* </div> */}
+      </div>
     </React.Fragment>
   );
 };

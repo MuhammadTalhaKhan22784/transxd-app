@@ -1,11 +1,11 @@
-import React, { useState, useLayoutEffect, useContext } from "react";
+import React, { useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
 import "./SimplePricing.css";
 import dot from "../../Assets/dot.png";
 import debit1 from "../../Assets/debit1.png";
 import debit2 from "../../Assets/debit2.png";
 const SimplePricing = () => {
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

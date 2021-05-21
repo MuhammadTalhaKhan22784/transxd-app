@@ -18,7 +18,7 @@ const Forget = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

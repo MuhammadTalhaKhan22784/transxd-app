@@ -3,7 +3,6 @@ import './style/otp.css'
 // assets 
 import edit from '../Assets/editL.png'
 import editD from '../Assets/Icon awesome-editd.png'
-import editL from '../Assets/Icon awesome-edit.png'
 import mobmsg from '../Assets/Group 4532.png'
 import mobmsgL from '../Assets/Group 4532l.png'
 import email from '../Assets/Group 4528.png'

@@ -22,7 +22,7 @@ const CorporateUpload = () => {
     setImg(filter);
   };
 
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

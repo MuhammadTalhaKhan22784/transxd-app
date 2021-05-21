@@ -33,16 +33,7 @@ import settingiconl from "../Assets/settingiconl.png";
 import logouticonl from "../Assets/logouticonl.png";
 import logouticond from "../Assets/logouticond.png";
 import UserDropdown from "../Components/Dropdown/UserDropdown";
-import { makeStyles } from "@material-ui/core";
 
-// const useStyles = makeStyles({
-//   root: {
-//     "&:hover": {
-//       color: (props) => `${props.color} !important`,
-//       backgroundColor: (props) => `${props.backgroundColor} !important`,
-//     },
-//   },
-// });
 const Navbar = () => {
   let [isActive, setIsActive] = useState(false);
   let [open, setOpen] = useState(false);
@@ -68,7 +59,7 @@ const Navbar = () => {
   const handleDark = () => {
     localStorage.setItem("theme", "dark");
     let set = localStorage.getItem("theme");
-    console.log(set);
+    // console.log(set);
     setColor({
       type: "Dark",
       payload: set,
@@ -79,7 +70,7 @@ const Navbar = () => {
   const handleLight = () => {
     localStorage.setItem("theme", "light");
     let set = localStorage.getItem("theme");
-    console.log(set);
+    // console.log(set);
 
     setColor({
       type: "light",

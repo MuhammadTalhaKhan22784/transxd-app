@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 import RegisterPersonalDetais from "./RegisterPersonalDetais";
 import CorporateRegisterStepper from "../../Components/RegistrationStepper.jsx/CorporateRegStepper";
@@ -30,14 +30,10 @@ const Register = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);
   const [regCop, setRegCop] = useState(false);
-  const showPassword = () => {
-    setPass(!pass);
-  };
 
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

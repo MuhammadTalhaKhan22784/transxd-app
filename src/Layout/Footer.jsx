@@ -29,7 +29,7 @@ const Footer = () => {
   const handleDark = () => {
     localStorage.setItem("theme", "dark");
     let set = localStorage.getItem("theme");
-    console.log(set);
+    // console.log(set);
     setColor({
       type: "Dark",
       payload: set,
@@ -40,7 +40,7 @@ const Footer = () => {
   const handleLight = () => {
     localStorage.setItem("theme", "light");
     let set = localStorage.getItem("theme");
-    console.log(set);
+    // console.log(set);
 
     setColor({
       type: "light",

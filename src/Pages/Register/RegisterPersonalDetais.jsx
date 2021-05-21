@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 // assets
 
@@ -23,8 +23,6 @@ const RegisterPersonalDetais = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  let history = useHistory();
-  const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);
 
@@ -87,7 +85,6 @@ const RegisterPersonalDetais = () => {
               <div className="inline_input">
                 <div
                   className="p_input"
-                  style={{ width: "93%" }}
                   style={{ width: "43%" }}
                 >
                   <img src={userimg} alt="..." />
@@ -104,7 +101,6 @@ const RegisterPersonalDetais = () => {
                 </div>
                 <div
                   className="p_input"
-                  style={{ width: "93%" }}
                   style={{ width: "48%" }}
                 >
                   <img src={userimg} alt="..." />

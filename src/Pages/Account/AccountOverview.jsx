@@ -19,15 +19,7 @@ const AccountOverview = () => {
     bgdarkgreen: "#72FAEC",
     bglightgreen: "#0E2725",
   };
-  const [state, setState] = React.useState({
-    checkedA: true,
-    // checkedB: true,
-  });
-
-  const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
-
+ 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -72,63 +64,61 @@ const AccountOverview = () => {
                 <h6 style={{ color: mode === "dark" ? "white" : "black" }}>
                   Your Balance
                 </h6>
-             
+
                 <div className="p_input">
-                <select
-                  className="cus_select"
-                  style={{
-                    color: mode == "light" ? "#27BDAD" : "#72FAEC",
-                  }}
-                >
-                  <option
+                  <select
+                    className="cus_select"
                     style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      color: mode === "light" ? "#27BDAD" : "#72FAEC",
                     }}
-                    selected
                   >
-                    GBP
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    EUR
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    XOF
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    USD
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    NGN
-                  </option>
-                </select>
-              </div>
-
-
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      selected
+                    >
+                      GBP
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      EUR
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      XOF
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      USD
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      NGN
+                    </option>
+                  </select>
+                </div>
               </div>
               <div
                 style={{
@@ -186,63 +176,61 @@ const AccountOverview = () => {
                 <h6 style={{ color: mode === "dark" ? "white" : "black" }}>
                   Your Summery
                 </h6>
-                   
+
                 <div className="p_input">
-                <select
-                  className="cus_select"
-                  style={{
-                    color: mode == "light" ? "#27BDAD" : "#72FAEC",
-                  }}
-                >
-                  <option
+                  <select
+                    className="cus_select"
                     style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      color: mode === "light" ? "#27BDAD" : "#72FAEC",
                     }}
-                    selected
                   >
-                    Funds Transfer
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    Funds Transfer 2
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    Funds Transfer 3
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                    Funds Transfer 4
-                  </option>
-                  <option
-                    style={{
-                      color:
-                        mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    }}
-                    value="dasda"
-                  >
-                  Funds Transfer 5
-                  </option>
-                </select>
-              </div>
-
-
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      selected
+                    >
+                      Funds Transfer
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      Funds Transfer 2
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      Funds Transfer 3
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      Funds Transfer 4
+                    </option>
+                    <option
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                      value="dasda"
+                    >
+                      Funds Transfer 5
+                    </option>
+                  </select>
+                </div>
               </div>
               <Chart />
             </div>
@@ -260,11 +248,12 @@ const AccountOverview = () => {
               <div className="select_transaction_div">
                 <select
                   style={{
-                    color: mode == "light" ? "#27BDAD" : "#72FAEC",
+                    color: mode === "light" ? "#27BDAD" : "#72FAEC",
                     backgroundColor:
-                      mode == "light" ? "#E9F8F7" : "transparent",
-                    border: `1px solid  ${mode === "light" ? "#27BDAD" : "#72FAEC"
-                      }`,
+                      mode === "light" ? "#E9F8F7" : "transparent",
+                    border: `1px solid  ${
+                      mode === "light" ? "#27BDAD" : "#72FAEC"
+                    }`,
                   }}
                 >
                   <option value="Card Transaction">Card Transaction</option>

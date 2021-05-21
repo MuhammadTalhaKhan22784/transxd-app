@@ -3,7 +3,7 @@ import { ColorContext } from "../../Context/Context";
 
 import "./style.css";
 const LangSwitch = ({id,...props}) => {
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

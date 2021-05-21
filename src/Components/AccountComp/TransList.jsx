@@ -5,24 +5,24 @@ import down from "../../Assets/Group 4451.png";
 
 const listData = [
   {
-    id: 'HVPACHV134',
+    id: "HVPACHV134",
     img: up,
-    source: 'Card',
-    date: 'Dec 23 2020 | 6:04:47 PM',
-    amount: '12132',
-    type: 'Credit',
-    balance: '3232'
+    source: "Card",
+    date: "Dec 23 2020 | 6:04:47 PM",
+    amount: "12132",
+    type: "Credit",
+    balance: "3232",
   },
   {
-    id: 'HVPACHV134',
+    id: "HVPACHV134",
     img: down,
-    source: 'Card',
-    date: 'Dec 23 2020 | 6:04:47 PM',
-    amount: '12132',
-    type: 'Credit',
-    balance: '3232'
+    source: "Card",
+    date: "Dec 23 2020 | 6:04:47 PM",
+    amount: "12132",
+    type: "Credit",
+    balance: "3232",
   },
-]
+];
 
 const TransList = () => {
   const { color } = useContext(ColorContext);
@@ -44,7 +44,7 @@ const TransList = () => {
       {listData.map((val, i) => (
         <>
           <div
-          key={i}
+            key={i}
             className="t_cards mt-4"
             style={{ color: mode === "light" ? style.bgblack : style.bgwhite }}
           >

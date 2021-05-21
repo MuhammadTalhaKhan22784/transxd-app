@@ -22,7 +22,6 @@ import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-// import 'swiper/swiper-bundle.min.css'
 import "swiper/swiper-bundle.css";
 SwiperCore.use([Pagination]);
 
@@ -38,7 +37,7 @@ const Login = () => {
     setPass(!pass);
   };
 
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

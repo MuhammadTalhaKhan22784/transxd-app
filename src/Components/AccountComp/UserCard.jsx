@@ -51,10 +51,10 @@ const UserCard = () => {
                             backgroundColor: mode === 'light' ? 'white' : 'transparent',
                             color: mode === 'dark' ? style.bgblnce : '', border: `1px solid ${style.bgblnce}`
                         }}
-                    >
+                    > 
                         <p>TCN #123456789#</p>
                     </div>
-                    <div className="user_email" style={{ color: mode === 'dark' ? style.bgblnce : '' }}>
+                    <div className="user_email" style={{ color: mode === 'dark' ? '#72faec' : '#FFFFFF' }}>
                         <p>username@123gmail.com</p>
                     </div>
                     <div className="user_balance_div" style={{ backgroundColor: style.bgblnce, color: style.bgClr }}>

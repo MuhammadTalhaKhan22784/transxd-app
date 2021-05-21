@@ -1,8 +1,6 @@
-import React, { useState, useLayoutEffect, useContext } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
 import LanguageDropdown from "../../Components/Dropdown/LanguageDropdown";
-import CorporateUpload from "./CorporateUpload";
 // assets
 import tick from "../../Assets/Path 7452.png";
 import cross from "../../Assets/cross.png";
@@ -23,15 +21,6 @@ const CooperateRegistration = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  let history = useHistory();
-  const [show, setShow] = useState(true);
-  const [pass, setPass] = useState(false);
-  const [showComp, setShowComp] = useState(false);
-
-  const showPassword = () => {
-    setPass(!pass);
-  };
-
   const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
@@ -45,7 +34,6 @@ const CooperateRegistration = () => {
 
   return (
     <React.Fragment>
-      {showComp === false ? (
         <div className="login_form">
           <div className="s_form">
             <div className="s_para mt-3">
@@ -172,9 +160,7 @@ const CooperateRegistration = () => {
             </form>
           </div>
         </div>
-      ) : (
-        <CorporateUpload />
-      )}
+   
     </React.Fragment>
   );
 };

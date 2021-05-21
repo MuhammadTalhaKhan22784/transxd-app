@@ -1,7 +1,6 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
-
 import "./Register.css";
 // assets
 import regimg from "../../Assets/regimg.png";
@@ -18,15 +17,10 @@ const RegisterAlmostDone = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [show, setShow] = useState(true);
-  const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);
 
-  const showPassword = () => {
-    setPass(!pass);
-  };
 
-  const { color, setColor } = useContext(ColorContext);
+  const { color } = useContext(ColorContext);
   let { mode } = color;
   let style = {
     bggreen: "#27BDAD",

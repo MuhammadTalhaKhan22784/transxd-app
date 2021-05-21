@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import edit from "../Assets/Icon awesome-edit.png";
 import editD from "../Assets/Icon awesome-edit.png";
 import loader1L from "../Assets/loader1L.png";
