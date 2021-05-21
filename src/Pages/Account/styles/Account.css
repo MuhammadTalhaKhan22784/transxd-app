@@ -82,21 +82,13 @@ border: none !important;
   margin-top: 10px;
 }
 .blnce_head_div > h6 {
-  /* margin-top: 8px; */
+  margin-top: 8px;
 }
 .blnce_head_div,
 .wallet_card_div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
-.blnce_head_div .p_input {
-  width: max-content;
-  height: 25px;
-  padding: 0 7px;
-}
-
 .e_wallet,
 .card_blnce {
   margin-top: 10px;

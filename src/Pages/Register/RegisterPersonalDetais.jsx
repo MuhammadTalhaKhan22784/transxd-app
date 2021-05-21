@@ -13,7 +13,7 @@ import locationimg from "../../Assets/locationimg.png";
 import tick from "../../Assets/Path 7452.png";
 import cross from "../../Assets/cross.png";
 import validationIcon from "../../Assets/validationIcon.png";
-
+// swiper js
 import SwiperCore, { Pagination } from "swiper";
 import RegisterContactDetails from "./RegisterContactDetails";
 SwiperCore.use([Pagination]);

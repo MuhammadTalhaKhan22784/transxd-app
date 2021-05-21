@@ -35,13 +35,13 @@ const VendorDetail = () => {
                         <div className="country_div">
                             <div className="tick_sign">
                                 <div className="country_input_slct">
-                                    <label htmlFor="loc"><img src={location} alt="" />
+                                    <label htmlFor="loc"><img src={location} alt="..." />
                                         <select name="loc" id="loc">
                                             <option value="">Country</option>
                                         </select>
                                     </label>
                                 </div>
-                                <img src={tick} alt="" />
+                                <img src={tick} alt="..." />
                             </div>
                             <div className="select_vendor_box" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#142b28' }}>
                                 <h6 style={{ color: mode === 'light' ? '' : 'white' }}>Select a vendor</h6>
@@ -62,18 +62,18 @@ const VendorDetail = () => {
                         </div>
                         <div className="bill_id_div">
                             <div className="country_input_slct">
-                                <label htmlFor="loc"><img src={bill} alt="" />
+                                <label htmlFor="loc"><img src={bill} alt="..." />
                                     <input type="text" placeholder='Enter Bill Id' />
                                 </label>
                             </div>
                             <div className="orLine_div">
-                                <img src={orline} alt="" />
+                                <img src={orline} alt="..." />
                                 <span style={{ color: mode === 'light' ? '' : 'white' }}> OR </span>
-                                <img src={orline} alt="" />
+                                <img src={orline} alt="..." />
                             </div>
                             <p className='qr_para' style={{ color: mode === 'light' ? '' : 'white' }}>SCAN QR CODE</p>
                             <div className="qrcode_div" style={{ backgroundColor: mode === 'dark' ? '#142b28' : '#E9F8F7' }}>
-                                <img src={mode==='light'? QrL:Qr} alt="" />
+                                <img src={mode==='light'? QrL:Qr} alt="..." />
                             </div>
                         </div>
                     </div>

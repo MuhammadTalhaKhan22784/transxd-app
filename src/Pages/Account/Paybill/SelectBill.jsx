@@ -43,29 +43,29 @@ const SelectBill = () => {
                     <div className="bill_type_select" style={{ backgroundColor: mode === 'light' ? '#D0F2EE' : '#142b28' }}>
                         <div className="bil_type">
                             <div className="_img_bill" style={{ border: '1px solid #27BDAD' }}>
-                                <img className='light_bil' src={mode === 'light' ? mob : mob2D} alt="" />
-                                <img className='hover_light_bil' src={mob2} alt="" />
+                                <img className='light_bil' src={mode === 'light' ? mob : mob2D} alt="..." />
+                                <img className='hover_light_bil' src={mob2} alt="..." />
                             </div>
                             <p style={{ color: mode === 'light' ? '' : 'white' }}>Mobile Recharge</p>
                         </div>
                         <div className="bil_type">
                             <div className="_img_bill" style={{ border: '1px solid #27BDAD' }}>
-                                <img className='light_bil' src={mode === 'light' ? bulb : bulb2D} alt="" />
-                                <img className='hover_light_bil' src={bulb2} alt="" />
+                                <img className='light_bil' src={mode === 'light' ? bulb : bulb2D} alt="..." />
+                                <img className='hover_light_bil' src={bulb2} alt="..." />
                             </div>
                             <p style={{ color: mode === 'light' ? '' : 'white' }}>Electricity Bills</p>
                         </div>
                         <div className="bil_type">
                             <div className="_img_bill" style={{ border: '1px solid #27BDAD' }}>
-                                <img className='light_bil' src={mode === 'light' ? water : water2D} alt="" />
-                                <img className='hover_light_bil' src={water2} alt="" />
+                                <img className='light_bil' src={mode === 'light' ? water : water2D} alt="..." />
+                                <img className='hover_light_bil' src={water2} alt="..." />
                             </div>
                             <p style={{ color: mode === 'light' ? '' : 'white' }}>Water Bills</p>
                         </div>
                         <div className="bil_type">
                             <div className="_img_bill" style={{ border: '1px solid #27BDAD' }}>
-                                <img className='light_bil' src={mode === 'light' ? gas : gas2D} alt="" />
-                                <img className='hover_light_bil' src={gas2} alt="" />
+                                <img className='light_bil' src={mode === 'light' ? gas : gas2D} alt="..." />
+                                <img className='hover_light_bil' src={gas2} alt="..." />
                             </div>
                             <p style={{ color: mode === 'light' ? '' : 'white' }}>Gas/CNG Bills</p>
                         </div>

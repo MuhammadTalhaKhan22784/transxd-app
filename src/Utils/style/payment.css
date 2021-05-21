@@ -4,6 +4,8 @@
     border-radius: 20px;
     /* height: 85vh; */
     position: relative;
+    width: 90%;
+    margin-left: 20px;
 }
 .paymen_div>h4{
     margin-top: 30px;
@@ -14,7 +16,7 @@
 }
 .amount_div{
     margin-top: 30px;
-    width: 300px;
+    width: 350px;
     border: 1px solid #27BDAD;
     padding: 20px;
     text-align: center;
@@ -60,7 +62,11 @@
         display: none;
     }
 }
-
+@media screen and (max-width:440px){
+    .amount_div{
+        width: 300px;
+    }
+}
 @media screen and (max-width:360px){
     .amount_div{
         width: 250px;

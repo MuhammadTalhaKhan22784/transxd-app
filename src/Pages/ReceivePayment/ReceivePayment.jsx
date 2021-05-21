@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
-
 import "./ReceivePayment.css";
+// assets
 import dot from "../../Assets/dot.png";
 import rpimg from "../../Assets/rpimg.png";
 const ReceivePayment = () => {

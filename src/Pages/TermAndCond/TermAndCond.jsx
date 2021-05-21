@@ -42,8 +42,6 @@ const TermAndCond = () => {
 
   const handleTransalte = (event) => {
     let filter = termsData.filter((val) => val.id === event);
-    // console.log(event)
-    // console.log(filter)
     setTrans(filter);
     console.log(trans);
   };
@@ -97,11 +95,6 @@ const TermAndCond = () => {
             { trans.map((val,i) => (
               <div key={i}>
                 <p> {val.para} </p>
-                {/* <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p> */}
               </div>
             ))}
           </div>

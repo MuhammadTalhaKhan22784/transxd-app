@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* border: 2px solid red; */
 }
 
 .f_form {
@@ -299,7 +298,6 @@
 .sc_label > input[type="checkbox"] + *::before {
   content: "";
   display: inline-block;
-  /* vertical-align: bottom; */
   width: 1rem;
   height: 1rem;
   background-color: white;
@@ -308,8 +306,6 @@
   position: absolute;
   left: 0;
   top: 1px;
-
-  /* margin-right: 10px; */
 }
 
 .sc_label > input[type="checkbox"]:checked + *::before {

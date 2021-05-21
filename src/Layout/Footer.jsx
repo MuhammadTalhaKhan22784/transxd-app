@@ -18,11 +18,9 @@ import darkimg from "../Assets/darkimg.png";
 import copyright from "../Assets/copyright.png";
 import copyrightmb from "../Assets/copyrightmb.png";
 import "./style.css";
-import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import LangSwitch from "../Components/Swich/LangSwitch";
 const Footer = () => {
-  let history = useHistory();
   const [showMode, setShowMode] = useState(false);
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -231,7 +229,7 @@ const Footer = () => {
           </div>
           <div className="fc_3">
             <h2
-              className="fs-4"
+              className="fs-5"
               style={{
                 color: mode === "light" ? style.bggreen : style.bgwhite,
               }}

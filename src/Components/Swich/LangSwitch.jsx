@@ -17,15 +17,13 @@ const LangSwitch = ({id,...props}) => {
     <React.Fragment>
       <div>
         <input
-          // onChange={onChange}
-          // checked={language.id_ === english.id_}
           type="checkbox"
           id={id}
           className="lol-checkbox"
         />
         <label
           className="button"
-          for={id}
+          htmlFor={id}
           style={{
             border: "1px solid",
             borderColor: mode === "light" ? style.bggreen : style.bgdarkgreen,

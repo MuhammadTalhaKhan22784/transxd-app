@@ -1,8 +1,9 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
+import RegisterPersonalDetais from "./RegisterPersonalDetais";
+import CorporateRegisterStepper from "../../Components/RegistrationStepper.jsx/CorporateRegStepper";
 
-// import "./Forms.css";
 // assets
 
 import fbIcon from "../../Assets/fb_icon.png";
@@ -14,21 +15,14 @@ import slider3bg from "../../Assets/slider3bg.png";
 import slider4bg from "../../Assets/slider4bg.png";
 import slider5bg from "../../Assets/slider5bg.png";
 import slider6bg from "../../Assets/slider6bg.png";
-
 import mailIcon from "../../Assets/mail-icon.png";
 import iconBriefcase from "../../Assets/icon-briefcase.png";
-import featherMail from "../../Assets/feather-mail.png";
-import featherLock from "../../Assets/feather-lock.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
-
+// swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-// import 'swiper/swiper-bundle.min.css'
 import "swiper/swiper-bundle.css";
-import RegisterPersonalDetais from "./RegisterPersonalDetais";
-import CorporateRegistration from "./CorporateRegistration";
-import CorporateRegisterStepper from "../../Components/RegistrationStepper.jsx/CorporateRegStepper";
 SwiperCore.use([Pagination]);
 
 const Register = () => {
@@ -36,8 +30,6 @@ const Register = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  let history = useHistory();
-  const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);
   const [regCop, setRegCop] = useState(false);

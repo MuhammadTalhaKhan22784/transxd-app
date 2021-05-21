@@ -1,8 +1,7 @@
-import React, { useState, useLayoutEffect, useContext } from "react";
+import React, { useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
 import "./GetCard.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-
+// assets
 import gchip1 from "../../Assets/gchip1.png";
 import gchip2 from "../../Assets/gchip2.png";
 import gchip3 from "../../Assets/gchip3.png";
@@ -12,6 +11,10 @@ import gchip2dark from "../../Assets/gchip2dark.png";
 import gchip3dark from "../../Assets/gchip3dark.png";
 import gchip4dark from "../../Assets/gchip4dark.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
+
+// swiper js
+import { Swiper, SwiperSlide } from "swiper/react";
+
 
 const GetCard = () => {
   useLayoutEffect(() => {
@@ -203,8 +206,6 @@ const GetCard = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="gs_right"></div> */}
 
         <div className="login_img_content gs_right">
           <div>

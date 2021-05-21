@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
-import { makeStyles, useTheme, withStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import StepConnector from "@material-ui/core/StepConnector";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { ColorContext } from "../../Context/Context";
 import { useHistory } from "react-router";
@@ -102,8 +101,6 @@ export default function CorporateRegisterStepper() {
   };
 
   const classes = useStyles({ color });
-  // const theme = useTheme();
-  // console.log(theme)
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
 
@@ -113,7 +110,6 @@ export default function CorporateRegisterStepper() {
       history.push("/login");
     }
   };
-  // console.log(classes.)
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);

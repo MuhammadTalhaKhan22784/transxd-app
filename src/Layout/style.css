@@ -1,3 +1,19 @@
+.blnce_head_div > h6 {
+  /* margin-top: 8px; */
+}
+.blnce_head_div,
+.wallet_card_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blnce_head_div .p_input {
+  width: max-content;
+  height: 25px;
+  padding: 0 7px;
+}
+
 ::placeholder {
   color: unset;
 }
@@ -20,7 +36,18 @@
   margin: 0 auto;
 }
 
-.nav-item .active{
+.link_activel {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.link_actived{
+  color:#72faec !important;
+  font-weight: bold !important;
+
+}
+
+.nav-item .active {
   color: red !important;
 }
 
@@ -160,30 +187,32 @@
 
 .s_btn_dark {
   background: #72faec;
-  color: #0E2725;
+  color: #0e2725;
 }
 
 .s_btn_dark:hover {
   transition: 0.9s;
-  box-shadow: inset -6em 0 0 0 #0E2725, inset 6em 0 0 0 #0E2725;
+  /* box-shadow: inset -6em 0 0 0 #0E2725, inset 6em 0 0 0 #0E2725; */
+  background-color: #0e2725 !important;
   color: #72faec !important;
 }
 
 .s_btn_light:hover {
   transition: 0.9s;
-  box-shadow: inset -6em 0 0 0 white, inset 6em 0 0 0 white;
+  background-color: white !important;
+  /* box-shadow: inset -6em 0 0 0 white, inset 6em 0 0 0 white; */
   color: #27bdad !important;
 }
 
 .reg_steppeer_btn .s_btn_light:hover {
   transition: 0.9s;
-  box-shadow: inset -12.5em 0 0 0 white, inset 12.5em 0 0 0 white;
+  background-color: white !important;
   color: #27bdad !important;
 }
 
 .reg_steppeer_btn .s_btn_dark:hover {
   transition: 0.9s;
-  box-shadow: inset -12.5em 0 0 0 #0E2725, inset 12.5em 0 0 0 #0E2725;
+  background-color: #0e2725 !important;
   color: #72faec !important;
 }
 
@@ -194,29 +223,29 @@
 
 .l_btn_light:hover {
   transition: 0.9s;
-  box-shadow: inset -6em 0 0 0 #27bdad, inset 6em 0 0 0 #27bdad;
+  background-color: #27bdad !important;
   color: white !important;
 }
 
 .reg_form_btn .l_btn_light:hover {
-  box-shadow: inset -11em 0 0 0 #27bdad, inset 11em 0 0 0 #27bdad !important;
+  background-color: #27bdad !important;
   /* color: #0E2725; */
 }
 
 .reg_form_btn .l_btn_dark:hover {
-  box-shadow: inset -11em 0 0 0 #27bdad, inset 11em 0 0 0 #27bdad !important;
-  color: #0E2725 !important;
+  background-color: #27bdad !important;
+  color: #0e2725 !important;
 }
 
 .l_btn_dark {
-  background: #0E2725;
+  background: #0e2725;
   color: #72faec;
 }
 
 .l_btn_dark:hover {
   transition: 0.9s;
   box-shadow: inset -6em 0 0 0 #72faec, inset 6em 0 0 0 #72faec;
-  color: #0E2725 !important;
+  color: #0e2725 !important;
 }
 
 .gc_card .l_btn_light:hover {
@@ -470,7 +499,7 @@
 }
 
 .path_line {
-  width: 1px !important;
+  width: 2px !important;
   height: 20px;
 }
 
@@ -504,8 +533,8 @@
 }
 
 .userdrpdwn_content button {
-  height: 33px;
-  width: 180px;
+  height: 27px;
+  width: 157px;
   border-radius: 5px;
   margin: 0.2rem 0;
   font-size: 0.9rem;
@@ -600,6 +629,7 @@
 .fc_2 p {
   font-size: 0.9rem;
   margin: 1.2rem 0;
+  padding-right: 100px;
 }
 
 .fc_2 h6 {
@@ -613,7 +643,8 @@
 
 .fc_btm {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  line-height: 1.4rem;
 }
 
 .fc2_button {
@@ -715,6 +746,8 @@
   }
 }
 
+
+
 @media (max-width: 1199px) {
   .c_navbar .cn_container {
     max-width: 1060px !important;
@@ -726,6 +759,10 @@
   .fc_2 {
     width: 80%;
     align-items: center;
+  }
+  .fc_2 p {
+    padding-right: 0;
+    text-align: center;
   }
   .fc2_m {
     display: flex;

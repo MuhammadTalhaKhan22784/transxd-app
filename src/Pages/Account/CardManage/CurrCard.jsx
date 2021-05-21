@@ -78,16 +78,16 @@ const CurrCard = () => {
                                             className="active_para"
                                             style={{ color: mode === 'dark' ? 'white' : 'black' }}
                                         >
-                                            {'( '} <img src={dot} alt="" />
+                                            {'( '} <img src={dot} alt="..." />
                                             <span > Active </span>
                                             {' )'}
                                         </div>
                                     </div>
                                     <div className="toggle_Main_div">
                                         {mode === 'light' ?
-                                            <img src={toggle} alt="" />
+                                            <img src={toggle} alt="..." />
                                             :
-                                            <img src={toggleW} alt="" />
+                                            <img src={toggleW} alt="..." />
                                         }
                                         <div
                                             className="toggle_div"
@@ -103,8 +103,8 @@ const CurrCard = () => {
                                     </div>
                                 </div>
                                 <div className="cards_img_div">
-                                    <img src={val.cardF} alt="" />
-                                    <img src={val.cardB} alt="" />
+                                    <img src={val.cardF} alt="..." />
+                                    <img src={val.cardB} alt="..." />
                                 </div>
                                 <div className="cards_details">
                                     <div className="detail_div1">

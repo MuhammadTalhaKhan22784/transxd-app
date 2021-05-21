@@ -61,9 +61,9 @@ const SelectPayment = () => {
                                 :
                                 ''
                                 }`} onClick={() => setCard('master')} >
-                                <img className='atm2' src={card1} alt="" />
+                                <img className='atm2' src={card1} alt="..." />
                                 {card === 'master' ?
-                                    <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="" />
+                                    <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="..." />
                                     : null
                                 }
                             </div>
@@ -79,9 +79,9 @@ const SelectPayment = () => {
                             :
                             ''
                             }`} onClick={() => setCard('virtual')} >
-                            <img className='atm2' src={card2} alt="" />
+                            <img className='atm2' src={card2} alt="..." />
                             {card === 'virtual' ?
-                                <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="" />
+                                <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="..." />
                                 : null
                             }
                         </div>
@@ -95,10 +95,10 @@ const SelectPayment = () => {
                                 :
                                 'payment_method_inp selecr_card_select dark_slct'
                         }>
-                        <img src={mode==='dark'? user:userL} alt="" />
+                        <img src={mode==='dark'? user:userL} alt="..." />
                         <input type="text" placeholder='Email address/Phone number' />
                     </div>
-                    <img src={tick} alt="" />
+                    <img src={tick} alt="..." />
                 </div>
                 <div className="tick_sign_div">
                     <div className={
@@ -106,10 +106,10 @@ const SelectPayment = () => {
                                 :
                                 'payment_method_inp selecr_card_select dark_slct'
                         }>
-                        <img src={mode==='dark'? user:userL} alt="" />
+                        <img src={mode==='dark'? user:userL} alt="..." />
                         <input type="text" placeholder='Password' />
                     </div>
-                    <img src={tick} alt="" />
+                    <img src={tick} alt="..." />
                 </div>
 
             </div>

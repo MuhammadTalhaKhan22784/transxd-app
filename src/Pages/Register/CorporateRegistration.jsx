@@ -1,8 +1,8 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
-
-// import "./Forms.css";
+import LanguageDropdown from "../../Components/Dropdown/LanguageDropdown";
+import CorporateUpload from "./CorporateUpload";
 // assets
 import tick from "../../Assets/Path 7452.png";
 import cross from "../../Assets/cross.png";
@@ -11,15 +11,11 @@ import featherLock from "../../Assets/feather-lock.png";
 import smartphone from "../../Assets/Icon feather-smartphone.png";
 import calendaricon from "../../Assets/calendaricon.png";
 import locationimg from "../../Assets/locationimg.png";
+
+// swiper js
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-// import 'swiper/swiper-bundle.min.css'
 import "swiper/swiper-bundle.css";
-import DatePicker from "../../Components/DatePicker/DatePicker";
-import RegisterAlmostDone from "./RegisterAlmostDone";
-import LanguageDropdown from "../../Components/Dropdown/LanguageDropdown";
-import CStepper from "../../Components/AccountComp/Stepper";
-import CorporateUpload from "./CorporateUpload";
 SwiperCore.use([Pagination]);
 
 const CooperateRegistration = () => {
@@ -49,7 +45,6 @@ const CooperateRegistration = () => {
 
   return (
     <React.Fragment>
-      {/* <div className="main_form"> */}
       {showComp === false ? (
         <div className="login_form">
           <div className="s_form">
@@ -78,7 +73,6 @@ const CooperateRegistration = () => {
                   />
                 </div>
                 <img className="tick_img ms-3" src={tick} alt="..." />
-
               </div>
               <div className="inline_input">
                 <div className="p_input">
@@ -93,7 +87,6 @@ const CooperateRegistration = () => {
                   />
                 </div>
                 <img className="tick_img ms-3" src={tick} alt="..." />
-
               </div>
               <div className="inline_input">
                 <div className="p_input">
@@ -108,11 +101,10 @@ const CooperateRegistration = () => {
                   <img src={calendaricon} alt="img" />
                 </div>
                 <img className="tick_img ms-3" src={tick} alt="..." />
-
               </div>
               <div className="inline_input">
                 <div className="p_input">
-                  <img src={locationimg} alt="" />
+                  <img src={locationimg} alt="..." />
                   <select
                     className="cus_select"
                     style={{
@@ -141,7 +133,6 @@ const CooperateRegistration = () => {
                   </select>
                 </div>
                 <img className="tick_img ms-3" src={tick} alt="..." />
-
               </div>
               <div className="inline_input">
                 <div className="p_input">
@@ -156,7 +147,6 @@ const CooperateRegistration = () => {
                   />
                 </div>
                 <img className="tick_img ms-3" src={cross} alt="..." />
-
               </div>
               <div className="inline_input">
                 <div className="p_input">
@@ -172,7 +162,6 @@ const CooperateRegistration = () => {
                   />
                 </div>
                 <img className="tick_img ms-3" src={cross} alt="..." />
-
               </div>
               <div className="validation_text mb-3 mt-3">
                 <img src={validationIcon} alt="..." />
@@ -180,30 +169,12 @@ const CooperateRegistration = () => {
                   Any front end error will show up here!
                 </span>
               </div>
-              {/* <div className="form_btn mt-5">
-                <button
-                  onClick={() => {
-                    setShowComp(true);
-                  }}
-                  style={{
-                    padding: "8px 120px",
-                    border: "none",
-                    backgroundColor:
-                      mode === "light" ? style.bggreen : style.bgdarkgreen,
-                    color: mode === "light" ? style.bgwhite : style.bgblack,
-                  }}
-                  className="cus_btn1"
-                >
-                  Next
-                </button>
-              </div> */}
             </form>
           </div>
         </div>
       ) : (
         <CorporateUpload />
       )}
-      {/* </div> */}
     </React.Fragment>
   );
 };

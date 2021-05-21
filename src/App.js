@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import AppRouter from "./Router/AppRouter";
 import { ColorContext, colors } from "./Context/Context";
 import { reducer } from "./Context/Reducer";

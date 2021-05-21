@@ -1,7 +1,6 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
-
 import "./Forms.css";
 // assets
 
@@ -19,7 +18,7 @@ import pwdclose from "../../Assets/Component 37 – 5.png";
 import featherMail from "../../Assets/feather-mail.png";
 import featherLock from "../../Assets/feather-lock.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
-
+// swiper js
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
@@ -33,7 +32,6 @@ const Login = () => {
   }, []);
 
   let history = useHistory();
-  const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
 
   const showPassword = () => {
@@ -160,7 +158,6 @@ const Login = () => {
               <div className="form_btn">
                 <button
                   style={{
-                    // padding: "8px 80px",
                     width:"170px",
                     border: "1px solid",
                    
@@ -193,7 +190,7 @@ const Login = () => {
 
         <div className="login_img_content">
           <div>
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
+            <Swiper pagination spaceBetween={50} slidesPerView={1} autoplay="play">
               <SwiperSlide
                 style={{
                   width: "546px",

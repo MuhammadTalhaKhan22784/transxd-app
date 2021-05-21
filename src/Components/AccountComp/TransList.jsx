@@ -35,7 +35,7 @@ const TransList = () => {
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
-    bglightgreen: "#0E2725",
+    bglightgreen: "#0A1716",
     bgcgreen: "#1EE834",
   };
 

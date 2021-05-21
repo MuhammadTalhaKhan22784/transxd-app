@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ColorContext } from "../Context/Context";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./style.css";
 
 // assets
@@ -214,15 +214,16 @@ const Navbar = () => {
               }}
             >
               <li className="nav-item">
-                <Link
+                <NavLink
+                  exact
+                  activeClassName={
+                    mode === "light" ? "link_activel" : "link_actived"
+                  }
                   className="nav-link"
-                  style={{
-                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
-                  }}
                   to="/"
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               {mode === "light" ? (
                 <img className="path_line" src={path} alt="img" />
@@ -230,9 +231,16 @@ const Navbar = () => {
                 <img className="path_line" src={pathmb} alt="img" />
               )}
               <li className="nav-item">
-                <Link className="nav-link" to="/features">
+                <NavLink
+                  exact
+                  activeClassName={
+                    mode === "light" ? "link_activel" : "link_actived"
+                  }
+                  className="nav-link"
+                  to="/features"
+                >
                   Features
-                </Link>
+                </NavLink>
               </li>
               {mode === "light" ? (
                 <img className="path_line" src={path} alt="img" />
@@ -240,9 +248,16 @@ const Navbar = () => {
                 <img className="path_line" src={pathmb} alt="img" />
               )}
               <li className="nav-item">
-                <Link className="nav-link" to="/receive-payment">
+                <NavLink
+                  exact
+                  activeClassName={
+                    mode === "light" ? "link_activel" : "link_actived"
+                  }
+                  className="nav-link"
+                  to="/receive-payment"
+                >
                   Payments
-                </Link>
+                </NavLink>
               </li>
               {mode === "light" ? (
                 <img className="path_line" src={path} alt="img" />
@@ -251,9 +266,16 @@ const Navbar = () => {
               )}
 
               <li className="nav-item">
-                <Link className="nav-link" to="/pricing">
+                <NavLink
+                  exact
+                  activeClassName={
+                    mode === "light" ? "link_activel" : "link_actived"
+                  }
+                  className="nav-link"
+                  to="/pricing"
+                >
                   Pricing
-                </Link>
+                </NavLink>
               </li>
               {mode === "light" ? (
                 <img className="path_line" src={path} alt="img" />
@@ -262,7 +284,14 @@ const Navbar = () => {
               )}
 
               <li className="nav-item">
-                <Link className="nav-link" to="#">
+                <Link
+                  // exact
+                  // activeClassName={
+                  //   mode === "light" ? "link_activel" : "link_actived"
+                  // }
+                  className="nav-link"
+                  to="#"
+                >
                   Get Card
                 </Link>
               </li>
@@ -372,7 +401,7 @@ const Navbar = () => {
                 {!isActive ? (
                   <>
                     {/* dsa */}
-                    <Link className="navbar-brand" to="/">
+                    <Link className="navbar-brand" to="/" onClick={handleClose}>
                       {mode === "light" ? (
                         <img
                           className="nav_rarare_logo"
@@ -495,37 +524,65 @@ const Navbar = () => {
                 {!isActive ? (
                   <>
                     <li onClick={handleClose} className="nav-item">
-                      <Link
+                      <NavLink
+                        exact
+                        activeClassName={
+                          mode === "light" ? "link_activel" : "link_actived"
+                        }
                         className="nav-link"
-                        to="/post"
-                        style={{
-                          color:
-                            mode === "light" ? style.bgblack : style.bggreen,
-                        }}
+                        to="/"
                       >
                         Home
-                      </Link>
+                      </NavLink>
                     </li>
                     <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="/features">
+                      <NavLink
+                        exact
+                        activeClassName={
+                          mode === "light" ? "link_activel" : "link_actived"
+                        }
+                        className="nav-link"
+                        to="/features"
+                      >
                         Features
-                      </Link>
+                      </NavLink>
                     </li>
                     <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="/receive-payment">
+                      <NavLink
+                        exact
+                        activeClassName={
+                          mode === "light" ? "link_activel" : "link_actived"
+                        }
+                        className="nav-link"
+                        to="/receive-payment"
+                      >
                         Payments
-                      </Link>
+                      </NavLink>
                     </li>
                     <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="/pricing">
+                      <NavLink
+                        exact
+                        activeClassName={
+                          mode === "light" ? "link_activel" : "link_actived"
+                        }
+                        className="nav-link"
+                        to="/pricing"
+                      >
                         Pricing
-                      </Link>
+                      </NavLink>
                     </li>
 
                     <li onClick={handleClose} className="nav-item">
-                      <Link className="nav-link" to="blog">
+                      <NavLink
+                        exact
+                        activeClassName={
+                          mode === "light" ? "link_activel" : "link_actived"
+                        }
+                        className="nav-link"
+                        to="blog"
+                      >
                         Get Card
-                      </Link>
+                      </NavLink>
                     </li>
                   </>
                 ) : (
@@ -652,7 +709,10 @@ const Navbar = () => {
                           <img src={logouticond} alt="..." />
                         )}
                         <Link
-                          onClick={handleClose}
+                          onClick={() => {
+                            handleClose();
+                            handleLogout();
+                          }}
                           className="nav-link ms-3"
                           to="#"
                         >

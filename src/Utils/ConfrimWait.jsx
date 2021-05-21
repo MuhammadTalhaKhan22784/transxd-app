@@ -9,7 +9,7 @@ import loaderd2 from "../Assets/loaderd2.png";
 import { ColorContext } from "../Context/Context";
 import "./style/otp.css";
 
-const ConfrimWait = () => {
+const ConfrimWait = ({number}) => {
   let [load, setLoad] = useState(false);
   const { color } = useContext(ColorContext);
   let { mode } = color;
@@ -34,8 +34,8 @@ const ConfrimWait = () => {
           className="number_div"
           style={{ color: mode === "light" ? "#27BDAD" : "#72FAEC" }}
         >
-          <span>924823202332</span>
-          <img src={mode === "light" ? edit : editD} alt="" />
+          <span>{number}</span>
+          <img src={mode === "light" ? edit : editD} alt="..." />
         </div>
         <div
           className="wating_animation d-flex flex-column align-items-center mt-5"

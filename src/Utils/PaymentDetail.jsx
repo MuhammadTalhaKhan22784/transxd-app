@@ -3,7 +3,7 @@ import { useHistory } from 'react-router'
 import { ColorContext } from '../Context/Context'
 import './style/payment.css'
 
-const PaymentDetail = ({btnV,link,backLink,desc}) => {
+const PaymentDetail = ({btnV,link,backLink,desc,amount,title}) => {
     const history = useHistory()
     const { color } = useContext(ColorContext)
     let { mode } = color
@@ -16,8 +16,8 @@ const PaymentDetail = ({btnV,link,backLink,desc}) => {
                         style={{ color: mode === 'light' ? '' : 'white' }}
                     >{desc}</p>
                     <div className="amount_div">
-                        <p style={{ color: mode === 'light' ? '' : 'white' }}>XOF</p>
-                        <h4 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>1243.43</h4>
+                        <p style={{ color: mode === 'light' ? '' : 'white' }}>{title}</p>
+                        <h4 style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>{amount}</h4>
                     </div>
                     <div className='payment_btns'>
                         <button

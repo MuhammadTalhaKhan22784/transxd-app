@@ -53,9 +53,9 @@ const UserGetDetail = () => {
         </div>
       </div>
       {mode === "light" ? (
-        <img className="v_line" src={path} alt="" />
+        <img className="v_line" src={path} alt="..." />
       ) : (
-        <img className="v_line" src={path1} alt="" />
+        <img className="v_line" src={path1} alt="..." />
       )}
       <div className="user_identification_div "
           style={{ backgroundColor: mode === "dark" ? "#2d4b4b" : "#ddf8f6" }}

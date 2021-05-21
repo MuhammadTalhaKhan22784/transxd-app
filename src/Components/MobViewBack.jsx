@@ -10,9 +10,8 @@ const MobViewBack = ({ link, value }) => {
   return (
     <div>
       <div className="back_link_div">
-        {/* <img src={back} alt=""/> */}
         <Link to={link} className="mob_back_link">
-          <img src={mode === "light" ? backl : backd} alt="" />{" "}
+          <img src={mode === "light" ? backl : backd} alt="..." />{" "}
           <span style={{color:mode==='light'?'black':''}} > {value}</span>
         </Link>
       </div>

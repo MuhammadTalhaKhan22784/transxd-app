@@ -12,10 +12,12 @@ const AccountOverview = () => {
   let style = {
     bggreen: "#27BDAD",
     bgblue: "#3C66C4",
+    bglightblue: "#E9F8F7",
     bgred: "#CF4332",
     bgblack: "#0E2725",
     bgwhite: "#FFFFFF",
     bgdarkgreen: "#72FAEC",
+    bglightgreen: "#0E2725",
   };
   const [state, setState] = React.useState({
     checkedA: true,
@@ -184,7 +186,7 @@ const AccountOverview = () => {
                 <h6 style={{ color: mode === "dark" ? "white" : "black" }}>
                   Your Summery
                 </h6>
-                 
+                   
                 <div className="p_input">
                 <select
                   className="cus_select"
@@ -241,7 +243,7 @@ const AccountOverview = () => {
               </div>
 
 
-             </div>
+              </div>
               <Chart />
             </div>
           </div>

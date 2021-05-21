@@ -52,21 +52,21 @@ const MoneyAccDetail = () => {
                     <div className={mode === 'light' ? "input_money_acc" : 'input_money_acc input_money_acc_D'}>
                         <div className="tick_sign money_info">
                             <div className="country_input_slct">
-                                <label htmlFor="loc"><img src={home} alt="" />
+                                <label htmlFor="loc"><img src={home} alt="..." />
                                     <select name="loc" id="loc">
                                         <option value="">Recipient Bank Name</option>
                                     </select>
                                 </label>
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <div className="tick_sign money_info">
                             <div className="country_input_slct">
-                                <label htmlFor="loc"><img src={user} alt="" />
+                                <label htmlFor="loc"><img src={user} alt="..." />
                                     <input type="text" placeholder='Recipient Account Number' />
                                 </label>
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <div className="account_formate_div" style={{ color: mode === 'light' ? '' : 'white' }}>
                             <p className='formate_note'>Account Number formats</p>
@@ -75,19 +75,19 @@ const MoneyAccDetail = () => {
                         </div>
                         <div className="tick_sign money_info">
                             <div className="country_input_slct">
-                                <label htmlFor="loc"><img src={email} alt="" />
+                                <label htmlFor="loc"><img src={email} alt="..." />
                                     <input type="text" placeholder='Recipient Email Address (Optional)' />
                                 </label>
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <div className="tick_sign money_info">
                             <div className="country_input_slct">
-                                <label htmlFor="loc"><img src={user} alt="" />
+                                <label htmlFor="loc"><img src={user} alt="..." />
                                     <input type="text" placeholder='Recipient Nick Name (Optional)' />
                                 </label>
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <div className="radio_div">
                             <GreenRadio

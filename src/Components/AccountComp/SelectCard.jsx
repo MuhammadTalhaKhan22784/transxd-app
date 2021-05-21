@@ -29,9 +29,9 @@ const SelectCard = () => {
                             }
                         `}
                             onClick={() => setCard('gm')} >
-                            <img className='atm1' src={card1} alt="" />
+                            <img className='atm1' src={card1} alt="..." />
                             {card === 'gm' ?
-                                <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="" />
+                                <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="..." />
                                 : null
                             }
                         </div>
@@ -47,9 +47,9 @@ const SelectCard = () => {
                             ''
                             }
                         `} onClick={() => setCard('master')} >
-                            <img className='atm2' src={card2} alt="" />
+                            <img className='atm2' src={card2} alt="..." />
                             {card === 'master' ?
-                                <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="" />
+                                <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="..." />
                                 : null
                             }
                         </div>
@@ -66,9 +66,9 @@ const SelectCard = () => {
                             ''
                         }
                         `} onClick={() => setCard('virtual')} >
-                        <img className='atm2' src={card2} alt="" />
+                        <img className='atm2' src={card2} alt="..." />
                         {card === 'virtual' ?
-                            <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="" />
+                            <img className='slct_tick' src={mode === 'dark' ? slct : slctL} alt="..." />
                             : null
                         }
                     </div>
@@ -76,19 +76,19 @@ const SelectCard = () => {
                 </div>
             </div>
             <div className={mode === 'dark' ? "selecr_card_select" : 'selecr_card_select_l'}>
-                    <img src={mode==='dark'? loc:loc} alt="" />
+                    <img src={mode==='dark'? loc:loc} alt="..." />
                 <select name="" id="">
                     <option value="">Preffered City Of Delivery</option>
                 </select>
             </div>
             <div className={mode === 'dark' ? "selecr_card_select" : 'selecr_card_select_l'}>
-                    <img src={mode==='dark'? userD:user} alt="" />
+                    <img src={mode==='dark'? userD:user} alt="..." />
                 <select name="" id="">
                     <option value="">Select Collection Agent</option>
                 </select>
             </div>
             <div className="alert_div">
-                <img src={alert} alt="" />
+                <img src={alert} alt="..." />
                 <span>Provide Phone Number Format </span>
             </div>
         </div>

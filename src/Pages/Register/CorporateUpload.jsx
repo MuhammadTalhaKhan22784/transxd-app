@@ -1,9 +1,7 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../../Context/Context";
 
-// import Button from "../../Components/Btn/Btn";
 // assets
-// import businesslogo from "../../Assets/businesslogo.png";
 import uploadImgLight from "../../Assets/uploadimglight.png";
 import uploadImgDark from "../../Assets/uploadimgdark.png";
 import "./Register.css";
@@ -12,11 +10,8 @@ const CorporateUpload = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   // upload img state and function
-
   let [img, setImg] = useState([]);
-
   const handleUrl = (e) => {
     let url = URL.createObjectURL(e.target.files[0]);
     setImg([url, ...img]);
@@ -42,23 +37,6 @@ const CorporateUpload = () => {
     <React.Fragment>
       <div className="login_form">
         <div className="s_form">
-          {/* <div className="s_text">
-            <h2
-              className="mt-4 fw-bold"
-              style={{
-                color: mode === "light" ? style.bgblack : style.bgwhite,
-              }}
-            >
-              Corporate{" "}
-              <strong
-                style={{
-                  color: mode === "light" ? style.bggreen : style.bgdarkgreen,
-                }}
-              >
-                Registration!
-              </strong>
-            </h2>
-          </div> */}
           <div className="s_para mt-3 mb-3">
             <p
               style={{

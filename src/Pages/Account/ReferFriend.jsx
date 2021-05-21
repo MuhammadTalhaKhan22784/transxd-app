@@ -41,17 +41,17 @@ const ReferFriend = () => {
                         >Share referral link on social media on your favorite social networking websites!</p>
                     </div>
                     <div className="social_icon_div">
-                        <img src={s1} alt="" />
-                        <img src={s2} alt="" />
-                        <img src={s3} alt="" />
-                        <img src={s4} alt="" />
-                        <img src={s5} alt="" />
-                        <img src={s6} alt="" />
+                        <img src={s1} alt="..." />
+                        <img src={s2} alt="..." />
+                        <img src={s3} alt="..." />
+                        <img src={s4} alt="..." />
+                        <img src={s5} alt="..." />
+                        <img src={s6} alt="..." />
                     </div>
                     <div className="orline_div">
-                        <img src={or} alt="" />
+                        <img src={or} alt="..." />
                         <span style={{ color: color.mode === 'light' ? '' : 'white' }}> OR </span>
-                        <img src={or} alt="" />
+                        <img src={or} alt="..." />
                     </div>
                     <div className="emailInput">
                         <h5 style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}>Enter friend's email</h5>
@@ -59,7 +59,7 @@ const ReferFriend = () => {
                             style={{ color: mode === 'light' ? '' : 'white' }}
                         >Send a personalized email link to your friend or family! Simply enter email and send a referral link!</p>
                         <div className="pass_inpt entr_link">
-                            <img src={mode === 'dark' ? email : emailL} alt="" />
+                            <img src={mode === 'dark' ? email : emailL} alt="..." />
                             <input
                                 type='email'
                                 placeholder='Recipient email address'
@@ -75,16 +75,16 @@ const ReferFriend = () => {
                     </div>
                 </div>
                 <div className="refer_copylink_card" style={{ backgroundColor: mode === 'light' ? '#E9F8F7' : '#112626' }}>
-                    <img src={mode==='light'? linkG:linkGD} alt="" />
+                    <img src={mode==='light'? linkG:linkGD} alt="..." />
                     <h5 style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}>Share via invite link</h5>
                     <p style={{ color: mode === 'light' ? '' : 'white' }}>Copy the invite link and send to your friends or family via messages or any medium you link!</p>
                     <div className="link_inpt">
-                        <img src={mode==='light'? link:linkD} alt="" />
+                        <img src={mode==='light'? link:linkD} alt="..." />
                         <input 
                         type='email' 
                         className={mode==='light'?'light_inp':'dark_inp'}
                         value='https://www.youtube.com/watch?v=pba_' readOnly  />
-                        <img src={mode==='light'? copy:copyD} alt="" />
+                        <img src={mode==='light'? copy:copyD} alt="..." />
                     </div>
                 </div>
             </div>

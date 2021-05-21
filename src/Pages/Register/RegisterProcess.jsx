@@ -1,5 +1,5 @@
-import React, { useState, useLayoutEffect, useContext, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React, { useState, useLayoutEffect, useContext } from "react";
+import { useHistory } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
 
 import "./Register.css";
@@ -9,11 +9,8 @@ import loader1L from "../../Assets/loader1L.png";
 import loader2L from "../../Assets/loader2L.png";
 import loaderd1 from "../../Assets/loaderd1.png";
 import loaderd2 from "../../Assets/loaderd2.png";
+// swiper
 import SwiperCore, { Pagination } from "swiper";
-import "swiper/swiper-bundle.css";
-// import 'swiper/swiper-bundle.min.css'
-import "swiper/swiper-bundle.css";
-
 SwiperCore.use([Pagination]);
 
 const RegisterProcess = () => {
@@ -23,16 +20,6 @@ const RegisterProcess = () => {
     useLayoutEffect(() => {
       window.scrollTo(0, 0);
     }, []);
-
-    // setInterval(() => {
-    //   setLoad(!load);
-    //   console.log(load)
-    // }, 2000);
-  // useEffect(()=>{
-
-  // },[load])
-
-  let history = useHistory();
   const [show, setShow] = useState(true);
   const [pass, setPass] = useState(false);
   const [showComp, setShowComp] = useState(false);

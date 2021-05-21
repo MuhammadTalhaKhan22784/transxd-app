@@ -4,7 +4,7 @@ import { ColorContext } from '../../Context/Context'
 
 
 const Chart = () => {
-  const { color, setColor } = useContext(ColorContext)
+  const { color } = useContext(ColorContext)
   
 const data = {
   

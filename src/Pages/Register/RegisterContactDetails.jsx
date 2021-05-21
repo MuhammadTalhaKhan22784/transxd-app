@@ -1,21 +1,16 @@
 import React, { useState, useLayoutEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { ColorContext } from "../../Context/Context";
-
-// import "./Forms.css";
+import RegisterAlmostDone from "./RegisterAlmostDone";
+import LanguageDropdown from "../../Components/Dropdown/LanguageDropdown";
 // assets
 
 import featherLock from "../../Assets/feather-lock.png";
 import smartphone from "../../Assets/Icon feather-smartphone.png";
 import locationimg from "../../Assets/locationimg.png";
 import validationIcon from "../../Assets/validationIcon.png";
-
+// swiper js
 import SwiperCore, { Pagination } from "swiper";
-import "swiper/swiper-bundle.css";
-// import 'swiper/swiper-bundle.min.css'
-import "swiper/swiper-bundle.css";
-import RegisterAlmostDone from "./RegisterAlmostDone";
-import LanguageDropdown from "../../Components/Dropdown/LanguageDropdown";
 SwiperCore.use([Pagination]);
 
 const RegisterContactDetails = () => {
@@ -42,7 +37,6 @@ const RegisterContactDetails = () => {
 
   return (
     <React.Fragment>
-      {/* <div className="main_form"> */}
       {showComp === false ? (
         <div className="login_form">
           <div className="s_form">
@@ -84,7 +78,7 @@ const RegisterContactDetails = () => {
             <form className="s_form_fields">
 
               <div className="p_input">
-                <img src={locationimg} alt="" />
+                <img src={locationimg} alt="..." />
                 <select
                   className="cus_select"
                   style={{
@@ -184,7 +178,6 @@ const RegisterContactDetails = () => {
       ) : (
         <RegisterAlmostDone />
       )}
-      {/* </div> */}
     </React.Fragment>
   );
 };

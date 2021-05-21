@@ -31,7 +31,7 @@ const CardDone = () => {
                             Use the button below to update your profile.
                   </p>
                         <div className='thank_you_card_para'>
-                            <img className='thanks_img' src={mode==='light'? thankyouL:thankyou} alt="" />
+                            <img className='thanks_img' src={mode==='light'? thankyouL:thankyou} alt="..." />
                             <h5 style={{ color: color.mode === 'light' ? '#27BDAD' : 'white' }}>Thank You</h5>
                             <p
                                 style={{ color: color.mode === 'light' ? '' : 'white' }}>

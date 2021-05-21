@@ -48,9 +48,9 @@ const ProfileSetting = () => {
                     <p style={{ color: mode === 'light' ? 'black' : 'white' }}
                     >Change your profile picture! Please use a picture so face is fully visible and clear!</p>
                     <div>
-                        <img src={user} alt="" />
+                        <img src={user} alt="..." />
                         <div>
-                            <img className='upload_profile' src={mode==='light'? upload:uploadD} alt="" />
+                            <img className='upload_profile' src={mode==='light'? upload:uploadD} alt="..." />
                         </div>
                     </div>
                 </div>

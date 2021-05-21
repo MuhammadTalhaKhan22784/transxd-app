@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { ColorContext } from "../../Context/Context";
-import { Link } from "react-router-dom";
 import up from "../../Assets/Group 4450.png";
 import down from "../../Assets/Group 4451.png";
 import TransList from "./TransList";
@@ -154,7 +153,7 @@ const TransTable = ({ className }) => {
                 <td style={{ color: "#1EE834", fontWeight: "bold" }}>{val.amount}</td>
                 <td style={{ color: "#27BDAD", fontWeight: "bold" }}>{val.balance}</td>
                 <td>
-                  <img src={val.img} alt="" />
+                  <img src={val.img} alt="..." />
                 </td>
               </tr>
             ))}

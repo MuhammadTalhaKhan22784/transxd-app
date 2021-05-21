@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { useHistory } from 'react-router-dom'
 import { ColorContext } from '../../Context/Context'
 // Assets 
 import user from '../../Assets/Path 7446.png'
@@ -23,7 +23,6 @@ import settingL from '../../Assets/Icon feather-settingsl.png'
 const UserCard = () => {
     const { color} = useContext(ColorContext)
     let { mode } = color
-    // console.log(mode)
     let style = {
         bgClr: mode === 'light' ? '#27BDAD' : '#112626',
         bgblnce: mode === 'light' ? 'white' : '#72FAEC'
@@ -31,11 +30,10 @@ const UserCard = () => {
 
     const history = useHistory()
     console.log(history.location.pathname)
-    let [path, setPath] = useState('')
-    // console.log(color)
+    // let [path, setPath] = useState('')
     const handleActive = (e) => {
         history.push(`/${e}`)
-        setPath(e)
+        // setPath(e)
     }
 
     return (
@@ -43,7 +41,7 @@ const UserCard = () => {
             <div className='user_card_container'>
                 <div className="userCard_main_div" style={{ backgroundColor: style.bgClr }}>
                     <div className="user_img_div">
-                        <img src={user} alt="" />
+                        <img src={user} alt="..." />
                     </div>
                     <div className="userName">
                         <p >User Name</p>
@@ -69,40 +67,40 @@ const UserCard = () => {
                             <li onClick={() => handleActive('account-overview')}
                             // style={history.location.pathname === '/' ? { backgroundColor: '#a1ece6' } : null}
                             >
-                                <img src={mode==='dark'? bar:barL} alt="" />
+                                <img src={mode==='dark'? bar:barL} alt="..." />
                                 <span>Overview</span>
                             </li>
                             <li 
                             onClick={() => handleActive('historic-transaction')} 
                             // style={history.location.pathname === '/historic-transaction' ? { backgroundColor: '#a1ece6' } : null}
                             >
-                                <img src={mode==='dark'?arrow:arrowL} alt="" />
+                                <img src={mode==='dark'?arrow:arrowL} alt="..." />
                                 <span>Historic Transactions</span>
                             </li>
                             <li onClick={() => handleActive('active-card')}>
-                                <img src={mode==='dark'?card:cardL} alt="" />
+                                <img src={mode==='dark'?card:cardL} alt="..." />
                                 <span>Cards Management</span>
                             </li>
                             <li onClick={() => handleActive('pay-bill')}>
-                                <img src={mode==='dark'?bill:billL} alt="" />
+                                <img src={mode==='dark'?bill:billL} alt="..." />
                                 <span>Pay a Bill</span>
                             </li>
                             <li onClick={() => handleActive('select-bank')}>
-                                <img src={mode==='dark'?money:moneyL} alt="" />
+                                <img src={mode==='dark'?money:moneyL} alt="..." />
                                 <span>Send Money</span>
                             </li>
                             <li onClick={() => handleActive('refer-friend')}>
-                                <img src={mode==='dark'?refer:referL} alt="" />
+                                <img src={mode==='dark'?refer:referL} alt="..." />
                                 <span>Refer a Friend</span>
                             </li>
                             <li onClick={() => handleActive('change-password')}>
-                                <img src={mode==='dark'?lock:lockL} alt="" />
+                                <img src={mode==='dark'?lock:lockL} alt="..." />
                                 <span>Account Security</span>
                             </li>
                             <li onClick={() => handleActive('setting')}
                             // style={history.location.pathname === '/setting' ? { backgroundColor: '#a1ece6' } : null}
                             >
-                                <img src={mode==='dark'?setting :settingL} alt="" />
+                                <img src={mode==='dark'?setting :settingL} alt="..." />
                                 <span>Profile settings</span>
                             </li>
                         </ul>

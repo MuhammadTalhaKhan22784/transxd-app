@@ -23,7 +23,7 @@ const UploadLicns = ({className, head,sBtn,height }) => {
                     :
                     null}
                 <div className="email_input_perosnal">
-                    <img src={license} alt="" />
+                    <img src={license} alt="..." />
                     <select style={{color:mode==='light'?'':'white'}} name="" id="">
                         <option value="">Driver's License</option>
                     </select>
@@ -31,13 +31,13 @@ const UploadLicns = ({className, head,sBtn,height }) => {
                 <div className="upload_imgs_divs">
                     <div className={`front_upload_div ${className}`}>
                         <p style={{ color:mode==='light'? '#27BDAD':'white' }}>FRONT IMAGE</p>
-                        <img src={front} alt="" />
+                        <img src={front} alt="..." />
                         <br />
                         <button>Remove image</button>
                     </div>
                     <div className={`front_upload_div ${className}`}>
                         <p style={{ color:mode==='light'? '#27BDAD':'white' }}>BACK IMAGE</p>
-                        <img src={upload} alt="" />
+                        <img src={upload} alt="..." />
                         <br />
                         <button>Remove image</button>
                     </div>

@@ -43,53 +43,53 @@ const ChangePassword = () => {
                         <p style={{ color: color.mode === 'light' ? '' : 'white' }}>Old Password</p>
                         <div className="input_tick">
                             <div className="pass_inpt">
-                                <img src={mode==='dark'? lockd:lockL} alt="" />
+                                <img src={mode==='dark'? lockd:lockL} alt="..." />
                                 <input
                                     type={!pass.old ? "password" : 'text'}
                                     className={mode === 'light' ? 'light_inp' : 'dark_inp'}
                                 />
                                 {!pass.old ?
-                                    <img onClick={() => showPassword('old')} src={mode==='light'? hide:hided} alt="" />
+                                    <img onClick={() => showPassword('old')} src={mode==='light'? hide:hided} alt="..." />
                                     :
-                                    <img onClick={() => showPassword('old')} src={mode==='light'? see:seed} alt="" />
+                                    <img onClick={() => showPassword('old')} src={mode==='light'? see:seed} alt="..." />
                                 }
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <p style={{ color: color.mode === 'light' ? '' : 'white' }}>New Password</p>
                         <div className="input_tick">
                             <div className="pass_inpt">
-                                <img src={mode==='dark'? lockd:lockL} alt="" />
+                                <img src={mode==='dark'? lockd:lockL} alt="..." />
                                 <input
                                     type={!pass.new ? "password" : 'text'}
                                     className={mode === 'light' ? 'light_inp' : 'dark_inp'}
                                 />
                                 {!pass.new ?
-                                    <img onClick={() => showPassword('new')} src={mode==='light'? hide:hided} alt="" />
+                                    <img onClick={() => showPassword('new')} src={mode==='light'? hide:hided} alt="..." />
                                     :
-                                    <img onClick={() => showPassword('new')} src={mode==='light'? see:seed} alt="" />
+                                    <img onClick={() => showPassword('new')} src={mode==='light'? see:seed} alt="..." />
                                 }
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <p style={{ color: color.mode === 'light' ? '' : 'white' }}>Confirm New Password</p>
                         <div className="input_tick">
                             <div className="pass_inpt">
-                                <img src={mode==='dark'? lockd:lockL} alt="" />
+                                <img src={mode==='dark'? lockd:lockL} alt="..." />
                                 <input
                                     type={!pass.confirm ? "password" : 'text'}
                                     className={mode === 'light' ? 'light_inp' : 'dark_inp'}
                                 />
                                 {!pass.confirm ?
-                                    <img onClick={() => showPassword('confirm')} src={mode==='light'? hide:hided} alt="" />
+                                    <img onClick={() => showPassword('confirm')} src={mode==='light'? hide:hided} alt="..." />
                                     :
-                                    <img onClick={() => showPassword('confirm')} src={mode==='light'? see:seed} alt="" />
+                                    <img onClick={() => showPassword('confirm')} src={mode==='light'? see:seed} alt="..." />
                                 }
                             </div>
-                            <img src={tick} alt="" />
+                            <img src={tick} alt="..." />
                         </div>
                         <div className="invalid_div">
-                            <img src={invalid} alt="" />
+                            <img src={invalid} alt="..." />
                             <span>Invalid Phone Number Formate</span>
                             <div >
                                 <button 
