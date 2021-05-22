@@ -142,8 +142,9 @@ border: none !important;
   margin-top: 20px;
   padding: 20px 10px;
   border-radius: 10px;
+  margin-left: 10px;
   /* height: max-content; */
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
 }
 .transaction_table_head {
   display: flex;
@@ -181,7 +182,7 @@ border: none !important;
 .transaction_table_main_div {
   overflow-x: auto;
   /* width: 100%; */
-  /* width: 900px; */
+  width: 881px;
 }
 /* .transaction_table_div {
   overflow-x: scroll;
@@ -201,6 +202,7 @@ border: none !important;
 }
 .transaction_table_main_div > table > thead tr th {
   padding: 10px 7px;
+  text-align: center;
 }
 tbody tr td {
   padding: 5px 10px;
@@ -339,7 +341,6 @@ th:nth-child(8) {
 
 @media screen and (max-width: 1250px) {
   .overview_main_div {
-    margin: 20px;
     margin-top: 50px;
   }
   /* .blnce_main_div {
@@ -358,7 +359,6 @@ th:nth-child(8) {
 }
 @media screen and (max-width: 1055px) {
   .overview_main_div {
-    margin: 20px;
     margin-top: 50px;
   }
   /* .blnce_main_div {

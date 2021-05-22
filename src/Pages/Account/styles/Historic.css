@@ -17,7 +17,7 @@
         margin-left: 0px;
     }
     .historic_trans_main_div{
-        justify-content: center;
+        /* justify-content: center; */
         margin-top: 50px;
     }
     .historic_trans_main_div>.transaction_table_div{
