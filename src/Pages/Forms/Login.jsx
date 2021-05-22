@@ -20,10 +20,10 @@ import featherLock from "../../Assets/feather-lock.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
 // swiper js
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/swiper-bundle.css";
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination,Autoplay]);
 
 const Login = () => {
   useLayoutEffect(() => {
@@ -157,9 +157,8 @@ const Login = () => {
               <div className="form_btn">
                 <button
                   style={{
-                    width:"170px",
+                    width: "170px",
                     border: "1px solid",
-                   
                   }}
                   className={`cus_btn1
                   ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
@@ -189,7 +188,12 @@ const Login = () => {
 
         <div className="login_img_content">
           <div>
-            <Swiper pagination spaceBetween={50} slidesPerView={1} autoplay="play">
+            <Swiper
+              pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+            >
               <SwiperSlide
                 style={{
                   width: "546px",
@@ -210,11 +214,7 @@ const Login = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider2bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider2bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -223,11 +223,7 @@ const Login = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider3bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider3bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -236,11 +232,7 @@ const Login = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider4bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider4bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -249,11 +241,7 @@ const Login = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider5bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider5bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -262,11 +250,7 @@ const Login = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider6bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider6bg} alt="signupBg" />
               </SwiperSlide>
             </Swiper>
           </div>

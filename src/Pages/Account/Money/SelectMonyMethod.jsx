@@ -26,7 +26,7 @@ const SelectMonyMethod = () => {
             <div className="bak_div">
                 <MobViewBack link='/' value='SEND MONEY' />
             </div>
-            <div className="pay_bill_main_div">
+            <div className="pay_bill_main_div dashboard_main">
                 <div className="pay_user_card_div">
                     <UserCard />
                 </div>

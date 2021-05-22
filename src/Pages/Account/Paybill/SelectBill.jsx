@@ -25,7 +25,7 @@ const SelectBill = () => {
     let { mode } = color
     const history = useHistory()
     return (
-        <div className='pay_Bil_container'>
+        <div className='pay_Bil_container dashboard_main'>
             <div className="bak_div">
                 <MobViewBack link='/account-overview' value='PAY A BILL' />
             </div>

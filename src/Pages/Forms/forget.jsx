@@ -57,7 +57,7 @@ const Forget = () => {
               <p
                 style={{
                   width: "90%",
-                  margin:"0 auto",
+                  margin: "0 auto",
                   color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
@@ -119,7 +119,12 @@ const Forget = () => {
 
         <div className="login_img_content">
           <div>
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
+            <Swiper
+              pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+            >
               <SwiperSlide
                 style={{
                   width: "546px",
@@ -140,11 +145,7 @@ const Forget = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider2bg}
-                  alt="loginBg"
-                />
+                <img className="s_bgimg" src={slider2bg} alt="loginBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -153,11 +154,7 @@ const Forget = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider3bg}
-                  alt="loginBg"
-                />
+                <img className="s_bgimg" src={slider3bg} alt="loginBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -166,11 +163,7 @@ const Forget = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider4bg}
-                  alt="loginBg"
-                />
+                <img className="s_bgimg" src={slider4bg} alt="loginBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -179,11 +172,7 @@ const Forget = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider5bg}
-                  alt="loginBg"
-                />
+                <img className="s_bgimg" src={slider5bg} alt="loginBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -192,11 +181,7 @@ const Forget = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider6bg}
-                  alt="loginBg"
-                />
+                <img className="s_bgimg" src={slider6bg} alt="loginBg" />
               </SwiperSlide>
             </Swiper>
           </div>

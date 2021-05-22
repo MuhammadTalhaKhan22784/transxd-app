@@ -42,7 +42,7 @@ const CurrCard = () => {
     const { color } = useContext(ColorContext)
     let { mode } = color
     return (
-        <div className='active_card_container'>
+        <div className='active_card_container dashboard_main'>
             <div className="bak_div">
                 <MobViewBack link='/' value='YOUR CARD' />
             </div>

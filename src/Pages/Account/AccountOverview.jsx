@@ -24,7 +24,7 @@ const AccountOverview = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="overview_main_container">
+    <div className="overview_main_container dashboard_main">
       <div className="overview_main_div">
         <div className="over_view_user_card">
           <UserCard />

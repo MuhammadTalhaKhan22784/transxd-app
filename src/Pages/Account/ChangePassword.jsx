@@ -31,7 +31,7 @@ const ChangePassword = () => {
 
     return (
         <div>
-            <div className="change_pass_main_div">
+            <div className="change_pass_main_div dashboard_main">
                 <div className="user_card_div">
                     <UserCard />
                 </div>

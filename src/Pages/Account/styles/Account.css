@@ -1,6 +1,11 @@
+.dashboard_main {
+  margin-left:50px;
+  margin-right:50px;
+}
+
 /* over view css  */
 .overview_main_div {
-  margin: 50px;
+  margin: 50px 0;
   display: flex;
 }
 .over_view_user_card {
@@ -13,6 +18,7 @@
 .head0verview {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .over_view_link {
   text-decoration: none;
@@ -377,6 +383,10 @@ th:nth-child(8) {
   .transaction_table_head > h5 {
     display: none;
   }
+  .dashboard_main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .transaction_table_head {
     justify-content: flex-end;
   }
@@ -443,6 +453,15 @@ th:nth-child(8) {
     margin-top: 20px;
     height: auto !important;
   }
+
+}
+@media screen and (max-width: 800px) {
+  .chart_main_div {
+    width: 49%;
+  }
+  .blnce_main_div {
+    width: 49%;
+  }
 }
 @media screen and (max-width: 751px) {
   .your_summery_div {
@@ -471,6 +490,19 @@ th:nth-child(8) {
     font-size: 0.9rem;
   }
 }
+
+@media screen and (max-width: 581px) {
+  .head0verview h2 {
+    font-size: 1.2rem;
+  }
+  .over_view_link {
+    margin-top: 0 !important;
+  }
+  .links_divpay {
+    margin-top: 0 ;
+  }
+}
+
 @media screen and (max-width: 521px) {
   .head0verview {
     flex-wrap: wrap;

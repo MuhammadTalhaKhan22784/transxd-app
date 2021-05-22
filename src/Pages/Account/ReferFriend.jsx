@@ -28,7 +28,7 @@ const ReferFriend = () => {
       }, []);
     return (
         <div>
-            <div className="refer_main_">
+            <div className="refer_main_ dashboard_main">
                 <div className="user_card_div2">
                     <UserCard />
                 </div>

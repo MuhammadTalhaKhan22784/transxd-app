@@ -1,7 +1,7 @@
 .your_card_main_div{
     display: flex;
     margin-top: 100px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* justify-content: space-around; */
 }
 .active_card_main_div{

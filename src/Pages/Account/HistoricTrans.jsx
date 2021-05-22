@@ -18,7 +18,7 @@ const HistoricTrans = () => {
               <div className="bak_div">
                 <MobViewBack link='/' value='YOUR TRANSCTIONS' />
             </div>
-            <div className="historic_trans_main_div">
+            <div className="historic_trans_main_div dashboard_main">
                 <div className="user_historic_card">
                     <UserCard />
                 </div>

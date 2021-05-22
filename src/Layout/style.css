@@ -25,10 +25,9 @@
   font-weight: bold !important;
 }
 
-.link_actived{
-  color:#72faec !important;
+.link_actived {
+  color: #72faec !important;
   font-weight: bold !important;
-
 }
 
 .nav-item .active {
@@ -215,15 +214,14 @@
   color: white !important;
 }
 
-.reg_form_btn .l_btn_light:hover {
+/* .reg_form_btn .l_btn_light:hover {
   background-color: #27bdad !important;
-  /* color: #0E2725; */
 }
 
 .reg_form_btn .l_btn_dark:hover {
   background-color: #27bdad !important;
   color: #0e2725 !important;
-}
+} */
 
 .l_btn_dark {
   background: #0e2725;
@@ -232,17 +230,17 @@
 
 .l_btn_dark:hover {
   transition: 0.9s;
-  box-shadow: inset -6em 0 0 0 #72faec, inset 6em 0 0 0 #72faec;
+  background-color: #72faec !important;
   color: #0e2725 !important;
 }
-
+/* 
 .gc_card .l_btn_light:hover {
-  box-shadow: inset -8em 0 0 0 #27bdad, inset 8em 0 0 0 #27bdad;
+  background-color: #27bdad;
 }
 
 .gc_card .l_btn_dark:hover {
-  box-shadow: inset -8em 0 0 0 #72faec, inset 8em 0 0 0 #72faec;
-}
+  background-color: #72faec;
+} */
 
 /*  */
 
@@ -733,8 +731,6 @@
     max-width: 1226px;
   }
 }
-
-
 
 @media (max-width: 1199px) {
   .c_navbar .cn_container {

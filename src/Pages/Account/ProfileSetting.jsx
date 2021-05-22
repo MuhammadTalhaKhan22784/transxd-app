@@ -28,7 +28,7 @@ const ProfileSetting = () => {
             <div className="bak_div">
                 <MobViewBack link='/' value='SECURITY SETTINGS' />
             </div>
-            <div className="setting_main_div">
+            <div className="setting_main_div dashboard_main">
                 <div>
                     <UserCard />
                 </div>

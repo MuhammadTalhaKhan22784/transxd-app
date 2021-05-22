@@ -1,7 +1,7 @@
 .setting_main_div {
   display: flex;
   margin-top: 100px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   /* justify-content: s; */
 }
 .updateImg_div {

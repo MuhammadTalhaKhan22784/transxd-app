@@ -62,7 +62,10 @@ const Register = () => {
                       Register with{" "}
                       <strong
                         style={{
-                          color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          color:
+                            mode === "light"
+                              ? style.bggreen
+                              : style.bgdarkgreen,
                         }}
                       >
                         Transxnd!
@@ -123,7 +126,9 @@ const Register = () => {
                       <Link
                         style={{
                           color:
-                            mode === "light" ? style.bggreen : style.bgdarkgreen,
+                            mode === "light"
+                              ? style.bggreen
+                              : style.bgdarkgreen,
                         }}
                         to="/login"
                       >
@@ -144,9 +149,7 @@ const Register = () => {
                               : style.bgdarkgreen,
                           backgroundColor: "transparent",
                           color:
-                            mode === "light"
-                              ? style.bggreen
-                              : style.bgwhite,
+                            mode === "light" ? style.bggreen : style.bgwhite,
                         }}
                         className={`cus_btn1 reg_btn1
                         ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
@@ -171,7 +174,12 @@ const Register = () => {
         )}
         <div className="login_img_content reg_img_content">
           <div>
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
+            <Swiper
+              pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+            >
               <SwiperSlide
                 style={{
                   width: "546px",
@@ -192,11 +200,7 @@ const Register = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider2bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider2bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -205,11 +209,7 @@ const Register = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider3bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider3bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -218,11 +218,7 @@ const Register = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider4bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider4bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -231,11 +227,7 @@ const Register = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider5bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider5bg} alt="signupBg" />
               </SwiperSlide>
               <SwiperSlide
                 style={{
@@ -244,11 +236,7 @@ const Register = () => {
                   marginRight: "50px ",
                 }}
               >
-                <img
-                  className="s_bgimg"
-                  src={slider6bg}
-                  alt="signupBg"
-                />
+                <img className="s_bgimg" src={slider6bg} alt="signupBg" />
               </SwiperSlide>
             </Swiper>
           </div>
