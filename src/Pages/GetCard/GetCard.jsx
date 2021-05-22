@@ -15,7 +15,6 @@ import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
 // swiper js
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 const GetCard = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -209,7 +208,12 @@ const GetCard = () => {
 
         <div className="login_img_content gs_right">
           <div>
-            <Swiper pagination spaceBetween={50} slidesPerView={1}>
+            <Swiper
+              pagination
+              spaceBetween={50}
+              slidesPerView={1}
+              autoplay={{ disableOnInteraction: false, delay: 2500 }}
+            >
               <SwiperSlide
                 style={{
                   width: "546px",

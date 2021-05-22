@@ -135,7 +135,12 @@ const Home = () => {
 
             <div className="hr_box3">
               <div>
-                <Swiper pagination spaceBetween={50} slidesPerView={1}>
+                <Swiper
+                  pagination
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  autoplay={{ disableOnInteraction: false, delay: 2500 }}
+                >
                   <SwiperSlide
                     style={{
                       width: "100%",

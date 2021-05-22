@@ -1,6 +1,6 @@
 .dashboard_main {
-  margin-left:50px;
-  margin-right:50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* over view css  */
@@ -55,20 +55,16 @@
   background-color: #27bdad;
   color: white;
 } */
-.over_view_link:hover{
-  transition: .5s;
-box-shadow: 
-inset -4.1em 0 0 0 #27BDAD,
-inset 4.1em 0 0  0   #27BDAD;
-color: white !important;
+.over_view_link:hover {
+  transition: 0.5s;
+  box-shadow: inset -4.1em 0 0 0 #27bdad, inset 4.1em 0 0 0 #27bdad;
+  color: white !important;
 }
-.dark_overview:hover{
-  transition: .5s;
-box-shadow: 
-inset -4.2em 0 0 0 #72faec,
-inset 4.2em 0 0  0   #72faec;
-color: #213838 !important;
-border: none !important;
+.dark_overview:hover {
+  transition: 0.5s;
+  box-shadow: inset -4.2em 0 0 0 #72faec, inset 4.2em 0 0 0 #72faec;
+  color: #213838 !important;
+  border: none !important;
 }
 .your_summery_div {
   margin-top: 13px;
@@ -335,9 +331,28 @@ th:nth-child(8) {
   width: 18px;
   object-fit: cover;
 }
-.transaction_table_main_div_mb{
+.transaction_table_main_div_mb {
   display: none;
 }
+
+@media screen and (max-width: 1310px) {
+  .overview_right_content_div {
+    width: 876px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .overview_right_content_div {
+    width: 806px;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  .overview_right_content_div {
+    width: 680px;
+  }
+}
+
 
 @media screen and (max-width: 1250px) {
   .overview_main_div {
@@ -375,7 +390,7 @@ th:nth-child(8) {
   .overview_right_content_div {
     margin-left: 10px;
   }
-  .overview_right_content_div{
+  .overview_right_content_div {
     width: 70%;
   }
 }
@@ -390,7 +405,7 @@ th:nth-child(8) {
   .transaction_table_head {
     justify-content: flex-end;
   }
-  .overview_right_content_div{
+  .overview_right_content_div {
     width: 100%;
   }
   .userCard_main_div,
@@ -424,21 +439,21 @@ th:nth-child(8) {
     display: block;
   }
   .t_cards {
-      border: 1px solid #27BDAD;
-      border-radius: 20px;
-      width: 98%;
-      margin: 0 auto;
-      display: flex;
-      padding: 15px 0;
-      justify-content: space-around;
-      align-items: center;
+    border: 1px solid #27bdad;
+    border-radius: 20px;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-around;
+    align-items: center;
   }
   .t_cards img {
-      width: 21px;
+    width: 21px;
   }
   .t_cards > div {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 831px) {
@@ -453,7 +468,6 @@ th:nth-child(8) {
     margin-top: 20px;
     height: auto !important;
   }
-
 }
 @media screen and (max-width: 800px) {
   .chart_main_div {
@@ -499,7 +513,7 @@ th:nth-child(8) {
     margin-top: 0 !important;
   }
   .links_divpay {
-    margin-top: 0 ;
+    margin-top: 0;
   }
 }
 
@@ -517,9 +531,9 @@ th:nth-child(8) {
 }
 
 @media screen and (max-width: 425px) {
-    .t_cards span {
-        font-size: 0.8rem;
-    }
+  .t_cards span {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 415px) {
