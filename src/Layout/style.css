@@ -233,21 +233,11 @@
   background-color: #72faec !important;
   color: #0e2725 !important;
 }
-/* 
-.gc_card .l_btn_light:hover {
-  background-color: #27bdad;
-}
-
-.gc_card .l_btn_dark:hover {
-  background-color: #72faec;
-} */
 
 /*  */
 
 .notif_btn {
   width: 50px;
-  /* margin-left: 10px; */
-  /* height: 50px; */
 }
 
 .notif_btn img {
@@ -427,13 +417,6 @@
   margin: 0 auto;
 }
 
-.advance-filter {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
 /*  */
 
 /*  */
@@ -528,35 +511,19 @@
   text-align: center;
 }
 
-/* 
-.advance-filter .af_submenu .af_submenu-item .nav-item {
-  margin: 0.5rem auto;
-  font-size: 0.9rem;
-} */
-
-/* .submenu .nav-link {
-  position: relative;
-}
-.submenu .nav-link::before {
-  position: absolute;
-  top: 50%;
-  left: -10%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  border: 1px solid #6c7293;
-} */
-
 /* footer */
 
 .footer {
   width: 100%;
   height: max-content;
-  padding: 5rem 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.f_switch {
+  margin-top: 2rem !important;
 }
 
 .fc_btm_mob {
@@ -578,6 +545,7 @@
   width: 30%;
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
   font-weight: 500;
 }
 
@@ -646,6 +614,7 @@
 /*  */
 .fc_3 {
   width: 30%;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -659,6 +628,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 2rem;
   justify-content: space-between;
 }
 
@@ -677,7 +647,6 @@
 }
 .copy_right_text {
   width: auto;
-  margin-top: 2rem;
 }
 
 .copy_right_text span {
@@ -788,9 +757,14 @@
     line-height: 1.3rem;
     text-align: center;
     align-items: center;
+    margin-top: 0rem;
+  }
+  .copy_right_text {
+    margin-top: 1rem
   }
   .ns_letter {
     width: 287px;
+    margin-top: 0;
   }
   .ns_letter input {
     height: 44px;
@@ -892,23 +866,6 @@
     box-shadow: none !important;
   }
   /*  */
-
-  .mob-advance-filter .af_submenu {
-    display: flex !important;
-    /* flex-direction: column; */
-    align-items: center;
-    position: unset;
-    width: 100%;
-    justify-content: center;
-    background: none;
-    box-shadow: none;
-  }
-  .mob-advance-filter .nav-item {
-    width: 100% !important;
-  }
-  .af_submenu .af_submenu-item .af_smi_1 {
-    width: 100%;
-  }
   .search_menu {
     height: 46vh;
     padding: 3rem 0px;
