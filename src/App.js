@@ -11,7 +11,6 @@ function App() {
   //  console.log(state)
   useEffect(() => {
     let get = localStorage.getItem("theme");
-    //  console.log(get)
     dispatch({
       type: "Dark",
       payload: get,
@@ -19,6 +18,19 @@ function App() {
     if (get === "dark") {
       document.body.classList.add("black");
     }
+    if (get === null) {
+      localStorage.setItem("theme", "light");
+      let get = localStorage.getItem("theme");
+      dispatch({
+        type: "light",
+        payload: get,
+      });
+      // console.log(get, 'fdfdsf')
+      document.body.classList.add("white");
+      document.body.classList.remove("black");
+
+    }
+
   }, []);
 
   return (
