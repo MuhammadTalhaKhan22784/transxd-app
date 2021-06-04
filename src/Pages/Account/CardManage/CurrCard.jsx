@@ -57,7 +57,7 @@ const CurrCard = () => {
                         <h5 style={{ color: mode === 'dark' ? 'white' : 'black' }}>Your Card</h5>
                         <Link
                             className='new_card_reqst_link'
-                            style={{ color: mode === 'light' ? 'black' : '#72FAEC' }}
+                            style={{ color: mode === 'light' ? '#27bdad' : '#72FAEC' }}
                             to='/request-new-card'>
                             Request a New Card
                         </Link>

@@ -22,8 +22,8 @@
 }
 .over_view_link {
   text-decoration: none;
-  /* color: #27bdad; */
-  color: black;
+  color: #27bdad;
+  /* color: black; */
   font-weight: 600;
   font-size: 0.9rem;
   padding: 6px 15px;

@@ -69,7 +69,7 @@ const AccountOverview = () => {
                   <select
                     className="cus_select"
                     style={{
-                      color: mode === "light" ? "black" : "#72FAEC",
+                      color: mode === "light" ? "#27bdad" : "#72FAEC",
                     }}
                   >
                     <option
@@ -181,7 +181,7 @@ const AccountOverview = () => {
                   <select
                     className="cus_select"
                     style={{
-                      color: mode === "light" ? "black" : "#72FAEC",
+                      color: mode === "light" ? "#27bdad" : "#72FAEC",
                     }}
                   >
                     <option
@@ -248,7 +248,7 @@ const AccountOverview = () => {
               <div className="select_transaction_div">
                 <select
                   style={{
-                    color: mode === "light" ? "black" : "#72FAEC",
+                    color: mode === "light" ? "#27bdad" : "#72FAEC",
                     backgroundColor:
                       mode === "light" ? "#E9F8F7" : "transparent",
                     border: `1px solid  ${

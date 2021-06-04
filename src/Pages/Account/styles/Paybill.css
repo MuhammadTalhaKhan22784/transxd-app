@@ -164,8 +164,8 @@
   font-weight: 600;
 }
 input::placeholder {
-  /* color: #27bdad; */
-  color: rgb(156, 156, 156);
+  color: #27bdad;
+  /* color: rgb(156, 156, 156); */
 
 }
 .select_vendor_box {
