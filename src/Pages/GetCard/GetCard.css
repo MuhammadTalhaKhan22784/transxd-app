@@ -1,8 +1,8 @@
 .getcard_section {
-  width: 100%;
+  max-width: 1500px;
   height: max-content;
   display: flex;
-  margin: 2rem 0;
+  margin: 2rem auto;
   padding: 0 44px;
 }
 

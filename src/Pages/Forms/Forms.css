@@ -17,10 +17,10 @@
 }
 
 .main_form {
-  width: 100%;
+  max-width: 1500px;
   height: 100%;
   display: flex;
-  margin: 3rem 0;
+  margin: 3rem auto;
 }
 
 .login_form {

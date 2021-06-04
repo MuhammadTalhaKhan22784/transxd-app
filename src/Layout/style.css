@@ -522,6 +522,11 @@
   align-items: center;
 }
 
+.f_main_c {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .f_switch {
   margin-top: 2rem !important;
 }
@@ -643,7 +648,8 @@
   outline: none;
 }
 .copy_right_text {
-  width: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .copy_right_text span {

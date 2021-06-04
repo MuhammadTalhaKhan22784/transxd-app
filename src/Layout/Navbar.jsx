@@ -99,7 +99,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <nav
-        className="navbar navbar-expand-lg c_navbar"
+        className="navbar navbar-expand-lg c_navbar sticky-top"
         id="top"
         style={{
           backgroundColor:
@@ -282,11 +282,12 @@ const Navbar = () => {
             </ul>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
+                {mode==='light'?
                 <button
-                  style={{ display: showMode === false ? "block" : "none" }}
+                  // style={{ display: showMode === false ? "block" : "none" }}
                   className="btn s_btn"
                   onClick={() => {
-                    setShowMode(true);
+                    // setShowMode(true);
                     handleDark();
                   }}
                 >
@@ -298,11 +299,12 @@ const Navbar = () => {
                     alt="..."
                   />
                 </button>
+                :
                 <button
                   className="btn s_btn"
-                  style={{ display: showMode === false ? "none" : "block" }}
+                  // style={{ display: showMode === false ? "none" : "block" }}
                   onClick={() => {
-                    setShowMode(false);
+                    // setShowMode(false);
                     handleLight();
                   }}
                 >
@@ -314,6 +316,7 @@ const Navbar = () => {
                     alt="..."
                   />
                 </button>
+}
               </li>
               <li className="nav-item">
                 <LangSwitch id="lang-2" />

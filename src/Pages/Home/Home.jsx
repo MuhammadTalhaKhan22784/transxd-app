@@ -449,36 +449,45 @@ const Home = () => {
                   Shop and pay bills online or in stores wherever our GIM UEMOA
                   Debit cards are accepted.
                 </p>
-
-                <h1>
-                  Pay{" "}
-                  <span class="animate-wrapp">
-                    <span
-                      style={{
-                        color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
-                      }}
-                    >
-                      Whenever
-                    </span>
-                    <span
-                      style={{
-                        color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
-                      }}
-                    >
-                      Wherever
-                    </span>
-                  </span>{" "}
-                </h1>
-                <br />
-                <strong
-                  style={{
-                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
-                  }}
-                >
-                 Your Want Debit Card!
-                </strong>
+                <div className="w_animate">
+                  <h1>
+                    Pay{" "}
+                    <span class="animate-wrapp">
+                      <span
+                        className="w1"
+                        style={{
+                          color:
+                            mode === "light"
+                              ? style.bggreen
+                              : style.bgdarkgreen,
+                        }}
+                      >
+                        Whenever
+                      </span>
+                      <span
+                        className="w2"
+                        style={{
+                          color:
+                            mode === "light"
+                              ? style.bggreen
+                              : style.bgdarkgreen,
+                        }}
+                      >
+                        Wherever
+                      </span>
+                    </span>{" "}
+                    <span className="w3">Your Want</span>
+                  </h1>
+                  <strong
+                    className="dc_text"
+                    style={{
+                      color:
+                        mode === "light" ? style.bggreen : style.bgdarkgreen,
+                    }}
+                  >
+                    Debit Card!
+                  </strong>
+                </div>
                 {/*               
                 <h2>
                   Pay{" "}

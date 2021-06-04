@@ -1,5 +1,6 @@
 .home_section {
-  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .home_hero {
@@ -113,7 +114,7 @@
 .htm_left img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .htm_right {
@@ -248,10 +249,6 @@
   display: block;
 }
 
-
-
-
-
 .pdark {
   display: none;
 }
@@ -279,7 +276,7 @@
 .pcard img {
   width: 40px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* home_why */
@@ -338,16 +335,37 @@
   width: 50%;
 }
 
- 
- .pdl_b h1 {
-  /* width: 90%; */
-  /* text-align: center; */
+.dc_text {
+  font-size: 2rem;
+}
+
+.w_animate {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.w1 {
+  /* margin-top: -23px; */
+  padding: 11px 6px !important;
+}
+
+.w2 {
+  margin-top: -2px;
+  padding: 13px 6px !important;
+}
+
+.w3 {
+  padding: 2px 0px !important;
+}
+
+.pdl_b h1 {
+  width: max-content;
+  display: flex;
   overflow: hidden;
-  height: 50px;
+  height: 36px;
   font-weight: 600;
-  /* font-size: 1.7rem; */
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .pdl_b h1 span {
@@ -362,72 +380,72 @@
   justify-content: center;
   align-items: center;
   -webkit-animation: textAnimation 5s ease-in-out infinite;
-          animation: textAnimation 5s ease-in-out infinite;
+  animation: textAnimation 5s ease-in-out infinite;
 }
 
 @-webkit-keyframes textAnimation {
   0% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   20% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   30% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   40% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   50% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   60% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   70% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   80% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   90% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   100% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 }
 
 @keyframes textAnimation {
   0% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   20% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   30% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   40% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   50% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   60% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   70% {
-      margin-top: -50px;
+    margin-top: -50px;
   }
   80% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   90% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
   100% {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -489,7 +507,7 @@
   width: 50px;
   margin-bottom: 1.5rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .hi_card h2 {
@@ -577,7 +595,7 @@
   z-index: 99999;
   width: 100%;
   -webkit-filter: opacity(0.9);
-          filter: opacity(0.9);
+  filter: opacity(0.9);
   padding: 10px;
 }
 
@@ -586,7 +604,7 @@
   right: 20px;
   top: 10px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 15px;
 }
 .cokkie_div {
@@ -912,6 +930,23 @@
   .hw_img img {
     width: 90%;
   }
+  .pdl_b h1 {
+    font-size: 1.5rem;
+  }
+  .dc_text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .pd_left .pdl_b p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+    width: 87%;
+  }
+  .w2 {
+    margin-top: -2px;
+    padding: 22px 6px !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -992,6 +1027,15 @@
   .hcb_left p {
     width: 85%;
     font-size: 0.8rem;
+  }
+  .pdl_b h1 {
+    font-size: 1.2rem;
+  }
+  .dc_text {
+    font-size: 1.2rem;
+  }
+  .w2 {
+    padding: 26px 6px !important;
   }
 }
 

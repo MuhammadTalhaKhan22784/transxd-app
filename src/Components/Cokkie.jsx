@@ -25,6 +25,7 @@ const Cokkie = () => {
         display: show === true ? "none" : "block",
         backgroundColor:
           mode === "light" ? style.bglightblue : style.bglightgreen,
+        opacity: 0.6,
       }}
     >
       <div className="cokkie_div">

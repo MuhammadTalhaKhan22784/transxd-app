@@ -72,6 +72,7 @@ const Footer = () => {
           color: mode === "light" ? style.bgblack : style.bgwhite,
         }}
       >
+    <div className="f_main_c">
         <div className="footer_container">
           <div className="fc_2">
             <Link to="/">
@@ -260,13 +261,14 @@ const Footer = () => {
               )}
             </div>
             <div className="f_switch w-100 d-flex justify-content-end align-items-center mt-3">
+              {mode==='light'?
               <button
-                style={{ display: showMode === false ? "block" : "none" }}
-                className="btn s_btn"
-                onClick={() => {
-                  setShowMode(true);
-                  handleDark();
-                }}
+              // style={{ display: showMode === false ? "block" : "none" }}
+              className="btn s_btn"
+              onClick={() => {
+                // setShowMode(true);
+                handleDark();
+              }}
               >
                 <img
                   src={lightimg}
@@ -274,15 +276,16 @@ const Footer = () => {
                     width: "35px",
                   }}
                   alt="..."
-                />
+                  />
               </button>
+              :
               <button
-                className="btn s_btn"
-                style={{ display: showMode === false ? "none" : "block" }}
-                onClick={() => {
-                  setShowMode(false);
-                  handleLight();
-                }}
+              className="btn s_btn"
+              // style={{ display: showMode === false ? "none" : "block" }}
+              onClick={() => {
+                // setShowMode(false);
+                handleLight();
+              }}
               >
                 <img
                   src={darkimg}
@@ -290,8 +293,9 @@ const Footer = () => {
                     width: "35px",
                   }}
                   alt="..."
-                />
+                  />
               </button>
+                }
 
               <LangSwitch id="lang-3" />
             </div>
@@ -332,6 +336,7 @@ const Footer = () => {
             )}{" "}
             2021. Rarare Inc. All rights reserved.{" "}
           </span>
+        </div>
         </div>
       </div>
     </React.Fragment>
