@@ -161,14 +161,14 @@ const Footer = () => {
           </div>
           <div className="fc_1">
             <div>
-              <span
+              <strong
                 className="mb-2"
                 style={{
-                  color: mode === "light" ? style.bggreen : style.bgwhite,
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
                 Transxd
-              </span>
+              </strong>
               <Link className="text-decoration-none" to="/">
                 <span>Home</span>
               </Link>
@@ -189,14 +189,14 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <span
+              <strong
                 className="mb-2"
                 style={{
-                  color: mode === "light" ? style.bggreen : style.bgwhite,
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
                 Legal
-              </span>
+              </strong>
               <Link className="text-decoration-none" to="/terms-condition">
                 <span>Terms of use</span>
               </Link>
@@ -208,14 +208,14 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <span
+              <strong
                 className="mb-2"
                 style={{
-                  color: mode === "light" ? style.bggreen : style.bgwhite,
+                  color: mode === "light" ? style.bgblack : style.bgwhite,
                 }}
               >
                 Business
-              </span>
+              </strong>
               <Link className="text-decoration-none" to="#">
                 <span>Contact us</span>
               </Link>
@@ -231,7 +231,7 @@ const Footer = () => {
             <h2
               className="fs-5"
               style={{
-                color: mode === "light" ? style.bggreen : style.bgwhite,
+                color: mode === "light" ? style.bgblack : style.bgwhite,
               }}
             >
               Newsletter

@@ -168,13 +168,13 @@
 }
 
 .s_btn_light {
-  background: #27bdad;
-  color: white;
+  background: #27bdad !important;
+  color: white !important;
 }
 
 .s_btn_dark {
-  background: #72faec;
-  color: #0e2725;
+  background: #72faec !important;
+  color: #0e2725 !important;
 }
 
 .s_btn_dark:hover {
@@ -552,16 +552,13 @@
 .fc_1 > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.fc_1 span {
-  margin: 0.2rem 0;
 }
 
 .fc_1 span {
   font-size: 0.8rem;
-  text-align: center;
+  text-align: justify;
+  margin: 0.2rem 0;
+  opacity: 0.8;
 }
 
 .fc_2 {
@@ -709,6 +706,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .fc_1 > div {
+    align-items: center;
+  }
   .fc_2 {
     width: 80%;
     align-items: center;
@@ -760,7 +760,7 @@
     margin-top: 0rem;
   }
   .copy_right_text {
-    margin-top: 1rem
+    margin-top: 1rem;
   }
   .ns_letter {
     width: 287px;
@@ -911,7 +911,8 @@
 
 @media screen and (max-width: 768px) {
   .c_navbar .navbar-nav .nav-item .nav-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin: 10px 15px;
   }
   .c_navbar .navbar-nav .nav-item img {
     width: 17px;
@@ -951,6 +952,9 @@
   }
   .fc_2 p {
     font-size: 0.7rem;
+  }
+  .fc_social img {
+    width: 34px;
   }
 }
 

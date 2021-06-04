@@ -59,6 +59,7 @@ const TransList = () => {
               <span
                 style={{
                   color: style.bgcgreen,
+                  fontSize:'.85rem'
                 }}
               >
                 {val.amount}

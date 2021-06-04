@@ -286,11 +286,21 @@ const Home = () => {
             <div className="pcard_section">
               <div className="pcard">
                 <div
-                  className="pcard-img pcard_light"
+                  className={`pcard-img ${
+                    mode === "light" ? "pcard_light" : "pcard_dark"
+                  }`}
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img className="plight" src={pchip1} alt="..." />
-                  <img className="pdark" src={pchip1dark} alt="..." />
+                  <img
+                    className={mode === "light" ? "plight" : "pdark"}
+                    src={pchip1}
+                    alt="..."
+                  />
+                  <img
+                    className={mode === "light" ? "pdark" : "plight"}
+                    src={pchip1dark}
+                    alt="..."
+                  />
                 </div>
                 <span
                   style={{
@@ -302,11 +312,25 @@ const Home = () => {
               </div>
               <div className="pcard">
                 <div
-                  className="pcard-img"
+                  className={`pcard-img ${
+                    mode === "light" ? "pcard_light" : "pcard_dark"
+                  }`}
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img className="pchip_img plight" src={pchip2} alt="..." />
-                  <img className="pchip_img pdark" src={pchip2dark} alt="..." />
+                  <img
+                    className={`pchip_img ${
+                      mode === "light" ? "plight" : "pdark"
+                    }`}
+                    src={pchip2}
+                    alt="..."
+                  />
+                  <img
+                    className={`{pchip_img ${
+                      mode === "light" ? "pdark" : "plight"
+                    }`}
+                    src={pchip2dark}
+                    alt="..."
+                  />
                 </div>
                 <span
                   style={{
@@ -318,11 +342,25 @@ const Home = () => {
               </div>
               <div className="pcard">
                 <div
-                  className="pcard-img"
+                  className={`pcard-img ${
+                    mode === "light" ? "pcard_light" : "pcard_dark"
+                  }`}
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img className="plight pchip_img" src={pchip3} alt="..." />
-                  <img className="pdark pchip_img" src={pchip3dark} alt="..." />
+                  <img
+                    className={`pchip_img ${
+                      mode === "light" ? "plight" : "pdark"
+                    }`}
+                    src={pchip3}
+                    alt="..."
+                  />
+                  <img
+                    className={`{pchip_img ${
+                      mode === "light" ? "pdark" : "plight"
+                    }`}
+                    src={pchip3dark}
+                    alt="..."
+                  />
                 </div>
                 <span
                   style={{
@@ -334,11 +372,21 @@ const Home = () => {
               </div>
               <div className="pcard">
                 <div
-                  className="pcard-img"
+                  className={`pcard-img ${
+                    mode === "light" ? "pcard_light" : "pcard_dark"
+                  }`}
                   style={{ border: "1px solid #27BDAD" }}
                 >
-                  <img className="plight" src={pchip4} alt="..." />
-                  <img className="pdark" src={pchip4dark} alt="..." />
+                  <img
+                    className={mode === "light" ? "plight" : "pdark"}
+                    src={pchip4}
+                    alt="..."
+                  />
+                  <img
+                    className={mode === "light" ? "pdark" : "plight"}
+                    src={pchip4dark}
+                    alt="..."
+                  />
                 </div>
                 <span
                   style={{
@@ -397,6 +445,41 @@ const Home = () => {
                 }}
               >
                 <img src={debitcard} alt="..." />
+                <p className="hp2">
+                  Shop and pay bills online or in stores wherever our GIM UEMOA
+                  Debit cards are accepted.
+                </p>
+
+                <h1>
+                  Pay{" "}
+                  <span class="animate-wrapp">
+                    <span
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                    >
+                      Whenever
+                    </span>
+                    <span
+                      style={{
+                        color:
+                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                      }}
+                    >
+                      Wherever
+                    </span>
+                  </span>{" "}
+                </h1>
+                <br />
+                <strong
+                  style={{
+                    color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+                  }}
+                >
+                 Your Want Debit Card!
+                </strong>
+                {/*               
                 <h2>
                   Pay{" "}
                   <strong
@@ -418,7 +501,8 @@ const Home = () => {
                     Debit Card!
                   </strong>
                 </h2>
-                <p>
+               */}
+                <p className="hp1">
                   Shop and pay bills online or in stores wherever our GIM UEMOA
                   Debit cards are accepted.
                 </p>

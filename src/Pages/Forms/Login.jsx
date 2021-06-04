@@ -18,6 +18,9 @@ import pwdclose from "../../Assets/Component 37 – 5.png";
 import featherMail from "../../Assets/feather-mail.png";
 import featherLock from "../../Assets/feather-lock.png";
 import smilingafricanwoman from "../../Assets/smiling-african-woman.png";
+import validationIcon from "../../Assets/validationIcon.png";
+
+
 // swiper js
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Autoplay } from "swiper";
@@ -153,6 +156,10 @@ const Login = () => {
                 >
                   Forgot Password?
                 </span>
+              </div>
+              <div className="validation_text" style={{marginTop:"5rem"}}>
+                  <img src={validationIcon} alt="..." />
+                  <span style={{color:style.bgred}}>Password does't match Please reenter!</span>
               </div>
               <div className="form_btn">
                 <button

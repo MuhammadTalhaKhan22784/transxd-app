@@ -57,7 +57,7 @@ const CurrCard = () => {
                         <h5 style={{ color: mode === 'dark' ? 'white' : 'black' }}>Your Card</h5>
                         <Link
                             className='new_card_reqst_link'
-                            style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}
+                            style={{ color: mode === 'light' ? 'black' : '#72FAEC' }}
                             to='/request-new-card'>
                             Request a New Card
                         </Link>
@@ -72,7 +72,7 @@ const CurrCard = () => {
                                 <div className="active_head_div">
                                     <div className="heading_active">
                                         <h5
-                                            style={{ color: mode === 'dark' ? '#72FAEC' : 'black' }}
+                                            style={{ color: mode === 'dark' ? '#72FAEC' : '#27BDAD' }}
                                         >Transxnd Mansa Card </h5>
                                         <div
                                             className="active_para"

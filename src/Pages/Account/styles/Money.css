@@ -95,6 +95,12 @@
         justify-content: center;
         margin-top: 10px;
     }
+    .mob_bg_clr_trans{
+        background-color: #e9f8f7;
+    }
+    .review_trans_head{
+        display: none;
+    }
     .money_detail_inputs_div{
         background-color: transparent !important;
     }

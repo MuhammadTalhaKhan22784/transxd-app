@@ -68,8 +68,8 @@
     outline: none;
     border: none;
     border-radius: 20px;
-    padding: 6px 25px;
-    font-weight: 600;
+    padding: 6px 35px;
+    font-weight: lighter;
     font-size: .9rem;
     margin-top: 15px;
 }
@@ -119,6 +119,9 @@
 @media screen and (max-width:991px){
     .number_div_mob{
         display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 20px;
     }
     .number_div_mob>img{

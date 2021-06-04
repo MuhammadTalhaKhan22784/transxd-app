@@ -69,13 +69,13 @@ const AccountOverview = () => {
                   <select
                     className="cus_select"
                     style={{
-                      color: mode === "light" ? "#27BDAD" : "#72FAEC",
+                      color: mode === "light" ? "black" : "#72FAEC",
                     }}
                   >
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? 'black' : style.bgdarkgreen,
                       }}
                       selected
                     >
@@ -84,7 +84,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? 'black' : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -93,7 +93,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -102,7 +102,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -111,7 +111,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -181,13 +181,13 @@ const AccountOverview = () => {
                   <select
                     className="cus_select"
                     style={{
-                      color: mode === "light" ? "#27BDAD" : "#72FAEC",
+                      color: mode === "light" ? "black" : "#72FAEC",
                     }}
                   >
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       selected
                     >
@@ -196,7 +196,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -205,7 +205,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -214,7 +214,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -223,7 +223,7 @@ const AccountOverview = () => {
                     <option
                       style={{
                         color:
-                          mode === "light" ? style.bggreen : style.bgdarkgreen,
+                          mode === "light" ? "black" : style.bgdarkgreen,
                       }}
                       value="dasda"
                     >
@@ -248,7 +248,7 @@ const AccountOverview = () => {
               <div className="select_transaction_div">
                 <select
                   style={{
-                    color: mode === "light" ? "#27BDAD" : "#72FAEC",
+                    color: mode === "light" ? "black" : "#72FAEC",
                     backgroundColor:
                       mode === "light" ? "#E9F8F7" : "transparent",
                     border: `1px solid  ${

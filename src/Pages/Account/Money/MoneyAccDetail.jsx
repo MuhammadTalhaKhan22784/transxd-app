@@ -96,7 +96,7 @@ const MoneyAccDetail = () => {
                                 name="radio-button-demo"
                                 inputProps={{ 'aria-label': 'C' }}
                             />
-                            <p style={{ color: mode === 'light' ? '#27BDAD' : 'white' }}>Refer this recipient to Transxnd!</p>
+                            <p style={{ color: mode === 'light' ? 'black' : 'white' }}>Refer this recipient to Transxnd!</p>
                         </div>
                         <div style={{ marginTop: '20px' }} >
                             <button

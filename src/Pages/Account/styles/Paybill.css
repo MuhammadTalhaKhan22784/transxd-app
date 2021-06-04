@@ -45,7 +45,7 @@
 ._img_bill {
   padding: 20px 0px;
   width: 120px !important;
-  border-radius: 15px;
+  border-radius: 8px;
   width: fit-content;
   /* height: 100px; */
 }
@@ -74,7 +74,7 @@
 }
 .empty_box_bil {
   background-color: #b5e8e3;
-  border-radius: 10px;
+  border-radius: 8px;
   width: 120px;
   /* padding: 20px; */
   height: 110px;
@@ -147,7 +147,7 @@
   height: fit-content;
   background-color: transparent;
   border: none;
-  color: #27bdad;
+  color: rgb(156, 156, 156);
   font-weight: 600;
 }
 .country_input_slct input {
@@ -158,11 +158,15 @@
   height: fit-content;
   background-color: transparent;
   border: none;
-  color: #27bdad;
+  /* color: #27bdad; */
+  color: rgb(156, 156, 156);
+
   font-weight: 600;
 }
 input::placeholder {
-  color: #27bdad;
+  /* color: #27bdad; */
+  color: rgb(156, 156, 156);
+
 }
 .select_vendor_box {
   margin-top: 15px;
@@ -317,14 +321,19 @@ input::placeholder {
     font-size: 0.7rem;
   }
   .country_input_slct {
-    width: 280px;
+    width: 300px;
   }
   .country_input_slct select,
   .country_input_slct input {
-    width: 210px;
+    width: 220px;
   }
   .select_vendor_box {
     width: 300px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .empty_box_bil{
+    width: 100px;
   }
 }
 @media screen and (max-width: 370px) {

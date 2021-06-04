@@ -9,6 +9,8 @@ import slider3bg from "../../Assets/slider3bg.png";
 import slider4bg from "../../Assets/slider4bg.png";
 import slider5bg from "../../Assets/slider5bg.png";
 import slider6bg from "../../Assets/slider6bg.png";
+import validationIcon from "../../Assets/validationIcon.png";
+
 import "./Forms.css";
 // assets
 import forgotlogo from "../../Assets/forgotlogo.png";
@@ -79,6 +81,10 @@ const Forget = () => {
                   placeholder="Email address"
                   type="email"
                 />
+              </div>
+              <div className="validation_text" style={{marginTop:"3rem"}}>
+                  <img src={validationIcon} alt="..." />
+                  <span style={{color:style.bgred}}>Password does't match Please reenter!</span>
               </div>
               <div className="form_btn ">
                 <button

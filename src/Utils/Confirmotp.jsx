@@ -3,6 +3,7 @@ import './style/otp.css'
 // assets 
 import edit from '../Assets/editL.png'
 import editD from '../Assets/Icon awesome-editd.png'
+import mobEditL from '../Assets/Icon-edit.png'
 import mobmsg from '../Assets/Group 4532.png'
 import mobmsgL from '../Assets/Group 4532l.png'
 import email from '../Assets/Group 4528.png'
@@ -37,8 +38,8 @@ const Confirmotp = ({ nextLink, bLink, mobNumber, resend, mail, error, code, cod
                         </div>
                         <img className='msg_img' src={mode === 'dark' ? mobmsg : mobmsgL} alt="..." />
                         <div className="number_div_mob">
-                            <span style={{ color: mode === 'light' ? '' : '#72FAEC' }}>{mobNumber}</span>
-                            <img src={mode === 'light' ? edit : editD} alt="..." />
+                            <span style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>{mobNumber}</span>
+                            <img src={mode === 'light' ? mobEditL : editD} alt="..." />
                         </div>
                         <div className="otp_get_inp_div">
                             {code.map((val, i) => (
@@ -71,8 +72,8 @@ const Confirmotp = ({ nextLink, bLink, mobNumber, resend, mail, error, code, cod
                         </div>
                         <img className='msg_img' src={mode === 'dark' ? email : email_l} alt="..." />
                         <div className="number_div_mob">
-                            <span style={{ color: mode === 'light' ? '' : '#72FAEC' }}>{mail}</span>
-                            <img src={mode === 'light' ? edit : editD} alt="..." />
+                            <span style={{ color: mode === 'light' ? '#27BDAD' : '#72FAEC' }}>{mail}</span>
+                            <img src={mode === 'light' ? mobEditL : editD} alt="..." />
                         </div>
                         <div className="otp_get_inp_div">
                             {codeEmail.map((val, i) => (

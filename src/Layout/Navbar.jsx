@@ -125,6 +125,9 @@ const Navbar = () => {
             </Link>
 
             <div className="nav_switch">
+            <li className="nav-item">
+                <LangSwitch id="lang" />
+              </li>
               <li className="nav-item">
                 <button
                   style={{ display: showMode === false ? "block" : "none" }}
@@ -158,9 +161,6 @@ const Navbar = () => {
                     alt="..."
                   />
                 </button>
-              </li>
-              <li className="nav-item">
-                <LangSwitch id="lang" />
               </li>
             </div>
           </div>
@@ -275,14 +275,7 @@ const Navbar = () => {
               )}
 
               <li className="nav-item">
-                <Link
-                  // exact
-                  // activeClassName={
-                  //   mode === "light" ? "link_activel" : "link_actived"
-                  // }
-                  className="nav-link"
-                  to="#"
-                >
+                <Link className="nav-link" to="#">
                   Get Card
                 </Link>
               </li>
@@ -363,7 +356,7 @@ const Navbar = () => {
                               : style.bgdarkgreen,
                           padding: "8px 28px",
                         }}
-                        className={`cus_btn1
+                        className={`cus_btn1 ms-2
                         ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                       >
                         Login
@@ -430,7 +423,8 @@ const Navbar = () => {
                                   : style.bgdarkgreen,
                               padding: "4px 32px",
                             }}
-                            className="cus_btn1"
+                            className={`cus_btn1
+                            ${mode === "light" ? "l_btn_light" : "l_btn_dark"}`}
                           >
                             Login
                           </button>
@@ -452,7 +446,8 @@ const Navbar = () => {
                                   : style.bgdarkgreen,
                               padding: "4px 25px",
                             }}
-                            className="cus_btn1 ms-3"
+                            className={`cus_btn1 ms-3
+                            ${mode === "light" ? "s_btn_light" : "s_btn_dark"}`}
                           >
                             Sign up
                           </button>
