@@ -452,7 +452,7 @@ const Home = () => {
                 <div className="w_animate">
                   <h1>
                     Pay{" "}
-                    <span class="animate-wrapp">
+                    <span className="animate-wrapp">
                       <span
                         className="w1"
                         style={{

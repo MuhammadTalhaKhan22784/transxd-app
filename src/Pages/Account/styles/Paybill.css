@@ -3,7 +3,6 @@
   margin-top: 100px;
 }
 .pay_user_card_div {
-  /* margin-left: 50px; */
   width: 320px;
 }
 .select_bill_div {
@@ -229,13 +228,11 @@ input::placeholder {
 .bil_payment_main_div {
   display: flex;
   margin-top: 50px;
-  /* margin-left: 50px; */
 }
 .user_card_div {
   width: 330px;
 }
 .payment_bil {
-  /* width: 900px; */
   width: 65%;
 }
 

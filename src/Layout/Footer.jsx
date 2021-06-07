@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useContext } from "react";
+import React, { useLayoutEffect, useContext } from "react";
 import { ColorContext } from "../Context/Context";
 
 import transxdlogo from "../Assets/transxdlogo.png";
@@ -21,7 +21,6 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import LangSwitch from "../Components/Swich/LangSwitch";
 const Footer = () => {
-  const [showMode, setShowMode] = useState(false);
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -263,10 +262,8 @@ const Footer = () => {
             <div className="f_switch w-100 d-flex justify-content-end align-items-center mt-3">
               {mode==='light'?
               <button
-              // style={{ display: showMode === false ? "block" : "none" }}
               className="btn s_btn"
               onClick={() => {
-                // setShowMode(true);
                 handleDark();
               }}
               >
@@ -281,9 +278,7 @@ const Footer = () => {
               :
               <button
               className="btn s_btn"
-              // style={{ display: showMode === false ? "none" : "block" }}
               onClick={() => {
-                // setShowMode(false);
                 handleLight();
               }}
               >
