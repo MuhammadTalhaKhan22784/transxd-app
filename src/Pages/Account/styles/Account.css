@@ -93,7 +93,7 @@
 .total_blnce {
   border-radius: 10px;
   text-align: center;
-  padding: 15px;
+  padding: 30px 0px;
   margin-top: 10px;
 }
 /* .blnce_head_div > h6 {
@@ -110,7 +110,7 @@
   width: 48%;
   text-align: center;
   border-radius: 10px;
-  padding: 15px;
+  padding: 30px 0px ;
 }
 .e_wallet > p,
 .card_blnce > p,
@@ -131,6 +131,8 @@
 }
 .bar_chart {
   width: 100% !important;
+  max-height: 250px;
+  min-height: 200px;
 }
 
 /* transaction table css  */
@@ -179,7 +181,7 @@
 .transaction_table_main_div {
   overflow-x: auto;
   /* width: 100%; */
-  width: 881px;
+  min-width: 881px;
 }
 /* .transaction_table_div {
   overflow-x: scroll;
@@ -556,6 +558,9 @@ th:nth-child(8) {
   .total_blnce > h4,
   .blnce_head_div > h6 {
     font-size: 0.9rem;
+  }
+  .total_blnce{
+    padding: 20px 0px;
   }
   .blnce_head_div > select,
   .dark_overview {

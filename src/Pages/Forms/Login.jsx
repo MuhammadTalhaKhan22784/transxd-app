@@ -146,9 +146,9 @@ const Login = () => {
                   </span>
                 </label>
                 <span
-                  style={{
-                    color: mode === "light" ? style.bgblack : style.bgdarkgreen,
-                  }}
+               style={{
+                color: mode === "light" ? style.bggreen : style.bgdarkgreen,
+              }}
                   className="fp_text"
                   onClick={() => {
                     history.push("/forget");

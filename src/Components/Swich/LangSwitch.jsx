@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ColorContext } from "../../Context/Context";
+import lang1 from "../../Assets/lang1.png";
+import lang2 from "../../Assets/lang2.png";
 
 import "./style.css";
 const LangSwitch = ({id,...props}) => {
@@ -37,8 +39,8 @@ const LangSwitch = ({id,...props}) => {
                 mode === "light" ? style.bggreen : style.bgdarkgreen,
             }}
           ></div>
-          <div className="subscribe">ENG</div>
-          <div className="alright">FRE</div>
+          <div className="subscribe"><img src={lang1} alt="..." /></div>
+          <div className="alright"><img src={lang2} alt="..." /></div>
         </label>
       </div>
     </React.Fragment>

@@ -164,7 +164,8 @@
   background-color: transparent;
 }
 
-.cus_select option:focus,.cus_select:focus {
+.cus_select option:focus,
+.cus_select:focus {
   border: none !important;
   outline: none;
 }
@@ -328,7 +329,6 @@
   width: 40%;
   position: relative;
 }
-
 
 .login_img_content .s_bgimg {
   width: 360px;

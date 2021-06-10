@@ -46,7 +46,10 @@ const ChangePassword = () => {
                                 <input
                                     type={!pass.old ? "password" : 'text'}
                                     className={mode === 'light' ? 'light_inp' : 'dark_inp'}
+                                    value='78687687'
+                                    readOnly
                                 />
+
                                 {!pass.old ?
                                     <img onClick={() => showPassword('old')} src={mode==='light'? hide:hided} alt="..." />
                                     :

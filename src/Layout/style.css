@@ -10,7 +10,7 @@
   display: none;
 }
 
-.nav_rarare_logo {
+.nav_trans_logo {
   width: 145px;
   object-fit: contain;
 }
@@ -646,6 +646,7 @@
 
 .ns_letter input:focus {
   outline: none;
+  background: white;
 }
 .copy_right_text {
   width: 100%;
@@ -986,6 +987,15 @@
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .nav_trans_logo {
+    width: 130px;
+    margin-right: 5px;
+    object-fit: contain;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .navbar-brand {
     margin-left: 0rem !important;
@@ -1003,6 +1013,13 @@
   .notification_menu {
     left: -130px !important;
   }
+  .c_navbar .container {
+    padding: 0 6px 0 0;
+  }
+  .nav_trans_logo {
+    width: 108px;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 345px) {
@@ -1016,12 +1033,4 @@
   }
 }
 
-@media screen and (max-width: 360px) {
-  .c_navbar .container {
-    padding: 0 6px 0 0;
-  }
-  .nav_rarare_logo {
-    width: 108px;
-    object-fit: contain;
-  }
-}
+

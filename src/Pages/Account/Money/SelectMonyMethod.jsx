@@ -36,34 +36,34 @@ const SelectMonyMethod = () => {
                         style={{ color: mode === 'light' ? '' : 'white' }}
                     >Please enter recipient details!</p>
                     <div className="bill_type_select money_type_select" >
-                        <div className="bil_type">
+                        <div className="bil_type money_type">
                             <div className="_img_bill money_selct" style={{ border: '1px solid #27BDAD' }}>
                                 <img className='light_bil' src={card} alt="..." />
                                 <img className='hover_light_bil' src={card2} alt="..." />
                             </div>
-                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Card to Card Money Transfer</p>
+                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Card to Card Money <br /> Transfer</p>
                         </div>
-                        <div className="bil_type">
+                        <div className="bil_type money_type">
                             <div className="_img_bill money_selct" style={{ border: '1px solid #27BDAD' }}>
                                 <img className='light_bil' src={wallet} alt="..." />
                                 <img className='hover_light_bil' src={wallet2} alt="..." />
 
                             </div>
-                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Wallet to Wallet Money Transfer</p>
+                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Wallet to <br /> Wallet Money <br /> Transfer</p>
                         </div>
-                        <div className="bil_type">
+                        <div className="bil_type money_type">
                             <div className="_img_bill money_selct" style={{ border: '1px solid #27BDAD' }}>
                                 <img className='light_bil' src={cash} alt="..." />
                                 <img className='hover_light_bil' src={cash2} alt="..." />
                             </div>
-                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Cash Collection</p>
+                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Cash <br /> Collection</p>
                         </div>
-                        <div className="bil_type">
+                        <div className="bil_type money_type">
                             <div className="_img_bill money_selct" style={{ border: '1px solid #27BDAD' }}>
                                 <img className='light_bil' src={bank} alt="..." />
                                 <img className='hover_light_bil' src={bank2} alt="..." />
                             </div>
-                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Bank Account</p>
+                            <p style={{ color: mode === 'light' ? '' : 'white' }}>Bank <br /> Account</p>
                         </div>
                     </div>
                     <div className='abslt_btn_div'>

@@ -201,7 +201,7 @@ const RegisterAlmostDone = () => {
                 Not a member?{" "}
                 <Link
                   style={{
-                    color: mode === "light" ? style.bgblack : style.bggreen,
+                    color: mode === "light" ? style.bggreen : style.bggreen,
                   }}
                   to="/login"
                 >

@@ -114,10 +114,10 @@ const Navbar = () => {
           <div className="d-flex align-items-center">
             <Link className="navbar-brand" to="/">
               {mode === "light" ? (
-                <img className="nav_rarare_logo" src={transxdlogo} alt="logo" />
+                <img className="nav_trans_logo" src={transxdlogo} alt="logo" />
               ) : (
                 <img
-                  className="nav_rarare_logo"
+                  className="nav_trans_logo"
                   src={transxdlogomob}
                   alt="logo"
                 />
@@ -125,7 +125,7 @@ const Navbar = () => {
             </Link>
 
             <div className="nav_switch">
-            <li className="nav-item">
+              <li className="nav-item">
                 <LangSwitch id="lang" />
               </li>
               <li className="nav-item">
@@ -275,48 +275,55 @@ const Navbar = () => {
               )}
 
               <li className="nav-item">
-                <Link className="nav-link" to="#">
+                <NavLink
+                  exact
+                  activeClassName={
+                    mode === "light" ? "link_activel" : "link_actived"
+                  }
+                  className="nav-link"
+                  to="/request-new-card"
+                >
                   Get Card
-                </Link>
+                </NavLink>
               </li>
             </ul>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                {mode==='light'?
-                <button
-                  // style={{ display: showMode === false ? "block" : "none" }}
-                  className="btn s_btn"
-                  onClick={() => {
-                    // setShowMode(true);
-                    handleDark();
-                  }}
-                >
-                  <img
-                    src={lightimg}
-                    style={{
-                      width: "35px",
+                {mode === "light" ? (
+                  <button
+                    // style={{ display: showMode === false ? "block" : "none" }}
+                    className="btn s_btn"
+                    onClick={() => {
+                      // setShowMode(true);
+                      handleDark();
                     }}
-                    alt="..."
-                  />
-                </button>
-                :
-                <button
-                  className="btn s_btn"
-                  // style={{ display: showMode === false ? "none" : "block" }}
-                  onClick={() => {
-                    // setShowMode(false);
-                    handleLight();
-                  }}
-                >
-                  <img
-                    src={darkimg}
-                    style={{
-                      width: "35px",
+                  >
+                    <img
+                      src={lightimg}
+                      style={{
+                        width: "35px",
+                      }}
+                      alt="..."
+                    />
+                  </button>
+                ) : (
+                  <button
+                    className="btn s_btn"
+                    // style={{ display: showMode === false ? "none" : "block" }}
+                    onClick={() => {
+                      // setShowMode(false);
+                      handleLight();
                     }}
-                    alt="..."
-                  />
-                </button>
-}
+                  >
+                    <img
+                      src={darkimg}
+                      style={{
+                        width: "35px",
+                      }}
+                      alt="..."
+                    />
+                  </button>
+                )}
               </li>
               <li className="nav-item">
                 <LangSwitch id="lang-2" />
@@ -391,13 +398,13 @@ const Navbar = () => {
                     <Link className="navbar-brand" to="/" onClick={handleClose}>
                       {mode === "light" ? (
                         <img
-                          className="nav_rarare_logo"
+                          className="nav_trans_logo"
                           src={transxdlogo}
                           alt="logo"
                         />
                       ) : (
                         <img
-                          className="nav_rarare_logo"
+                          className="nav_trans_logo"
                           src={transxdlogomob}
                           alt="logo"
                         />
@@ -568,7 +575,7 @@ const Navbar = () => {
                           mode === "light" ? "link_activel" : "link_actived"
                         }
                         className="nav-link"
-                        to="blog"
+                        to="/request-new-card"
                       >
                         Get Card
                       </NavLink>
