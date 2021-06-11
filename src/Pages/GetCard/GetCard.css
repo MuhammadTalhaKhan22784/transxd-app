@@ -35,6 +35,15 @@
   margin-top: 2rem;
 }
 
+.gc_container {
+  height: 358px;
+  overflow-y: scroll;
+}
+
+.gc_container::-webkit-scrollbar {
+  width: 2px;
+}
+
 .gc_card {
   width: 80%;
   text-align: center;
@@ -88,6 +97,10 @@
   .getcard_section {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .gc_container {
+    height: max-content;
+    overflow-y: unset;
   }
   .gs_text_content {
     padding-left: 0;

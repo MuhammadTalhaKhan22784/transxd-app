@@ -68,7 +68,7 @@ const SelectBill = () => {
                 <img className="hover_light_bil" src={mob2} alt="..." />
               </div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Mobile Recharge
+                Mobile <br /> Recharge
               </p>
             </div>
             <div className="bil_type">
@@ -84,7 +84,7 @@ const SelectBill = () => {
                 <img className="hover_light_bil" src={bulb2} alt="..." />
               </div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Electricity Bills
+                Electricity <br /> Bills
               </p>
             </div>
             <div className="bil_type">
@@ -100,7 +100,7 @@ const SelectBill = () => {
                 <img className="hover_light_bil" src={water2} alt="..." />
               </div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Water Bills
+                Water <br /> Bills
               </p>
             </div>
             <div className="bil_type">
@@ -116,31 +116,31 @@ const SelectBill = () => {
                 <img className="hover_light_bil" src={gas2} alt="..." />
               </div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Gas/CNG Bills
+                Gas/CNG <br /> Bills
               </p>
             </div>
             <div className="bil_type">
               <div className="empty_box_bil"></div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Mobile Recharge
+                Mobile <br /> Recharge
               </p>
             </div>
             <div className="bil_type">
               <div className="empty_box_bil"></div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Electricity Bills
+                Electricity <br /> Bills
               </p>
             </div>
             <div className="bil_type">
               <div className="empty_box_bil"></div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Water Bills
+                Water <br /> Bills
               </p>
             </div>
             <div className="bil_type">
               <div className="empty_box_bil"></div>
               <p style={{ color: mode === "light" ? "" : "white" }}>
-                Gas/CNG Bills
+                Gas/CNG <br /> Bills
               </p>
             </div>
           </div>
