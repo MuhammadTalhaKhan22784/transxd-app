@@ -64,10 +64,10 @@ const CorporateUpload = () => {
                 </h6>
                 <p
                 style={{ fontWeight:"600",
-                opacity:"0.9",}}
+                opacity:"0.9",fontSize:'.8rem'}}
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                  cupiditate accusantium quibusdam facere.
+                  Please upload all business registration documents including certificate of incarporation and 
+                  registration with the relavent autharity.
                 </p>
               </div>
               <div className="upload_div">
