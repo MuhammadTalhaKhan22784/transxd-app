@@ -44,7 +44,7 @@
 }
 
 .bussines_main_div div p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
   margin: 1rem 0;
 }
@@ -113,22 +113,27 @@
   width: 400px !important;
 }
 
-
 .reg_img_content .swiper-pagination-bullets {
   left: 65px !important;
 }
 
 .reg_stepper {
-  width: 650px;
+  width: 702px;
   margin: 20px auto 0 auto;
 }
 
-.cus_stepper_btn{
+.cus_stepper_btn {
   width: max-content;
   padding: 8px 120px;
   border-radius: 40px;
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .reg_stepper {
+    width: 655px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -140,10 +145,10 @@
   }
 }
 
-@media screen and (max-width:615px) {
-  .cr_stepper .MuiStepLabel-labelContainer{
+@media screen and (max-width: 615px) {
+  .cr_stepper .MuiStepLabel-labelContainer {
     display: block;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -177,4 +182,3 @@
     padding: 8px 17px;
   }
 }
-

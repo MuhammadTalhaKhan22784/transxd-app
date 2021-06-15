@@ -41,8 +41,8 @@ const CorporateUpload = () => {
             <p
               style={{
                 color: mode === "light" ? style.bgblack : style.bgwhite,
-                fontWeight:"600",
-                opacity:"0.9",
+                fontWeight: "500",
+                opacity: "0.9",
               }}
             >
               Please enter your email address and password to login..
@@ -63,11 +63,15 @@ const CorporateUpload = () => {
                   </strong>
                 </h6>
                 <p
-                style={{ fontWeight:"600",
-                opacity:"0.9",fontSize:'.8rem'}}
+                  style={{
+                    fontWeight: "500",
+                    opacity: "0.9",
+                    fontSize: ".8rem",
+                  }}
                 >
-                  Please upload all business registration documents including certificate of incarporation and 
-                  registration with the relavent autharity.
+                  Please upload all business registration documents including
+                  certificate of incarporation and registration with the
+                  relavent autharity.
                 </p>
               </div>
               <div className="upload_div">
